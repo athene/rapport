@@ -100,27 +100,36 @@
  \begin{section}{Dispositif expérimental}
    Le dispositif expérimental se compose d'un enceinte à vide et ses accesoires, un détecteur rélie à un préimplificateur et un analyseur multicanal. Le siganl est enregisté sur l'ordinateur par un logiciel très simple.
    
-   \begin{subsubsection}{Enceinte à vide}
-    Dans l'einceinte à vide se trouve le détecteur et un sélecteur de source pour que nous n'ayons pas dû toucher les sources nues $\alpha$ se qui est très dangereux et peut causé de cancer. En plus il y a une pompe pour faire le vide et un système pour faire rentrer l'air précisement. Un jauge capacitifcalibré un jauge Pirani très precis mesure la pression dans l'enceinte avec une précision de \unit[0,2]{\%}.  
-   \end{subsubsection}
+   \begin{subsection}{Enceinte à vide}
+    Dans l'einceinte à vide se trouve le détecteur et un sélecteur de source pour que nous n'ayons pas dû toucher les sources nues $\alpha$ se qui est très dangereux et peut causé de cancer. En plus il y a une pompe pour faire le vide et un système de vanne et de fuit micrométrique pour faire rentrer l'air précisement. Un jauge capacitif calibré parun jauge Pirani très précis mesure la pression dans l'enceinte avec une précision de \unit[0,2]{\%}.  
+   \end{subsection}
 
-   \begin{subsubsection}{Détecteur et préamplificateur}
-    \todo{ev. Bild finden}
-    Le détecteur consiste d'une jonction Si(Li) avec une barrière de surface et le zone active du détecteur est réglée par la tension de polarisation. La jonction est assimilable à un condensateur plan dont la distance est égale à la zone désertée (=active?) \todo{Problem verstehen, dass durch den preamplificateur behoben wird}. 
-    Le préamplificateur de charge est rélie à un module de mise en forme qui fournit un signal de l'amplitude proportionnel à la charge collecté dans la jonction du détecteur.
+   \begin{subsection}{Détecteur et préamplificateur}
+    \begin{figure*}[hbt]
+     \begin{center}
+      \includegraphics[width=0.75\textwidth]{Bilder/detecteur.png}
+     \end{center}
+     \caption{schéma d'un détecteur semi-conducteur}
+    \end{figure*}
+    Le détecteur est un détecteur semi-conducteur et consiste d'une jonction Si(Li) avec une barrière de surface. Un détecteur semi-conducteur a trois parts: une zone chargée négative n, une zone chargée positive p  et une zone neutre, la zone active ou desertée. Le largeur de cette dernière zone est reglée par haute tension, la tension de polarisation. Comme ci la jonction est assimilable à un condensateur plan dont la distance est égale à la zone désertée. Donc ce condensateur est de même d'amplitude que la tension rélié.
 
-    source de haute tension pour la dépolarisation du détecteur
-   \end{subsubsection}
+    Le préamplificateur de charge supprime ce problème. Il est rélie à un module de mise en forme qui fournit un signal de l'amplitude proportionnel à la charge collecté dans la jonction du détecteur indépedant de la capacité.
+   \end{subsection}
 
-   \begin{subsubsection}{Logiciel}
-    Un amplificateur entre le préamplificateur et l'analysateur d'amplitude donne la possibilité d'ajuster le signal. L'analyseur d'amplitude est rélie à l'ordinateur où un logiciel met le signal en fonction de on ne sait pas.
-   \end{subsubsection}
+   \begin{subsection}{Logiciel}
+    Un amplificateur entre le préamplificateur et l'analyseur d'amplitude donne la possibilité d'ajuster le signal à un valeur connue. L'analyseur d'amplitude est rélie à l'ordinateur où un logiciel montre le signal en fonction de l'énergie d'$\alpha$. Ce logiciel n'est pas calibré alors il faut le faire soi-même et il permet de choisir la temps de la mesure et un seuil qui était mis à \unit[200]{mV}.
+   \end{subsection}
   \end{section}
   
   \begin{section}{Expériences préliminaire}
-  \begin{subsection}{Etude de la réponse du détecteur}
-   \todo{im Anhang nachschauen}
-   Pour comprendre le comportement du détecteur en fonction de la tension, nous avon fait...
+   \begin{subsection}{Etude de la réponse du détecteur}
+    \begin{subsubsection}{Caractéristique du détecteur}
+    \todo{Astar}
+    \end{subsubsection}
+    \begin{subsubsection}{Largeur de la zone active en fonction de la tension}
+     Pour comprendre le comportement du détecteur en fonction de la tension, nous avons lancé une série de mesure. Nous avons choisi une tension de \unit[0]{V}, \unit[25]{V}, \unit[50]{V} et \unit[80]{V}.
+     \todo{résultats, Erklärung und was haben wir weiter genutzt}
+    \end{subsubsection}
   \end{subsection} 
 
   \begin{subsection}{Calibration des résultat}
@@ -137,7 +146,9 @@
  \end{section}
 
  \begin{section}{Conclusion}
+  Nous avons appris comment lancé une mesure et calibré les dispositifs pour cette mésure. En plus nous avons vu que des particules $\alpha$ déposent leur énergie après un certain trajet parcouru. Cette distance montré par le pic de Bragg est spécifique pour les $\alpha$ d'une source comme nous avons vu en comparaisant les deux sources disponibles pour la TP.
   
+  Dans la radiothérapie on use ce fait pour détruire des tumeurs. En utilisant des particules $\alpha$ on est sûre de ne détruire que la tumeur car l'alpha interagissent que dans cette pétite zone bien défini.
  \end{section}
 
  \vspace{1cm}

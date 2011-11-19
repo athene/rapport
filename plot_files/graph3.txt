@@ -1,0 +1,7 @@
+set output 'energie_perdue-distance.png'
+set terminal png
+set title "énergie perdue en fonction de distance"
+set ylabel 'énergie restante[MeV]'
+set xlabel 'distance parcourue[mm]'
+set key left top
+plot 'daten_wegvar_Am.txt' using ($10):(5.4480627572-$2) title 'Am', 'daten_nur_Bi.txt' using ($10):(8.728626701-$2) title 'Bi', 'daten_nur_Po.txt' using ($10):(6.1817045284-$2) title 'Po'

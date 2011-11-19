@@ -1,0 +1,13 @@
+Zum Hochladen von Daten:
+$ git add .
+$ git commit -m "Beschreibung der Änderungen am Repo"
+$ git push
+
+Erst der letzte Befehl lädt die Daten auf die Webseite github.com hoch.
+
+
+Am Besten bevor man am Verzeichnis arbeitet:
+
+$ git pull
+
+aufrufen, um die aktuellsten Änderungen einzuspielen.

@@ -7,6 +7,8 @@
 \usepackage{isotope}
 \usepackage{longtable}
 \usepackage{color}
+\usepackage{amsmath}
+\usepackage{units}
 
 
 \subject{TP~3 Physique nucléaire}
@@ -101,7 +103,6 @@ T(\alpha)=\frac{m(Np)\cdot Q^{\ast}}{m(\alpha)+m(Np)}
    \todo{Schema Pollonium}
 
    Les trois $\alpha$ principaux sont deux $\alpha$ de la désintégration vers le \isotope[208]{Tl} et l'$\alpha$ de la désintégration du \isotope[212]{Po} avec les énergies suivantes. Pour 100 désintégration du \isotope[212]{Bi} environ 90 particules $\alpha$ sont émis.
-\\ \todo {warum? ich denke 25,1 + 9,7+ 0,63}
    \begin{align*}
     Q_{5^+}(Bi)&=\left[M\left(\isotope[212]{Bi}\right)-M\left(\isotope[208]{Pb}\right)-M\left(\isotope[4]{He}\right)\right]c^2\approx\unit[6,154]{MeV} &\text{ avec }\unit[9,7]{\%}\\
 &\rightarrow T_{0}(\alpha)=\unit[6,042]{MeV}\\
@@ -173,23 +174,36 @@ tension\unit{[V]} & $n^{\circ}$ de particules	& err(part.) & énergie	&	err(èn.
    \begin{table}[htbp]
 \caption{Résultats de précise messuration de Am et Bi}
 \begin{center}
-\begin{tabular}{|c||c|c|c|c|c|c|c|}
+\begin{tabular}{|c||c||c||c|c|c|c|c|c|}
 \hline 
-materiau	&	pic	&	énergie	&	err(én)	&	resolution	&	err(res)	&	$n^{\circ}$ de particules	&	err(part)	\\ \hline\hline
-Bi	&	1	&	1668,94	&	0,25	&	8,36	&	0,25	&	1215,24	&	34,86	\\ \hline
-Bi	&	2	&	2752,96	&	0,12	&	4,58	&	0,08	&	2335,28	&	48,32	\\ \hline
-Am	&	1	&	1662,27	&	0,1	&	13,52	&	0,06	&	23528,39	&	153,39	\\ \hline\hline
-\hline
-\multicolumn{ 6}{|c|}{} & temps\unit{[s]} & 30 \\ \cline{ 7- 8}
-\multicolumn{6}{|c|}{} & tension \unit{[V]}& 80 \\ \cline{7-8}
-\multicolumn{ 6}{|c|}{} & pression\unit{[mb]}& 0.78 \\ \hline
+materiau	&	pic	& énergie  &	énergie	&	err(én)	&	resolution	&	err(res)	&	$n^{\circ}$ de 	&	err(part)
+& & &calculée \unit{[MeV]} & & && & particules & \\ \hline\hline
+Bi	&	1	&	 6, 114 &	1868,94	&	0,25	&	8,36	&	0,25	&	1215,24	&	34,86	\\ \hline
+Bi (Po)	&	2	&	 8, 785 &	2752,96	&	0,12	&	4,58	&	0,08	&	2335,28	&	48,32	\\ \hline
+Am	&	1	&	 5, 433 &	1662,27	&	0,1	&	13,52	&	0,06	&	23528,39	&	153,39	\\ \hline\hline
+\multicolumn{ 7}{|c|}{} & temps\unit{[s]} & 300 \\ \cline{ 8- 9}
+\multicolumn{7}{|c|}{} & tension \unit{[V]}& 80 \\ \cline{8-9}
+\multicolumn{ 7}{|c|}{} & pression\unit{[mb]}& 0.78 \\ \hline
 \end{tabular}
 \end{center}
 \end{table}
+
+
+\begin{figure*}
+\begin{center}
+   \includegraphics[width=0.75\textwidth]{Bilder/calibration.png}
+\caption[calibration d'energie]{fitparameter: $ a = 0.00305786  \pm 4.301\cdot 10^{-5} \hspace{2 em} b = 0.371954  \pm 0.09235$ }
+  \end{center}
+\end{figure*}
   \end{subsection}
-  
+  Nous avons utillisés le program "Gnuplot" pour le fit de donées. Gnuplot applique la méthode des moindres carrés. On trouve pour les coefficients a et b les valeurs:
+\begin{align*}
+a&= 0.00305786 \\
+b&= 0.371954 \\
+\rightarrow E_{callibration} &= 0.00305786  \cdot E +0.371954 
+\end{align*}
+
   \begin{subsection}{Simulation de la perte d'énergie}
-   
   \end{subsection}
  \end{section}
 
@@ -264,7 +278,28 @@ pression\unit{[mb]} & pic	&	énergie	&	err(én)	&	resolution	&	err(res)	&	$n^{\c
 \end{tabular}
 \end{center}
 \end{table}
-
+\begin{figure*}[hbt]
+     \begin{center}
+      \includegraphics[width=0.75\textwidth]{Bilder/fonction_pression.png}
+     \end{center}
+    \end{figure*}
+Le dispositif expérimental est construit comme \c{c}a, que la distance entre le détecteur et la source est fixé à \unit[45]{mm}. Donc on modifie l'épaisseur d'air entre la source et le détecteur,
+c'est-à-dire on régle la pression à l'intérieur d'une enceinte à vide.\\
+l'équation des gaz parfaits $p \cdot x \cdot A =N \cdot R \cdot T$ nous indique que la pression $p$ et la distance $x$ sont inversement proportionnelles, il en résulte pour la distance x = x(p) 
+\begin{equation*}
+x=\frac{p}{p_0}\cdot x_0
+\end{equation*}
+Avec la calibration d'energie $E_{callibration} &= 0.00305786  \cdot E +0.371954 $ on trouve pour le distance $x$ en fonction d'energie $E$:
+\begin{figure*}[hbt]
+     \begin{center}
+      \includegraphics[width=0.75\textwidth]{Bilder/energie-distance.png}
+     \end{center}
+    \end{figure*}
+\begin{figure*}[hbt]
+     \begin{center}
+      \includegraphics[width=0.75\textwidth]{Bilder/energie_perdue.png}
+     \end{center}
+    \end{figure*}
 \end{subsection}
 \begin{subsection}{perte d'energie par unité de longueur}
 \end{subsection}

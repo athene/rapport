@@ -1,0 +1,8 @@
+set output 'calibration.png'
+set terminal png
+set title "Calibration d'energie"
+set ylabel 'energie calculée [MeV]'
+set xlabel 'position de pic'
+f(x)=a*x+b
+fit f(x) 'daten_5min.txt' using 4:3 via a,b
+plot 'daten_5min.txt' using 4:3:5 with xerrorbars title 'donées', f(x) title 'fit'

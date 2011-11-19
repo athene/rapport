@@ -1,0 +1,6 @@
+materiau	pic	energie	position	err(pos)	largeur	err(lar)	integral	err(int) temps[s] pression[mb]
+Bi	1	6.114	1868.94		0.25		8.36	0.25		1215.24		34.86	300	0.78
+Bi	2	8.785	2752.96		0.12		4.58	0.08		2335.28		48.32	300	0.78
+Am	1	5.433	1662.27		0.10		13.52	0.06		23528.39	153.39	300	0.78	
+
+

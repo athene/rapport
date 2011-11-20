@@ -1,0 +1,6 @@
+"ASTAR:"	"Stopping"	"Powers"	"and"	"Range"	"Tables"	"for"	"Alpha"	"Particles"
+"SILICON"								
+"Kinetic Energy [MeV]"	"Total Stp. Pow. MeV cm^2/g"	"Projected Range g/cm^2"						
+5,413	586,3	0,006251						
+6,004	547,2	0,007923						
+8,785	421,4	0,00313						

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.5.1)  20 NOV 2011 14:52
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.5.1)  20 NOV 2011 19:09
 entering extended mode
  %&-line parsing enabled.
 **rapport2
@@ -928,9 +928,9 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \tab@size=\count157
 \listing@line=\count158
 )
-runsystem(touch /tmp/w18-test-20111120892)...disabled.
+runsystem(touch /tmp/w18-test-201111201149)...disabled.
 
-runsystem(rm -f /tmp/w18-test-20111120892)...disabled.
+runsystem(rm -f /tmp/w18-test-201111201149)...disabled.
 
 
 
@@ -1373,94 +1373,95 @@ it/10.95 ; M [] \OT1/cmr/m/n/10.95 = 211\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.9
 File: Bilder/detecteur.png Graphic file (type png)
 
 <use Bilder/detecteur.png> [6 <./Bilder/detecteur.png>]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 160.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 176.
 
 
 (/usr/share/texmf-texlive/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-Overfull \hbox (8.63443pt too wide) in paragraph at lines 168--178
+Overfull \hbox (8.63443pt too wide) in paragraph at lines 180--190
  [] 
  []
 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.191 &
+l.203 &
         & &calculée \unit{[MeV]} & & && & particules & \\ \hline\hline
 ? 
 
-Overfull \hbox (78.04593pt too wide) in paragraph at lines 188--199
+Overfull \hbox (78.04593pt too wide) in paragraph at lines 200--211
  [] 
  []
 
 <Bilder/calibration.png, id=151, 642.4pt x 481.8pt>
 File: Bilder/calibration.png Graphic file (type png)
 
-<use Bilder/calibration.png> [7] [8 <./Bilder/calibration.png (PNG copy)>]
-Overfull \hbox (24.27928pt too wide) in paragraph at lines 229--256
+<use Bilder/calibration.png>
+Overfull \hbox (24.27928pt too wide) in paragraph at lines 241--268
  [] 
  []
 
-
-Overfull \hbox (24.27928pt too wide) in paragraph at lines 261--290
+[7] [8]
+Overfull \hbox (24.27928pt too wide) in paragraph at lines 273--302
  [] 
  []
 
-<Bilder/fonction_pression.png, id=167, 642.4pt x 481.8pt>
+<Bilder/fonction_pression.png, id=166, 642.4pt x 481.8pt>
 File: Bilder/fonction_pression.png Graphic file (type png)
 
 <use Bilder/fonction_pression.png>
 ! Misplaced alignment tab character &.
-l.303 ...calibration d'energie $E_{callibration} &
+l.315 ...calibration d'energie $E_{callibration} &
                                                   = 0.00305786  \cdot E +0.3...
 
 ? 
-<Bilder/energie_restante.png, id=168, 642.4pt x 481.8pt>
+<Bilder/energie_restante.png, id=167, 642.4pt x 481.8pt>
 File: Bilder/energie_restante.png Graphic file (type png)
 
 <use Bilder/energie_restante.png>
-<Bilder/energie_perdue.png, id=169, 642.4pt x 481.8pt>
+<Bilder/energie_perdue.png, id=168, 642.4pt x 481.8pt>
 File: Bilder/energie_perdue.png Graphic file (type png)
 
-<use Bilder/energie_perdue.png> [9 <./Bilder/fonction_pression.png (PNG copy)>]
+<use Bilder/energie_perdue.png> [9 <./Bilder/calibration.png (PNG copy)>]
 [10] [11]
 ! Undefined control sequence.
-l.326   \titlefont \textcopyleft
+l.338   \titlefont \textcopyleft
                                 \ Mona Dentler et Sabine Engelhardt
 ? 
-[12 <./Bilder/energie_restante.png (PNG copy)>] [13 <./Bilder/energie_perdue.pn
-g (PNG copy)>] (./rapport2.aux) ) 
+[12 <./Bilder/fonction_pression.png (PNG copy)>] [13 <./Bilder/energie_restante
+.png (PNG copy)> <./Bilder/energie_perdue.png (PNG copy)>] (./rapport2.aux) ) 
 Here is how much of TeX's memory you used:
- 19150 strings out of 495061
- 299374 string characters out of 1182622
- 486331 words of memory out of 3000000
+ 19151 strings out of 495061
+ 299382 string characters out of 1182622
+ 489644 words of memory out of 3000000
  21790 multiletter control sequences out of 15000+50000
  31275 words of font info for 69 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 60i,13n,75p,708b,915s stack positions out of 5000i,500n,10000p,200000b,50000s
- </home/mona/.texmf-var/fonts/pk/ljfour/jknapp
-en/ec/ecrm0800.600pk> </home/mona/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt08
-00.600pk> </home/mona/.texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1095.600pk>{/u
-sr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc} </home/mona/.texmf-var/fonts/pk/lj
-four/jknappen/ec/ecrm0900.600pk> </home/mona/.texmf-var/fonts/pk/ljfour/jknappe
-n/ec/ecti0900.600pk> </home/mona/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm144
-0.600pk> </home/mona/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2488.600pk> </h
-ome/mona/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk></usr/share/texm
-f-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/f
-onts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/
-public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
-onts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi
-9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-
-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts
-/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public
-/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
-m/cmsy6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-</usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on rapport2.pdf (13 pages, 414848 bytes).
+ 60i,13n,73p,708b,916s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <
+/home/mona/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/mona/.
+texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0800.600pk> </home/mona/.texmf-var/fo
+nts/pk/ljfour/jknappen/ec/eccc1095.600pk>{/usr/share/texmf/fonts/enc/dvips/lm/l
+m-ec.enc} </home/mona/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </
+home/mona/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti0900.600pk> </home/mona/.t
+exmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/mona/.texmf-var/fon
+ts/pk/ljfour/jknappen/ec/ecrm2488.600pk> </home/mona/.texmf-var/fonts/pk/ljfour
+/jknappen/ec/ecrm1095.600pk></usr/share/texmf-texlive/fonts/type1/public/amsfon
+ts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi1
+0.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr
+/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf
+-texlive/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texmf-texlive/fon
+ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/pub
+lic/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
+/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share
+/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-texli
+ve/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/publi
+c/lm/lmssbx10.pfb>
+Output written on rapport2.pdf (13 pages, 417216 bytes).
 PDF statistics:
- 476 PDF objects out of 1000 (max. 8388607)
- 42 named destinations out of 1000 (max. 500000)
+ 482 PDF objects out of 1000 (max. 8388607)
+ 43 named destinations out of 1000 (max. 500000)
  197 words of extra memory for PDF output out of 10000 (max. 10000000)
 

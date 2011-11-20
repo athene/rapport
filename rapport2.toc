@@ -10,7 +10,7 @@
 \contentsline {subsection}{\numberline {3.1}Etude de la r\IeC {\'e}ponse du d\IeC {\'e}tecteur}{7}{subsection.3.1}
 \contentsline {subsubsection}{\numberline {3.1.1}Caract\IeC {\'e}ristique du d\IeC {\'e}tecteur}{7}{subsubsection.3.1.1}
 \contentsline {subsubsection}{\numberline {3.1.2}Largeur de la zone active en fonction de la tension}{7}{subsubsection.3.1.2}
-\contentsline {subsection}{\numberline {3.2}Calibration des r\IeC {\'e}sultat}{9}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.2}Calibration des r\IeC {\'e}sultat}{7}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Simulation de la perte d'\IeC {\'e}nergie}{9}{subsection.3.3}
 \contentsline {section}{\numberline {4}Mesure}{9}{section.4}
 \contentsline {section}{\numberline {5}Att\IeC {\'e}nuation des particules alpha dans l'air et pic de Bragg}{9}{section.5}

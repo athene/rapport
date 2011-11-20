@@ -1,0 +1,9 @@
+set title "énergie perdue en fonction de distance"
+set ylabel 'énergie perdue[MeV]'
+set xlabel 'distance parcourue[mm]'
+set key left top
+f(x)=a*x**5+b*x**4+c*x**3+d*x**2+e*x+f
+fit f(x)'daten_Am.txt' using ($10):(6.1817045284-$2) via a,b,c,d,e,f
+g(x)=-1*(5*a*(f(x))**4+4*b*(f(x))**3+3*c*(f(x))**2+2*d*(f(x))+e)
+set xrange [0:40]
+plot g(x)

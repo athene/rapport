@@ -4,5 +4,4 @@ set xlabel 'distance parcourue[mm]'
 set key left top
 f(x)=a*x**5+b*x**4+c*x**3+d*x**2+e*x+f
 fit f(x) 'daten_wegvar_Am.txt' using ($10):(5.4480627572-$2) via a,b,c,d,e,f
-g(x)=5*a*x**4+4*b*x**3+3*c*x**2+2*d*x+e
-plot g(x)
+plot 'daten_wegvar_Am.txt' using ($10):(5.4480627572-$2) title 'Am', f(x)

@@ -1,0 +1,6 @@
+set output 'energie_restante.png'
+set terminal png
+set title "énergie restante en fonction de distance"
+set ylabel 'énergie restante[MeV]'
+set xlabel 'distance parcourue[mm]'
+plot 'daten_wegvar_Am.txt' using 10:2 title 'Am', 'daten_nur_Bi.txt' using 10:2 title 'Bi', 'daten_nur_Po.txt' using 10:2 title 'Po'

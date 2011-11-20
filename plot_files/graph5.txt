@@ -1,0 +1,6 @@
+set output 'fonction_pression.png'
+set terminal png
+set title "nombre de particule en fonction de pression"
+set ylabel 'nombre de particules'
+set xlabel 'pression[mb]'
+plot 'daten_druckvar_Am.txt' using 8:6:(0.002*$8):7 with xyerrorbars title 'Am', 'daten_nur_Bi.txt' using 9:7:(0.0002*$9):8 with xyerrorbars title 'Bi', 'daten_nur_Po.txt' using 9:7:(0.0002*$9):8 with xyerrorbars title 'Po'

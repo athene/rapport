@@ -1,0 +1,19 @@
+\select@language {french}
+\contentsline {section}{\numberline {1}Etude des sources}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}La source \isotope [241][95]{Am}}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}La source \isotope [212][83]{Bi}}{4}{subsection.1.2}
+\contentsline {section}{\numberline {2}Dispositif exp\IeC {\'e}rimental}{6}{section.2}
+\contentsline {subsection}{\numberline {2.1}Enceinte \IeC {\`a} vide}{6}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}D\IeC {\'e}tecteur et pr\IeC {\'e}amplificateur}{6}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Logiciel}{7}{subsection.2.3}
+\contentsline {section}{\numberline {3}Exp\IeC {\'e}riences pr\IeC {\'e}liminaire}{7}{section.3}
+\contentsline {subsection}{\numberline {3.1}Etude de la r\IeC {\'e}ponse du d\IeC {\'e}tecteur}{7}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Caract\IeC {\'e}ristique du d\IeC {\'e}tecteur}{7}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Largeur de la zone active en fonction de la tension}{7}{subsubsection.3.1.2}
+\contentsline {subsection}{\numberline {3.2}Calibration des r\IeC {\'e}sultat}{9}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Simulation de la perte d'\IeC {\'e}nergie}{9}{subsection.3.3}
+\contentsline {section}{\numberline {4}Mesure}{9}{section.4}
+\contentsline {section}{\numberline {5}Att\IeC {\'e}nuation des particules alpha dans l'air et pic de Bragg}{9}{section.5}
+\contentsline {subsection}{\numberline {5.1}perte d'energie dans l'air en fonction de pression}{9}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}perte d'energie par unit\IeC {\'e} de longueur}{12}{subsection.5.2}
+\contentsline {section}{\numberline {6}Conclusion}{12}{section.6}

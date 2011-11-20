@@ -1,0 +1,6 @@
+	"ASTAR:"	"Stopping"		"Powers"		"and"	"Range"	"Tables"	"for"	"Alpha"	"Particles"			
+	"AIR"	"(dry."		"near"		"sea"	"level)"							
+"materiau"	"Kinetic"	"energy"		"[MeV]"		"Total"	"stp."	"po."	"[MeV"	"cm^2/g]"	"Projected"	"Range"	"[g/cm^2]"	"Dichte Silicium g/cm^3"
+"Am"	5,413	720,2		0,004889										2,336
+"Po"	6,004	669,7		0,005739										
+"Bi"	8,785	509,8		0,01055										

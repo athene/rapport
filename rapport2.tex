@@ -167,7 +167,7 @@ Kinetic Energy [MeV]	&	Total Stp. Pow. \unit[]{[MeV cm^2/g]}	&	Projected Range \
 6,004	&	547,2	&	0,007923	\\ \hline
 8,785	&	421,4	&	0,00313	\\ \hline
 \end{tabular}
-\caption{Total stopping power et projected range pour silicium}
+\caption{Total stopping power et projected range pour silicium, pour les trois energies caracteristiques de l'$\alpha$ émisé par l'Am, le Po et le Bi}
 \end{center}
 \end{table}
     \end{subsubsection}
@@ -228,12 +228,10 @@ b&= 0.371954 \\
 
   \begin{subsection}{Simulation de la perte d'énergie}
   \end{subsection}
- \end{section}
 
  \begin{section}{Mesure}
   
  \end{section}
-\begin{section}{Atténuation des particules alpha dans l'air et pic de Bragg}
 \begin{subsection}{perte d'energie dans l'air en fonction de pression}
 \begin{table}[htbp]
 \caption{energie d'alpha en fonction de pression pour \isotope[241][95]{Am}}
@@ -306,6 +304,22 @@ pression\unit{[mb]} & pic	&	énergie	&	err(én)	&	resolution	&	err(res)	&	$n^{\c
       \includegraphics[width=0.75\textwidth]{Bilder/fonction_pression.png}
      \end{center}
     \end{figure*}
+\end{subsection}
+
+\begin{subsection}{perte d'energie par unité de longueur}
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|c||c||c|c|}
+\hline
+Air& \multicolumn{ 3}{|c|}{} \\ \hline \hline
+materiau	&	Kinetic Energy \unit{[MeV]}	&	Total Stp. Pow. \unit[]{[MeV cm^2/g]}	&	Projected Range \unit[]{[g/cm^2]}	\\ \hline
+Am	&	5,413	&	720,2	&	0,004889	\\ \hline								
+Po	&	6,004	&	669,7	&	0,005739	\\ \hline								
+Bi	&	8,785	&	509,8	&	0,01055	\\ \hline								
+\end{tabular}
+\caption{Total stopping power et projected range pour air}
+\end{center}
+\end{table}
 Le dispositif expérimental est construit comme \c{c}a, que la distance entre le détecteur et la source est fixé à \unit[45]{mm}. Donc on modifie l'épaisseur d'air entre la source et le détecteur,
 c'est-à-dire on régle la pression à l'intérieur d'une enceinte à vide.\\
 l'équation des gaz parfaits $p \cdot x \cdot A =N \cdot R \cdot T$ nous indique que la pression $p$ et la distance $x$ sont inversement proportionnelles, il en résulte pour la distance x = x(p) 
@@ -323,8 +337,9 @@ Avec la calibration d'energie $E_{callibration} &= 0.00305786  \cdot E +0.371954
       \includegraphics[width=0.75\textwidth]{Bilder/energie_perdue.png}
      \end{center}
     \end{figure*}
+
 \end{subsection}
-\begin{subsection}{perte d'energie par unité de longueur}
+\begin{subsection}{pic de Bragg}
 \end{subsection}
 \end{section}
  \begin{section}{Conclusion}

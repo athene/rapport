@@ -9,6 +9,7 @@
 \usepackage{color}
 \usepackage{amsmath}
 \usepackage{units}
+\usepackage{float}
 
 
 \subject{TP~3 Physique nucléaire}
@@ -42,9 +43,6 @@
  \end{center}
  \vfill
 
- \textcolor{blue}{Sabine}
- \textcolor{red}{Mona}
-
  \begin{abstract}
   Le but des cette TP est de connaître la perte d'énergie des particules $\alpha$ dans l'air. Nous avons eu deux sources une source d'Americium 241 (\isotope[241]{Am}) et une source de Plomb 212/ Bismuth 212 (\isotope[212]{Bi}) pour étudier des particules $\alpha$ différentes. L'$\alpha$ perd son énergie par ionisation des atomes de la matière, ici l'air. La perte est proportionnelle au carré de la charge et à la masse de l'$alpha$ et varie beaucoup avec la vitess d'$\alpha$. Plus l'$\alpha$ est lente plus de temps il passe dans l'atome et \c ca augmente la chance d'une interaction. Si l'ionisation est très intense, le trajet de la particule est très court.
 
@@ -58,290 +56,265 @@
  \begin{section}{Etude des sources}
   \begin{subsection}{La source \isotope[241][95]{Am}}
    La période de l'\isotope[241][95]{Am} est \unit[432,6]{ans} et ce noyeau se désintègre vers le \isotope[237][93]{Np}. A presque \unit[100]{\%} des désintégration sont des désintégration $\alpha$, seule $\unit[4,3\cdot10^{-10}]{\%}$ 
-   se fait par fission spontanée.  
-    \begin{figure*}[hbt]
-     \begin{center}
-      \includegraphics[width=0.5\textwidth]{Bilder/schemaAm1.png}
-     \end{center}
-     \caption{schéma de désintegration de l'\isotope[241][95]{Am}}
-    \end{figure*}
-   Le énergie cinétique d'un $\alpha$ est équivalent à la diffénce d'énergie causé par le défaut de masse entre les particules. Alors l'énergie cinétique de trois $alpha$ principaux se calculent comme suivante:
+   se fait par fission spontanée.\\
+   \begin{figure}[H]
+    \begin{center}
+     \includegraphics[width=0.5\textwidth]{Bilder/schemaAm1.png}
+    \end{center}
+    \caption{Schéma de désintégration de l'\isotope[241][95]{Am}}
+   \end{figure}
+   L'énergie libérée $Q$ par la désintégration est équivalent à la différence d'énergie causé par le défaut de masse entre les particules. Alors l'énergie cinétique $T$ des trois $\alpha$ principaux se calculent comme suivante:
    \begin{equation*}
     Q=\Delta E\stackrel{Einstein}{=}\Delta M\cdot c^2=\left[M\left(\isotope[241]{Am}\right)-M\left(\isotope[237]{Np}\right)-M\left(\isotope[4]{He}\right)\right]c^2\approx\unit[5,638]{MeV}
    \end{equation*}\\
-   avec $M\left(\isotope[241]{Am}\right)=\unit[241,0568229]{uma},M\left(\isotope[237]{Np}\right)=\unit[237,0481673]{uma}, \\ M\left(\isotope[4]{He}\right)=\unit[4,00266032]{uma}\text{ et }\unit[1]{uma}\cdot c^2=\unit[931,5]{MeV}$.\\
-Et pour les desintegrations vers les états excités convenit:
-\begin{equation*}
-Q^{\ast}=Q-E^{\ast}
-  \end{equation*}
-avec $E^{\ast}$ l'energie d'etat excitè.\\
-La consevation de la quantité de mouvement implique:
-\begin{equation*}
-m(\alpha)T(\alpha)=m(Np)T(Np)
-  \end{equation*}
-En outre la conservation de l'energie totale implique:
-\begin{equation*}
-Q=T(Np)+T(\alpha)
-  \end{equation*}
-On trouve donc pour les énergies cinétiques du \isotope[4][2]{He}   
-\begin{equation*}
-T(\alpha)=\frac{m(Np)\cdot Q^{\ast}}{m(\alpha)+m(Np)}
-  \end{equation*}
-   Les trois $\alpha$ principaux sont ceux avec la plus grande possibilité d'être émis, ici ce sont les $\alpha$ émis par la désintegration vers \isotope[237]{Np^*} $\nicefrac{5}{2}^-$ avec \unit[84,85]{\%}, la désintegration vers \isotope[237]{Np^*} $\nicefrac{7}{2}^-$ avec \unit[13,23]{\%} et la désintegration vers \isotope[237]{Np^*} $\nicefrac{9}{2}^-$ avec \unit[1,66]{\%}.
+   avec $M\left(\isotope[241]{Am}\right)=\unit[241,0568229]{uma},\text{ }M\left(\isotope[237]{Np}\right)=\unit[237,0481673]{uma}, \\ M\left(\isotope[4]{He}\right)=\unit[4,00266032]{uma}\text{ et }\unit[1]{uma}\cdot c^2=\unit[931,5]{MeV}$.\\
+   L'énergie $Q^{\ast}$ des désintégrations vers les états excités s'y calcule par $Q^{\ast}=Q-E^{\ast}$.\\
+   La conservation de la quantité de mouvement implique
+   \begin{equation*}
+    m(\alpha)T(\alpha)=m(Np)T(Np)
+   \end{equation*}
+   En outre la conservation de l'énergie totale a pour conséquence
+   \begin{equation*}
+    Q=T(Np)+T(\alpha)
+   \end{equation*}
+   On trouve donc pour l'énergie cinétique d'une particule $\alpha$ \isotope[4][2]{He}   
+   \begin{equation*}
+    T(\alpha)=\frac{m(Np)\cdot Q^{\ast}}{m(\alpha)+m(Np)}
+   \end{equation*}
+   Les trois $\alpha$ principaux sont ceux avec la plus grande possibilité d'être émis, ici ce sont les $\alpha$ émis par la désintégration vers \isotope[237]{Np^*} $\nicefrac{5}{2}^-$ avec \unit[84,85]{\%}, la désintégration vers \isotope[237]{Np^*} $\nicefrac{7}{2}^-$ avec \unit[13,23]{\%} et la désintégration vers \isotope[237]{Np^*} $\nicefrac{9}{2}^-$ avec \unit[1,66]{\%}. Alors on trouve pour leur énergie cinétique
    \begin{eqnarray*}
     T_{\nicefrac{5}{2}^-}=\unit[5,413]{MeV}\\
     T_{\nicefrac{7}{2}^-}=\unit[5,370]{MeV}\\
     T_{\nicefrac{9}{2}^-}=\unit[5,316]{MeV}
-\end{eqnarray*}
+   \end{eqnarray*}
   \end{subsection}
  
   \begin{subsection}{La source \isotope[212][83]{Bi}}
-   Le \isotope[212][83]{Bi} fait partie de la chaîne radioactive du Thorium 232. Car le  \isotope[212]{Bi} n'a qu'une période de \unit[60,5]{min}, la source a été apporté par un technicien pendant la TP. Le \isotope[212]{Bi} se désintègre vers le Thalium \isotope[208][81]{Tl} en émettant des particules $\alpha$ \isotope[4][2]{He} et vers le Polonium\isotope[212][84]{Po} par désintégration $\beta^-$ comme le schéma suivant le montre.
-\begin{figure*}[hbt]
-     \begin{center}
-      \includegraphics[width=0.75\textwidth]{Bilder/schemaBi1.png}
-     \end{center}
-     \caption{schéma de désintégration du \isotope[212]{83}{Bi} }
-    \end{figure*}
-
-   Le Polonium \isotope[212][84]{Po} fait à son tour par \unit[100]{\%} la désintégration $\alpha$ vers le plomb \isotope[208][82]{Pb} avec une période de $T=\unit[298]{ns}$.
-\begin{figure*}[hbt]
-     \begin{center}
-      \includegraphics[width=0.5\textwidth]{Bilder/schemaPo1.png}
-     \end{center}
-     \caption{schéma de désintégration du \isotope[212]{84}{P0} }
-    \end{figure*}
-
-
-   Les trois $\alpha$ principaux sont deux $\alpha$ de la désintégration vers le \isotope[208]{Tl} et l'$\alpha$ de la désintégration du \isotope[212]{Po} avec les énergies suivantes. Pour 100 désintégration du \isotope[212]{Bi} environ 90 particules $\alpha$ sont émis.
-   \begin{align*}
+   Le \isotope[212][83]{Bi} fait partie de la chaîne radioactive du Thorium 232. Car le  \isotope[212]{Bi} n'a qu'une période de \unit[60,5]{min}, la source a été apporté par un technicien pendant la TP. Le \isotope[212]{Bi} se désintègre vers le Thalium \isotope[208][81]{Tl} en émettant des particules $\alpha$ \isotope[4][2]{He} et vers le Polonium\isotope[212][84]{Po} par désintégration $\beta^-$ comme le schéma suivant le montre.\\
+   \begin{figure}[H]
+    \begin{center}
+     \includegraphics[width=0.75\textwidth]{Bilder/schemaBi1.png}
+    \end{center}
+    \caption{schéma de désintégration du \isotope[212]{83}{Bi} }
+   \end{figure}
+   On peut se poser la question pourquoi la désintégration du \isotope[212]{Bi} vers l'état fondamental est plus probable que vers le deuxième état excité parce qu'ils ont tous les deux le même moment angulaire et la même parité $5^+$. C'est assez facile à comprendre car les atomes vont avoir un état énergétiquement favorable, c'est à dire un état stable. Comme l'état fondamental est le plus stable des deux états la désintégration vers l'état fondamental est préféré.\\
+\newpage
+   Le Polonium \isotope[212][84]{Po} fait à son tour par \unit[100]{\%} la désintégration $\alpha$ vers le plomb \isotope[208][82]{Pb} avec une période de $T=\unit[298]{ns}$. Cette période est très couret à cause de la préférence d'un noyeau avec un nombre magique. Le \isotope[208][82]{Pb} est un noyeau double magique avec le nombre magique 84 pour les protons et le nombre magique 126 pour les neutrons. Alors ce noyeau est fortement favorisé du noyeau de \isotope[212]{Po}.
+   \begin{figure}[H]
+    \begin{center}
+     \includegraphics[width=0.5\textwidth]{Bilder/schemaPo1.png}
+    \end{center}
+    \caption{schéma de désintégration du \isotope[212]{84}{P0} }
+   \end{figure}
+   Les trois $\alpha$ principaux de la désintégration du \isotope[212]{Bi} sont deux $\alpha$ de la désintégration vers le \isotope[208]{Tl} et l'$\alpha$ de la désintégration du \isotope[212]{Po}. Pour 100 désintégration du \isotope[212]{Bi} environ 90 particules $\alpha$ sont émis et nous avons calculé l'énergie cinétique des trois $\alpha$ principaux.
+   \begin{eqnarray*}
     Q_{5^+}(Bi)&=\left[M\left(\isotope[212]{Bi}\right)-M\left(\isotope[208]{Pb}\right)-M\left(\isotope[4]{He}\right)\right]c^2\approx\unit[6,154]{MeV} &\text{ avec }\unit[9,7]{\%}\\
-&\rightarrow T_{0}(\alpha)=\unit[6,042]{MeV}\\
-Q_{4^+}(Bi)&=Q_0-E^*_{4^+}=\unit[6,114]{MeV} &\text{ avec }\unit[25,1]{\%}\\
-&\rightarrow T_{2^+}(\alpha)=\unit[6,004]{MeV}\\
-Q_{0⁺}(Po)&=\left[M\left(\isotope[212]{Po}\right)-M\left(\isotope[208]{Pb}\right)-M\left(\isotope[4]{He}\right)\right]c^2\approx\unit[8,954]{MeV} &\text{ avec }\unit[55,2]{\%} \\  
-&\rightarrow T_{0}(\alpha)=\unit[8,785]{MeV}\\
-\end{align*}
-   avec $M\left(\isotope[212]{Bi}\right)=\unit[211,9912715]{uma},M\left(\isotope[208]{Tl}\right)=\unit[207,9820047]{uma}, M\left(\isotope[212]{Po}\right)=\unit[211,9888518]{uma},\newline M\left(\isotope[208]{Pb}\right)=\unit[207,9766359]{uma}, M\left(\isotope[4]{He}\right)=\unit[4,00266032]{uma}\text{ et }\unit[1]{uma}\cdot c^2=\unit[931,5]{MeV}$.
-   
-   On peut se poser la question pourquoi la désintégration du \isotope[212]{Bi} vers l'état fondamental est plus probable que vers le deuxième état excité parce qu'ils ont tous les deux le même moment angulaire et la même parité $5^+$. C'est assez facile à comprendre car les atomes vont avoir un état énergétiquement favorable, c'est à dire un état stable. Comme l'état fondamental est le plus stable des deux états la désintégration vers l'état fondamental est préféré.
-
-   Le \isotope[212]{Po} a une période très court à cause de la préférence d'un noyeau avec un nombre magique. Le \isotope[208][82]{Pb} est un noyeau double magique avec le nombre magique 84 pour les protons et le nombre magique 126 pour les neutrons. Alors ce noyeau est fortement favorisé du noyeau de \isotope[212]{Po}.
+    &\rightarrow T_{0}(\alpha)=\unit[6,042]{MeV}\\
+    Q_{4^+}(Bi)&=Q_0-E^*_{4^+}=\unit[6,114]{MeV} &\text{ avec }\unit[25,1]{\%}\\
+    &\rightarrow T_{2^+}(\alpha)=\unit[6,004]{MeV}\\
+    Q_{0^+}(Po)&=\left[M\left(\isotope[212]{Po}\right)-M\left(\isotope[208]{Pb}\right)-M\left(\isotope[4]{He}\right)\right]c^2\approx\unit[8,954]{MeV} &\text{ avec }\unit[55,2]{\%} \\  
+    &\rightarrow T_{0}(\alpha)=\unit[8,785]{MeV}\\
+   \end{eqnarray*}
+   avec $M\left(\isotope[212]{Bi}\right)=\unit[211,9912715]{uma},\text{ }M\left(\isotope[208]{Tl}\right)=\unit[207,9820047]{uma}, M\left(\isotope[212]{Po}\right)=\unit[211,9888518]{uma},\newline M\left(\isotope[208]{Pb}\right)=\unit[207,9766359]{uma}, M\left(\isotope[4]{He}\right)=\unit[4,00266032]{uma}\text{ et }\unit[1]{uma}\cdot c^2=\unit[931,5]{MeV}$.
   \end{subsection}
  \end{section}
-
+\newpage
  \begin{section}{Dispositif expérimental}
-   Le dispositif expérimental se compose d'un enceinte à vide et ses accesoires, un détecteur rélie à un préimplificateur et un analyseur multicanal. Le siganl est enregisté sur l'ordinateur par un logiciel très simple.
-   
-   \begin{subsection}{Enceinte à vide}
-    Dans l'einceinte à vide se trouve le détecteur et un sélecteur de source pour que nous n'ayons pas dû toucher les sources nues $\alpha$ se qui est très dangereux et peut causé de cancer. En plus il y a une pompe pour faire le vide et un système de vanne et de fuit micrométrique pour faire rentrer l'air précisement. Un jauge capacitif calibré parun jauge Pirani très précis mesure la pression dans l'enceinte avec une précision de \unit[0,2]{\%}.  
-   \end{subsection}
+  Le dispositif expérimental se compose d'un enceinte à vide et ses accesoires, un détecteur rélie à un préimplificateur et un analyseur multicanal. Le siganl est enregisté sur l'ordinateur par un logiciel très simple.
+  \begin{subsection}{Enceinte à vide}
+   Dans l'einceinte à vide se trouve le détecteur et un sélecteur de source pour que nous n'ayons pas dû toucher les sources nues $\alpha$ se qui est très dangereux et peut causé de cancer. En plus il y a une pompe pour faire le vide et un système de vanne et de fuit micrométrique pour faire rentrer l'air précisement. Un jauge capacitif calibré parun jauge Pirani très précis mesure la pression dans l'enceinte avec une précision de \unit[0,2]{\%}.  
+  \end{subsection}
 
-   \begin{subsection}{Détecteur et préamplificateur}
-    \begin{figure*}[hbt]
-     \begin{center}
-      \includegraphics[width=0.75\textwidth]{Bilder/detecteur.png}
-     \end{center}
-     \caption{schéma d'un détecteur semi-conducteur}
-    \end{figure*}
-    Le détecteur est un détecteur semi-conducteur et consiste d'une jonction Si(Li) avec une barrière de surface. Un détecteur semi-conducteur a trois parts: une zone chargée négative n, une zone chargée positive p  et une zone neutre, la zone active ou desertée. Le largeur de cette dernière zone est reglée par haute tension, la tension de polarisation. Comme ci la jonction est assimilable à un condensateur plan dont la distance est égale à la zone désertée. Donc ce condensateur est de même d'amplitude que la tension rélié.
+  \begin{subsection}{Détecteur et préamplificateur}
+\enlargethispage{1cm}
+   \begin{figure*}[hbt]
+    \begin{center}
+     \includegraphics[width=0.75\textwidth]{Bilder/detecteur.png}
+    \end{center}
+    \caption{schéma d'un détecteur semi-conducteur}
+   \end{figure*}
+   Le détecteur est un détecteur semi-conducteur et consiste d'une jonction Si(Li) avec une barrière de surface. Un détecteur semi-conducteur a trois parts: une zone chargée négative n, une zone chargée positive p  et une zone neutre, la zone active ou desertée. Le largeur de cette dernière zone est reglée par haute tension, la tension de polarisation. Comme ci la jonction est assimilable à un condensateur plan dont la distance est égale à la zone désertée. Donc ce condensateur est de même d'amplitude que la tension rélié.
+   Le préamplificateur de charge supprime ce problème. Il est rélie à un module de mise en forme qui fournit un signal de l'amplitude proportionnel à la charge collecté dans la jonction du détecteur indépedant de la capacité.
+  \end{subsection}
 
-    Le préamplificateur de charge supprime ce problème. Il est rélie à un module de mise en forme qui fournit un signal de l'amplitude proportionnel à la charge collecté dans la jonction du détecteur indépedant de la capacité.
-   \end{subsection}
-
-   \begin{subsection}{Logiciel}
-    Un amplificateur entre le préamplificateur et l'analyseur d'amplitude donne la possibilité d'ajuster le signal à un valeur connue. L'analyseur d'amplitude est rélie à l'ordinateur où un logiciel montre le signal en fonction de l'énergie d'$\alpha$. Ce logiciel n'est pas calibré alors il faut le faire soi-même et il permet de choisir la temps de la mesure et un seuil qui était mis à \unit[200]{mV}.
-   \end{subsection}
-  \end{section}
+  \begin{subsection}{Logiciel}
+   Un amplificateur entre le préamplificateur et l'analyseur d'amplitude donne la possibilité d'ajuster le signal à un valeur connue. L'analyseur d'amplitude est rélie à l'ordinateur où un logiciel montre le signal en fonction de l'énergie d'$\alpha$. Ce logiciel n'est pas calibré alors il faut le faire soi-même et il permet de choisir la temps de la mesure et un seuil qui était mis à \unit[200]{mV}.
+  \end{subsection}
+ \end{section}
   
-  \begin{section}{Expériences préliminaire}
-   \begin{subsection}{Etude de la réponse du détecteur}
-    \begin{subsubsection}{Caractéristique du détecteur}
-\begin{table}[htbp]
-\begin{center}
-\begin{tabular}{|c||c|c|}
-\hline
-Silicium& \multicolumn{ 2}{|c|}{} \\ \hline \hline
-Kinetic Energy [MeV]	&	Total Stp. Pow. \unit[]{[MeV cm^2/g]}	&	Projected Range \unit[]{[g/cm^2]}	\\ \hline
-5,413	&	586,3	&	0,006251	\\ \hline
-6,004	&	547,2	&	0,007923	\\ \hline
-8,785	&	421,4	&	0,00313	\\ \hline
-\end{tabular}
-\caption{Total stopping power et projected range pour silicium, pour les trois energies caracteristiques de l'$\alpha$ émisé par l'Am, le Po et le Bi}
-\end{center}
-\end{table}
-    \end{subsubsection}
-    \begin{subsubsection}{Largeur de la zone active en fonction de la tension}
-     Pour comprendre le comportement du détecteur en fonction de la tension, nous avons lancé une série de mesure. Nous avons choisi une tension de \unit[0]{V}, \unit[25]{V}, \unit[50]{V} et \unit[80]{V}.
-     \todo{résultats, Erklärung und was haben wir weiter genutzt}
-\begin{table}[htbp]
-\caption{Résultats de variation de tension}
-\begin{center}
-\begin{tabular}{|c||c|c|c|c|c|c|}
-\hline
-tension\unit{[V]} & $n^{\circ}$ de particules	& err(part.) & énergie	&	err(èn.)	& resolution & err(res.)	\\ \hline \hline
-0	&	2545,3	&	50,45	&	1295,22	&	3,21	&	14,36	&	0,26		\\ \hline
-25	&	2154,9	&	46,42	&	1664,71	&	0,27	&	6,34	&	0,18		\\ \hline
-50	&	1838,12	&	42,87	&	1676,8	&	0,28	&	4,93	&	0,18		\\ \hline
-80	&	2028,32	&	45,04	&	1678,01	&	0,21	&	4,94	&	0,14		\\ \hline\hline
-\multicolumn{ 5}{|c|}{} & temps\unit{[s]} & 30 \\ \cline{ 6- 7}
-\multicolumn{ 5}{|c|}{} & pression\unit{[mb]}& 0.78 \\ \hline
-\end{tabular}
-\end{center}
-\end{table}
-
-    \end{subsubsection}
+ \begin{section}{Expériences préliminaire}
+  \begin{subsection}{Etude de la réponse du détecteur}
+   \begin{subsubsection}{Caractéristique du détecteur}
+    \todo{Astar}
+   \end{subsubsection}
+   \begin{subsubsection}{Largeur de la zone active en fonction de la tension}
+    Pour comprendre le comportement du détecteur en fonction de la tension, nous avons lancé une série de mesure. Nous avons choisi une tension de \unit[0]{V}, \unit[25]{V}, \unit[50]{V} et \unit[80]{V} et nous avons mesurer à une pression de \unit[0,78]{mbar} pendant \unit[30]{s} par mesure.
+    \begin{table}[htbp]
+     \caption{Résultats de variation de tension}
+     \begin{center}
+      \begin{tabular}{|c||c|c|c|c|c|c|}
+       \hline
+       tension\unit{[V]} & $n^{\circ}$ de particules	& err(part.) & énergie	&	err(èn.)	& resolution & err(res.)	\\ \hline \hline 
+       0	&	2545,3	&	50,45	&	1295,22	&	3,21	&	14,36	&	0,26		\\ \hline
+       25	&	2154,9	&	46,42	&	1664,71	&	0,27	&	6,34	&	0,18		\\ \hline
+       50	&	1838,12	&	42,87	&	1676,8	&	0,28	&	4,93	&	0,18		\\ \hline
+       80	&	2028,32	&	45,04	&	1678,01	&	0,21	&	4,94	&	0,14		\\ \hline
+      \end{tabular}
+     \end{center}
+    \end{table}
+    On voit bien qu'on a la plus petite erreur des énergies avec la tension de \unit[80]{V}. C'est celui que nous avons utilisé pour tous les mesures suivantes. 
+    \todo{Erklärung Zone}
+   \end{subsubsection}
   \end{subsection} 
 
   \begin{subsection}{Calibration des résultat}
+   \todo{Erklärung was und warum gemessen}
    \begin{table}[htbp]
-\caption{Résultats de précise messuration de Am et Bi}
-\begin{center}
-\begin{tabular}{|c||c||c||c|c|c|c|c|c|}
-\hline 
-materiau	&	pic	& énergie  &	énergie	&	err(én)	&	resolution	&	err(res)	&	$n^{\circ}$ de 	&	err(part)
-& & &calculée \unit{[MeV]} & & && & particules & \\ \hline\hline
-Bi	&	1	&	 6, 114 &	1868,94	&	0,25	&	8,36	&	0,25	&	1215,24	&	34,86	\\ \hline
-Bi (Po)	&	2	&	 8, 785 &	2752,96	&	0,12	&	4,58	&	0,08	&	2335,28	&	48,32	\\ \hline
-Am	&	1	&	 5, 433 &	1662,27	&	0,1	&	13,52	&	0,06	&	23528,39	&	153,39	\\ \hline\hline
-\multicolumn{ 7}{|c|}{} & temps\unit{[s]} & 300 \\ \cline{ 8- 9}
-\multicolumn{7}{|c|}{} & tension \unit{[V]}& 80 \\ \cline{8-9}
-\multicolumn{ 7}{|c|}{} & pression\unit{[mb]}& 0.78 \\ \hline
-\end{tabular}
-\end{center}
-\end{table}
-
-
-\begin{figure*}
-\begin{center}
-   \includegraphics[width=0.75\textwidth]{Bilder/calibration.png}
-\caption[calibration d'energie]{fitparameter: $ a = 0.00305786  \pm 4.301\cdot 10^{-5} \hspace{2 em} b = 0.371954  \pm 0.09235$ }
-  \end{center}
-\end{figure*}
+    \caption{Résultats de la mesure précise de Am et Bi}
+    \begin{center}
+     \begin{tabular}{|c||c||c||c|c|c|c|c|c|}
+      \hline 
+      matériau	&	pic	& énergie  &	énergie	&	err(én)	&	resolution	&	err(res)	&	$n^{\circ}$ de 	&	err(part)\\
+      & & &calculée [MeV] & & &&  particules & \\ \hline\hline
+      Bi 	&	1 (Tl)	&	 6, 114 &	1868,94	&	0,25	&	8,36	&	0,25	&	1215,24	&	34,86	\\ \hline
+      Bi 	&	2 (Po)	&	 8, 785 &	2752,96	&	0,12	&	4,58	&	0,08	&	2335,28	&	48,32	\\ \hline
+      Am	&	1	&	 5, 433 &	1662,27	&	0,1	&	13,52	&	0,06	&	23528,39	&	153,39	\\ \hline\hline
+      \multicolumn{ 7}{|c|}{} & temps\unit{[s]} & 300 \\ \cline{ 8- 9}
+      \multicolumn{7}{|c|}{} & tension \unit{[V]}& 80 \\ \cline{8-9}
+      \multicolumn{ 7}{|c|}{} & pression\unit{[mb]}& 0.78 \\ \hline
+     \end{tabular}
+    \end{center}
+   \end{table}
+   \begin{figure*}
+    \begin{center}
+     \includegraphics[width=0.75\textwidth]{Bilder/calibration.png}
+     \caption[calibration d'énergie]{fitparameter: $ a = 0.00305786  \pm 4.301\cdot 10^{-5} \hspace{2 em} b = 0.371954  \pm 0.09235$ }
+    \end{center}
+   \end{figure*}
   \end{subsection}
-  Nous avons utillisés le program "Gnuplot" pour le fit de donées. Gnuplot applique la méthode des moindres carrés. On trouve pour les coefficients a et b les valeurs:
-\begin{align*}
-a&= 0.00305786 \\
-b&= 0.371954 \\
-\rightarrow E_{callibration} &= 0.00305786  \cdot E +0.371954 
-\end{align*}
+  Nous avons utillisés le logiciel \flqq Gnuplot\frqq \.pour le fit de données qui applique la méthode des moindres carrés. On trouve pour les coefficients a et b les valeurs
+  \begin{align*}
+   a&= 0.00305786 \\
+   b&= 0.371954 \\
+   \rightarrow E_{callibration} &= 0.00305786  \cdot E +0.371954 
+  \end{align*}
 
   \begin{subsection}{Simulation de la perte d'énergie}
+   Nous avons lancé une simulation avec le logiciel \flqq SRIM \frqq pour savoir quoi attendre. Nous avons pris pour la simulation un trajet de \unit[45]{mm} (la distance maximale entre la source et le détecteur) dans l'air.
+   \begin{figure}[H]
+    \begin{minipage}{0.45\textwidth}
+     \includegraphics[width=\textwidth]{Bilder/simam.png}
+     \caption{Simulation avec une énergie de \unit[5]{MeV} pour l'\isotope[241]{Am}}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+     \includegraphics[width=\textwidth]{Bilder/simbi7MeV.png}
+     \caption{Simulation avec une énergie de \unit[7]{MeV} pour le \isotope[212]{Bi}}
+    \end{minipage}
+   \end{figure}
+   On va bien que les particules $\alpha$ de l'\isotope[241]{Am} n'arrivent pas au détecteur au contraire aux particules $\alpha$ du \isotope[212]{Bi}. Cela veut dire pour nous qu'il faut absolument mesure l'\isotope[241]{Am} car là nous trouverons bien les pic de Bragg. Pour le \isotope[212]{Bi} il fallait mesurer encore des trajets plus longs qui n'étaient pas possible avec notre dispositif éxperimental. Car nous avons pris à peu près le moyenne des énergies possible pour le \isotope[212]{Bi} c'est possible de trouver le pic de Bragg pour les désintégrations vers le \isotope[208]{Tl} avec une énergie d'environ \unit[6]{MeV}.
   \end{subsection}
+ \end{section}
 
- \begin{section}{Mesure}
+ \begin{section}{Mesure de l'atténuation des particules alpha dans l'air}
+  \begin{subsection}{Perte d'énergie dans l'air en fonction de pression}
+   \begin{table}[H]
+    \caption{Energie des alphas en fonction de pression pour l'\isotope[241][95]{Am}}
+    \begin{center}
+     \begin{tabular}{|c||c|c|c|c|c|c|c|}
+      \hline 
+      pression\unit{[mb]} & pic	&	énergie	&	err(én)	&	resolution	&	err(res)	&	$n^{\circ}$ de particules	&	err(part) 	\\ \hline\hline
+      1,62	&	1	&	1660,02	&	0,25	&	6,83	&	0,21	&	1486,168	&	38,55	\\ \hline
+      102,4	&	1	&	1525,79	&	0,29	&	8,7	&	0,25	&	1542,36	&	39,27	\\ \hline
+      199,7	&	1	&	1374,82	&	0,33	&	10,99	&	0,26	&	1600,78	&	40,01	\\ \hline
+      300,5	&	1	&	1216,61	&	0,4	&	13,96	&	0,32	&	1674,84	&	40,92	\\ \hline
+      401,3	&	1	&	1044,07	&	0,52	&	18,31	&	0,45	&	1664,61	&	40,8	\\ \hline
+      501,08	&	1	&	855,9	&	0,59	&	21,59	&	0,49	&	1695,65	&	40,74	\\ \hline
+      608,7	&	1	&	609,86	&	0,72	&	26,56	&	0,6	&	1615,09	&	40,19	\\ \hline
+      706,3	&	1	&	349,35	&	1,17	&	30,9	&	1,31	&	1341,7	&	36,63	\\ \hline
+      706,3	&	2	&	246,13	&	36,48	&	128,45	&	32,14	&	474,96	&	21,31	\\ \hline
+      806,39	&	1	&	246,13	&	36,48	&	128,45	&	32,14	&	474,96	&	21,31	\\ \hline
+      653,9	&	1	&	503,98	&	0,86	&	29,08	&	0,77	&	1511,56	&	38,8	\\ \hline
+      714,65	&	1	&	329,75	&	1,16	&	32,07	&	1,26	&	1402,57	&	37,45	\\ \hline
+      714,65	&	2	&	207,4	&	42,1	&	116,78	&	35,28	&	362,95	&	19,05	\\ \hline
+      738,8	&	1	&	247,17	&	1	&	40,16	&	1,2	&	1525,44	&	39,05	\\ \hline
+      762,2	&	1	&	172,24	&	1,36	&	45,47	&	1,32	&	1475,01	&	38,41	\\ \hline
+      774,5	&	1	&	134,43	&	1,3	&	40,26	&	1,26	&	1290,85	&	35,93	\\ \hline
+      817,3	&	1	&	134,43	&	1,3	&	40,26	&	1,62	&	1290,9	&	35,92	\\ \hline
+		&	-	&		&		&		&		&	14	&		\\ \hline\hline
+      \hline
+      \multicolumn{ 6}{|c|}{} & temps\unit{[s]} & 20 \\ \cline{ 7- 8}
+      \multicolumn{6}{|c|}{} & tension \unit{[V]}& 80 \\ \cline{7-8}
+      \multicolumn{ 6}{|c|}{} & matériau& \isotope[241][95]{Am} \\ \hline
+     \end{tabular}
+    \end{center}
+   \end{table}
+   \begin{table}[H]
+    \caption{Energie des alphas en fonction de pression pour le \isotope[212][83]{Bi}}
+    \begin{center}
+     \begin{tabular}{|c||c|c|c|c|c|c|c|}
+      \hline 
+      pression\unit{[mb]} & pic	&	énergie	&	err(én)	&	resolution	&	err(res)	&	$n^{\circ}$ de particules	&	err(part) 	\\ \hline\hline
+      16,43	&	1	&	2732,85	&	0,23	&	5,69	&	0,26	&	412,9	&	20,32	\\ \hline
+      6,43	&	2	&	1899,94	&	0,63	&	9,11	&	0,65	&	242,96	&	15,59	\\ \hline
+      100,7	&	1	&	2653,17	&	0,36	&	7,28	&	0,33	&	460,25	&	21,5	\\ \hline
+      100,7	&	2	&	1741,73	&	0,85	&	11,2	&	1,06	&	253,24	&	25,11	\\ \hline
+      200,42	&	1	&	2564,43	&	0,45	&	8,97	&	0,42	&	445,97	&	21,12	\\ \hline
+      200,42	&	2	&	1619,05	&	1,4	&	14,61	&	2,21	&	177,23	&	13,21	\\ \hline
+      300,6	&	1	&	2461,22	&	0,6	&	11,52	&	0,62	&	429,58	&	20,73	\\ \hline
+      300,6	&	2	&	1474,6	&	1,61	&	18,89	&	1,98	&	235,1	&	15,33	\\ \hline
+      403,7	&	1	&	2357,18	&	0,73	&	12,27	&	0,7	&	379,64	&	19,48	\\ \hline
+      403,7	&	2	&	1326,71	&	1,59	&	18,99	&	2,33	&	226,68	&	15,06	\\ \hline
+      503,7	&	1	&	2246,3	&	0,85	&	15,47	&	0,83	&	413,87	&	20,34	\\ \hline
+      503,7	&	2	&	1161,31	&	2,08	&	24,58	&	2,86	&	234,92	&	15,32	\\ \hline
+      605,2	&	1	&	2143,09	&	0,95	&	16,41	&	1,01	&	387,72	&	19,69	\\ \hline
+      605,2	&	2	&	1001,36	&	4,3	&	39,75	&	9,3	&	297,97	&	17,26	\\ \hline
+      705	&	1	&	2029,47	&	1,17	&	15,54	&	1,17	&	309,43	&	17,59	\\ \hline
+      705	&	2	&	1152,52	&	116,51	&	70,93	&	202,05	&	3526,06	&	59,38	\\ \hline
+      802,1	&	1	&	1916,84	&	1,08	&	19,65	&	1,37	&	387,17	&	19,68	\\ \hline
+      802,1	&	2	&	626,78	&	71,36	&	253,05	&	113,1	&	987,4	&	31,42	\\ \hline
+      905,2	&	1	&	1793,34	&	1,42	&	16,75	&	1,89	&	257,1	&	16,03	\\ \hline
+      994,66	&	1	&	1678,34	&	1,64	&	27,11	&	2,01	&	401,01	&	29,03	\\ \hline\hline
+      \hline
+      \multicolumn{ 6}{|c|}{} & temps\unit{[s]} & 30 \\ \cline{ 7- 8}
+      \multicolumn{6}{|c|}{} & tension \unit{[V]}& 80 \\ \cline{7-8}
+      \multicolumn{ 6}{|c|}{} & matériau& \isotope[212][83]{Bi} \\ \hline
+     \end{tabular}
+    \end{center}
+   \end{table}
+   \begin{figure*}[H]
+    \begin{center}
+     \includegraphics[width=0.75\textwidth]{Bilder/fonction_pression.png}
+    \end{center}
+   \end{figure*}
+   Le dispositif expérimental est construit ainsi que la distance entre le détecteur et la source est fixé à \unit[45]{mm}. Donc on modifie la pression d'air à l'intérieur de l'enceinte à vide pour simuler des distances différentes.\\
+   L'équation des gaz parfaits $p \cdot x \cdot A =N \cdot R \cdot T$ nous indique que la pression $p$ et la distance $x$ sont inversement proportionnelles, il en résulte pour la distance x = x(p) 
+   \begin{equation*}
+    x=\frac{p}{p_0}\cdot x_0
+   \end{equation*}
+\newpage
+   Avec la calibration d'énergie $E_{callibration}= 0.00305786  \cdot E +0.371954 $, on trouve pour le distance $x$ en fonction d'énergie $E$:
+   \begin{figure*}[h]
+    \begin{center}
+     \includegraphics[width=0.75\textwidth]{Bilder/energie_restante.png}
+    \end{center}
+   \end{figure*}
+   \begin{figure*}[h]
+    \begin{center}
+     \includegraphics[width=0.75\textwidth]{Bilder/energie_perdue.png}
+    \end{center}
+   \end{figure*}
+  \end{subsection}
+  
+  \begin{subsection}{Perte d'énergie par unité de longueur}
+  \end{subsection}
+ \end{section}
+
+ \begin{section}{Pic de Bragg}
   
  \end{section}
-\begin{subsection}{perte d'energie dans l'air en fonction de pression}
-\begin{table}[htbp]
-\caption{energie d'alpha en fonction de pression pour \isotope[241][95]{Am}}
-\begin{center}
-\begin{tabular}{|c||c|c|c|c|c|c|c|}
-\hline 
-pression\unit{[mb]} & pic	&	énergie	&	err(én)	&	resolution	&	err(res)	&	$n^{\circ}$ de particules	&	err(part) 	\\ \hline\hline
-1,62	&	1	&	1660,02	&	0,25	&	6,83	&	0,21	&	1486,168	&	38,55	\\ \hline
-102,4	&	1	&	1525,79	&	0,29	&	8,7	&	0,25	&	1542,36	&	39,27	\\ \hline
-199,7	&	1	&	1374,82	&	0,33	&	10,99	&	0,26	&	1600,78	&	40,01	\\ \hline
-300,5	&	1	&	1216,61	&	0,4	&	13,96	&	0,32	&	1674,84	&	40,92	\\ \hline
-401,3	&	1	&	1044,07	&	0,52	&	18,31	&	0,45	&	1664,61	&	40,8	\\ \hline
-501,08	&	1	&	855,9	&	0,59	&	21,59	&	0,49	&	1695,65	&	40,74	\\ \hline
-608,7	&	1	&	609,86	&	0,72	&	26,56	&	0,6	&	1615,09	&	40,19	\\ \hline
-706,3	&	1	&	349,35	&	1,17	&	30,9	&	1,31	&	1341,7	&	36,63	\\ \hline
-706,3	&	2	&	246,13	&	36,48	&	128,45	&	32,14	&	474,96	&	21,31	\\ \hline
-806,39	&	1	&	246,13	&	36,48	&	128,45	&	32,14	&	474,96	&	21,31	\\ \hline
-653,9	&	1	&	503,98	&	0,86	&	29,08	&	0,77	&	1511,56	&	38,8	\\ \hline
-714,65	&	1	&	329,75	&	1,16	&	32,07	&	1,26	&	1402,57	&	37,45	\\ \hline
-714,65	&	2	&	207,4	&	42,1	&	116,78	&	35,28	&	362,95	&	19,05	\\ \hline
-738,8	&	1	&	247,17	&	1	&	40,16	&	1,2	&	1525,44	&	39,05	\\ \hline
-762,2	&	1	&	172,24	&	1,36	&	45,47	&	1,32	&	1475,01	&	38,41	\\ \hline
-774,5	&	1	&	134,43	&	1,3	&	40,26	&	1,26	&	1290,85	&	35,93	\\ \hline
-817,3	&	1	&	134,43	&	1,3	&	40,26	&	1,62	&	1290,9	&	35,92	\\ \hline
-	&	-	&		&		&		&		&	14	&		\\ \hline\hline
 
-\hline
-\multicolumn{ 6}{|c|}{} & temps\unit{[s]} & 20 \\ \cline{ 7- 8}
-\multicolumn{6}{|c|}{} & tension \unit{[V]}& 80 \\ \cline{7-8}
-\multicolumn{ 6}{|c|}{} & matériau& \isotope[241][95]{Am} \\ \hline
-\end{tabular}
-\end{center}
-\end{table}
-\begin{table}[htbp]
-\caption{energie d'alpha en fonction de pression pour \isotope[212][83]{Bi}}
-\begin{center}
-\begin{tabular}{|c||c|c|c|c|c|c|c|}
-\hline 
-pression\unit{[mb]} & pic	&	énergie	&	err(én)	&	resolution	&	err(res)	&	$n^{\circ}$ de particules	&	err(part) 	\\ \hline\hline
-16,43	&	1	&	2732,85	&	0,23	&	5,69	&	0,26	&	412,9	&	20,32	\\ \hline
-6,43	&	2	&	1899,94	&	0,63	&	9,11	&	0,65	&	242,96	&	15,59	\\ \hline
-100,7	&	1	&	2653,17	&	0,36	&	7,28	&	0,33	&	460,25	&	21,5	\\ \hline
-100,7	&	2	&	1741,73	&	0,85	&	11,2	&	1,06	&	253,24	&	25,11	\\ \hline
-200,42	&	1	&	2564,43	&	0,45	&	8,97	&	0,42	&	445,97	&	21,12	\\ \hline
-200,42	&	2	&	1619,05	&	1,4	&	14,61	&	2,21	&	177,23	&	13,21	\\ \hline
-300,6	&	1	&	2461,22	&	0,6	&	11,52	&	0,62	&	429,58	&	20,73	\\ \hline
-300,6	&	2	&	1474,6	&	1,61	&	18,89	&	1,98	&	235,1	&	15,33	\\ \hline
-403,7	&	1	&	2357,18	&	0,73	&	12,27	&	0,7	&	379,64	&	19,48	\\ \hline
-403,7	&	2	&	1326,71	&	1,59	&	18,99	&	2,33	&	226,68	&	15,06	\\ \hline
-503,7	&	1	&	2246,3	&	0,85	&	15,47	&	0,83	&	413,87	&	20,34	\\ \hline
-503,7	&	2	&	1161,31	&	2,08	&	24,58	&	2,86	&	234,92	&	15,32	\\ \hline
-605,2	&	1	&	2143,09	&	0,95	&	16,41	&	1,01	&	387,72	&	19,69	\\ \hline
-605,2	&	2	&	1001,36	&	4,3	&	39,75	&	9,3	&	297,97	&	17,26	\\ \hline
-705	&	1	&	2029,47	&	1,17	&	15,54	&	1,17	&	309,43	&	17,59	\\ \hline
-705	&	2	&	1152,52	&	116,51	&	70,93	&	202,05	&	3526,06	&	59,38	\\ \hline
-802,1	&	1	&	1916,84	&	1,08	&	19,65	&	1,37	&	387,17	&	19,68	\\ \hline
-802,1	&	2	&	626,78	&	71,36	&	253,05	&	113,1	&	987,4	&	31,42	\\ \hline
-905,2	&	1	&	1793,34	&	1,42	&	16,75	&	1,89	&	257,1	&	16,03	\\ \hline
-994,66	&	1	&	1678,34	&	1,64	&	27,11	&	2,01	&	401,01	&	29,03	\\ \hline\hline
-
-\hline
-\multicolumn{ 6}{|c|}{} & temps\unit{[s]} & 30 \\ \cline{ 7- 8}
-\multicolumn{6}{|c|}{} & tension \unit{[V]}& 80 \\ \cline{7-8}
-\multicolumn{ 6}{|c|}{} & matériau& \isotope[212][83]{Bi} \\ \hline
-\end{tabular}
-\end{center}
-\end{table}
-\begin{figure*}[hbt]
-     \begin{center}
-      \includegraphics[width=0.75\textwidth]{Bilder/fonction_pression.png}
-     \end{center}
-    \end{figure*}
-\end{subsection}
-
-\begin{subsection}{perte d'energie par unité de longueur}
-\begin{table}[htbp]
-\begin{center}
-\begin{tabular}{|c||c||c|c|}
-\hline
-Air& \multicolumn{ 3}{|c|}{} \\ \hline \hline
-materiau	&	Kinetic Energy \unit{[MeV]}	&	Total Stp. Pow. \unit[]{[MeV cm^2/g]}	&	Projected Range \unit[]{[g/cm^2]}	\\ \hline
-Am	&	5,413	&	720,2	&	0,004889	\\ \hline								
-Po	&	6,004	&	669,7	&	0,005739	\\ \hline								
-Bi	&	8,785	&	509,8	&	0,01055	\\ \hline								
-\end{tabular}
-\caption{Total stopping power et projected range pour air}
-\end{center}
-\end{table}
-Le dispositif expérimental est construit comme \c{c}a, que la distance entre le détecteur et la source est fixé à \unit[45]{mm}. Donc on modifie l'épaisseur d'air entre la source et le détecteur,
-c'est-à-dire on régle la pression à l'intérieur d'une enceinte à vide.\\
-l'équation des gaz parfaits $p \cdot x \cdot A =N \cdot R \cdot T$ nous indique que la pression $p$ et la distance $x$ sont inversement proportionnelles, il en résulte pour la distance x = x(p) 
-\begin{equation*}
-x=\frac{p}{p_0}\cdot x_0
-\end{equation*}
-Avec la calibration d'energie $E_{callibration} &= 0.00305786  \cdot E +0.371954 $ on trouve pour le distance $x$ en fonction d'energie $E$:
-\begin{figure*}[hbt]
-     \begin{center}
-      \includegraphics[width=0.75\textwidth]{Bilder/energie_restante.png}
-     \end{center}
-    \end{figure*}
-\begin{figure*}[hbt]
-     \begin{center}
-      \includegraphics[width=0.75\textwidth]{Bilder/energie_perdue.png}
-     \end{center}
-    \end{figure*}
-
-\end{subsection}
-\begin{subsection}{pic de Bragg}
-\end{subsection}
-\end{section}
+ 
  \begin{section}{Conclusion}
   Nous avons appris comment lancé une mesure et calibré les dispositifs pour cette mésure. En plus nous avons vu que des particules $\alpha$ déposent leur énergie après un certain trajet parcouru. Cette distance montré par le pic de Bragg est spécifique pour les $\alpha$ d'une source comme nous avons vu en comparaisant les deux sources disponibles pour la TP.
   

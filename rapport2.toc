@@ -12,8 +12,8 @@
 \contentsline {subsubsection}{\numberline {3.1.2}Largeur de la zone active en fonction de la tension}{7}{subsubsection.3.1.2}
 \contentsline {subsection}{\numberline {3.2}Calibration des r\IeC {\'e}sultat}{7}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Simulation de la perte d'\IeC {\'e}nergie}{9}{subsection.3.3}
-\contentsline {section}{\numberline {4}Mesure}{9}{section.4}
-\contentsline {section}{\numberline {5}Att\IeC {\'e}nuation des particules alpha dans l'air et pic de Bragg}{9}{section.5}
-\contentsline {subsection}{\numberline {5.1}perte d'energie dans l'air en fonction de pression}{9}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}perte d'energie par unit\IeC {\'e} de longueur}{12}{subsection.5.2}
+\contentsline {section}{\numberline {4}Mesure de l'att\IeC {\'e}nuation des particules alpha dans l'air}{10}{section.4}
+\contentsline {subsection}{\numberline {4.1}Perte d'\IeC {\'e}nergie dans l'air en fonction de pression}{10}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Perte d'\IeC {\'e}nergie par unit\IeC {\'e} de longueur}{12}{subsection.4.2}
+\contentsline {section}{\numberline {5}Pic de Bragg}{12}{section.5}
 \contentsline {section}{\numberline {6}Conclusion}{12}{section.6}

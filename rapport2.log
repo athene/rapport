@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.11.18)  21 NOV 2011 08:01
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.11.18)  22 NOV 2011 09:10
 entering extended mode
  %&-line parsing enabled.
 **rapport2.tex
@@ -1199,9 +1199,9 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \tab@size=\count161
 \listing@line=\count162
 )
-runsystem(touch /tmp/w18-test-20111121481)...disabled.
+runsystem(touch /tmp/w18-test-20111122550)...disabled.
 
-runsystem(rm -f /tmp/w18-test-20111121481)...disabled.
+runsystem(rm -f /tmp/w18-test-20111122550)...disabled.
 
 
 
@@ -1658,13 +1658,13 @@ Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)            on input line 9.
 Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)           `sectioning' that is an alias of element `disposition'
-(scrartcl)            on input line 15.
+(scrartcl)            on input line 18.
 Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)           `sectioning' that is an alias of element `disposition'
-(scrartcl)            on input line 16.
+(scrartcl)            on input line 21.
 Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)           `sectioning' that is an alias of element `disposition'
-(scrartcl)            on input line 19.
+(scrartcl)            on input line 22.
 )
 \tf@toc=\write8
 \openout8 = `rapport2.toc'.
@@ -1762,39 +1762,60 @@ LaTeX Font Info:    Try loading font information for T1+cmtt on input line 148.
 (/usr/share/texmf-texlive/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-Overfull \hbox (81.14029pt too wide) in paragraph at lines 175--186
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+
+ []
+
+
+Overfull \hbox (60.5697pt too wide) in paragraph at lines 179--185
  [] 
  []
 
 <Bilder/calibration.png, id=139, 642.4pt x 481.8pt>
 File: Bilder/calibration.png Graphic file (type png)
 
-<use Bilder/calibration.png> [7pdfTeX warning (ext4): destination with the same
- identifier (name{table.1}) has been already used, duplicate ignored
+<use Bilder/calibration.png> [7]
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.200   \end{align*}
-                    ] [8pdfTeX warning (ext4): destination with the same identi
-fier (name{table.2}) has been already used, duplicate ignored
+! LaTeX Error: \begin{paragraph} on input line 176 ended by \end{subsection}.
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.200   \end{align*}
-                    pdfTeX warning (ext4): destination with the same identifier
- (name{figure.5}) has been already used, duplicate ignored
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.200   \end{subsection}
+                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.200   \end{align*}
-                     <./Bilder/calibration.png (PNG copy)>]
-<Bilder/simam.png, id=154, 508.90125pt x 439.6425pt>
+<Bilder/simam.png, id=148, 508.90125pt x 439.6425pt>
 File: Bilder/simam.png Graphic file (type png)
  <use Bilder/simam.png>
-<Bilder/simbi7MeV.png, id=155, 508.90125pt x 439.6425pt>
+<Bilder/simbi7MeV.png, id=149, 508.90125pt x 439.6425pt>
 File: Bilder/simbi7MeV.png Graphic file (type png)
 
-<use Bilder/simbi7MeV.png>
+<use Bilder/simbi7MeV.png> [8pdfTeX warning (ext4): destination with the same i
+dentifier (name{figure.5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.215    O
+          n va bien que les particules $\alpha$ de l'\isotope[241]{Am} n'arr...
+ <./Bilder/calibration.png (PNG copy)>]
+
+! LaTeX Error: \begin{subsection} on input line 174 ended by \end{section}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.217  \end{section}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
 Overfull \hbox (15.62186pt too wide) in paragraph at lines 224--250
  [] 
  []
@@ -1817,17 +1838,17 @@ l.284    \end{table}
                                                   \fi \fi 
 l.284    \end{table}
                      <./Bilder/simam.png (PNG copy)> <./Bilder/simbi7MeV.png (P
-NG copy)>] <Bilder/fonction_pression.png, id=162, 642.4pt x 481.8pt>
+NG copy)>] <Bilder/fonction_pression.png, id=163, 642.4pt x 481.8pt>
 File: Bilder/fonction_pression.png Graphic file (type png)
 
 <use Bilder/fonction_pression.png> [10pdfTeX warning (ext4): destination with t
-he same identifier (name{table.3}) has been already used, duplicate ignored
+he same identifier (name{table.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.290    L
           e dispositif expérimental est construit ainsi que la distance ent...
-] [11pdfTeX warning (ext4): destination with the same identifier (name{table.4}
+] [11pdfTeX warning (ext4): destination with the same identifier (name{table.2}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1849,33 +1870,45 @@ LaTeX Font Info:    Try loading font information for TS1+lmss on input line 326
 (/usr/share/texmf/tex/latex/lm/ts1lmss.fd
 File: ts1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [12 <./Bilder/energie_restante.png (PNG copy)>] [13 <./Bilder/energie_perdue.
-png (PNG copy)>] (./rapport2.aux) ) 
+png (PNG copy)>]
+
+! LaTeX Error: \begin{section} on input line 145 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.329 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+(./rapport2.aux) )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 145 (\begingroup)
+### bottom level 
 Here is how much of TeX's memory you used:
  20349 strings out of 495028
  318238 string characters out of 1181228
- 503920 words of memory out of 3000000
- 22903 multiletter control sequences out of 15000+50000
+ 503635 words of memory out of 3000000
+ 22904 multiletter control sequences out of 15000+50000
  114775 words of font info for 141 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 60i,13n,69p,712b,933s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{subsection.5.2} 
-has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.5.1} has been referenced but does not ex
-ist, replaced by a fixed one
-
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc} </home/sabine/.texmf-var/fonts
-/pk/ljfour/jknappen/ec/ectt0800.600pk>{/usr/share/texmf/fonts/enc/dvips/lm/lm-e
-c.enc}{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-t
-exlive/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texmf-texlive/fon
-ts/type1/public/fourier/fourier-ml.pfb></usr/share/texmf-texlive/fonts/type1/pu
-blic/fourier/fourier-mlit.pfb></usr/share/texmf-texlive/fonts/type1/public/four
-ier/fourier-ms.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/s
-hare/texmf-texlive/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texmf-texliv
-e/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on rapport2.pdf (13 pages, 298858 bytes).
+ 60i,13n,69p,712b,971s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc} </home/sabine/
+.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0800.600pk>{/usr/share/texmf/fonts/e
+nc/dvips/lm/lm-ec.enc}{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</u
+sr/share/texmf-texlive/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/t
+exmf-texlive/fonts/type1/public/fourier/fourier-ml.pfb></usr/share/texmf-texliv
+e/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texmf-texlive/fonts/t
+ype1/public/fourier/fourier-ms.pfb></usr/share/texmf/fonts/type1/public/lm/lmss
+bx10.pfb></usr/share/texmf-texlive/fonts/type1/adobe/utopia/putr8a.pfb></usr/sh
+are/texmf-texlive/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on rapport2.pdf (13 pages, 297872 bytes).
 PDF statistics:
- 235 PDF objects out of 1000 (max. 8388607)
- 46 named destinations out of 1000 (max. 500000)
+ 234 PDF objects out of 1000 (max. 8388607)
+ 45 named destinations out of 1000 (max. 500000)
  207 words of extra memory for PDF output out of 10000 (max. 10000000)
 

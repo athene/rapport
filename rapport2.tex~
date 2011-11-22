@@ -95,7 +95,7 @@
     \begin{center}
      \includegraphics[width=0.75\textwidth]{Bilder/schemaBi1.png}
     \end{center}
-    \caption{schéma de désintégration du \isotope[212]{83}{Bi} }
+    \caption{Schéma de désintégration du \isotope[212][83]{Bi} }
    \end{figure}
    On peut se poser la question pourquoi la désintégration du \isotope[212]{Bi} vers l'état fondamental est plus probable que vers le deuxième état excité parce qu'ils ont tous les deux le même moment angulaire et la même parité $5^+$. C'est assez facile à comprendre car les atomes vont avoir un état énergétiquement favorable, c'est à dire un état stable. Comme l'état fondamental est le plus stable des deux états la désintégration vers l'état fondamental est préféré.\\
 \newpage
@@ -104,7 +104,7 @@
     \begin{center}
      \includegraphics[width=0.5\textwidth]{Bilder/schemaPo1.png}
     \end{center}
-    \caption{schéma de désintégration du \isotope[212]{84}{P0} }
+    \caption{Schéma de désintégration du \isotope[212][84]{Po} }
    \end{figure}
    Les trois $\alpha$ principaux de la désintégration du \isotope[212]{Bi} sont deux $\alpha$ de la désintégration vers le \isotope[208]{Tl} et l'$\alpha$ de la désintégration du \isotope[212]{Po}. Pour 100 désintégration du \isotope[212]{Bi} environ 90 particules $\alpha$ sont émis et nous avons calculé l'énergie cinétique des trois $\alpha$ principaux.
    \begin{eqnarray*}
@@ -131,7 +131,7 @@
     \begin{center}
      \includegraphics[width=0.75\textwidth]{Bilder/detecteur.png}
     \end{center}
-    \caption{schéma d'un détecteur semi-conducteur}
+    \caption{Schéma d'un détecteur semi-conducteur}
    \end{figure*}
    Le détecteur est un détecteur semi-conducteur et consiste d'une jonction Si(Li) avec une barrière de surface. Un détecteur semi-conducteur a trois parts: une zone chargée négative n, une zone chargée positive p  et une zone neutre, la zone active ou desertée. Le largeur de cette dernière zone est reglée par haute tension, la tension de polarisation. Comme ci la jonction est assimilable à un condensateur plan dont la distance est égale à la zone désertée. Donc ce condensateur est de même d'amplitude que la tension rélié.
    Le préamplificateur de charge supprime ce problème. Il est rélie à un module de mise en forme qui fournit un signal de l'amplitude proportionnel à la charge collecté dans la jonction du détecteur indépedant de la capacité.
@@ -147,42 +147,41 @@
    \begin{subsubsection}{Caractéristique du détecteur}
     \todo{Astar}
    \end{subsubsection}
+
    \begin{subsubsection}{Largeur de la zone active en fonction de la tension}
-    Pour comprendre le comportement du détecteur en fonction de la tension, nous avons lancé une série de mesure. Nous avons choisi une tension de \unit[0]{V}, \unit[25]{V}, \unit[50]{V} et \unit[80]{V} et nous avons mesurer à une pression de \unit[0,78]{mbar} pendant \unit[30]{s} par mesure.
-    \begin{table}[htbp]
-     \caption{Résultats de variation de tension}
-     \begin{center}
-      \begin{tabular}{|c||c|c|c|c|c|c|}
-       \hline
-       tension\unit{[V]} & $n^{\circ}$ de particules	& err(part.) & énergie	&	err(èn.)	& resolution & err(res.)	\\ \hline \hline 
-       0	&	2545,3	&	50,45	&	1295,22	&	3,21	&	14,36	&	0,26		\\ \hline
-       25	&	2154,9	&	46,42	&	1664,71	&	0,27	&	6,34	&	0,18		\\ \hline
-       50	&	1838,12	&	42,87	&	1676,8	&	0,28	&	4,93	&	0,18		\\ \hline
-       80	&	2028,32	&	45,04	&	1678,01	&	0,21	&	4,94	&	0,14		\\ \hline
-      \end{tabular}
-     \end{center}
-    \end{table}
-    On voit bien qu'on a la plus petite erreur des énergies avec la tension de \unit[80]{V}. C'est celui que nous avons utilisé pour tous les mesures suivantes. 
-    \todo{Erklärung Zone}
+    Pour comprendre le comportement du détecteur en fonction de la tension, nous avons lancé une série de mesure. Nous avons choisi une tension de \unit[0]{V}, \unit[25]{V}, \unit[50]{V} et \unit[80]{V} et nous avons mesurer à une pression de \unit[0,78]{mbar} pendant \unit[30]{s} par mesure.\\
+    \begin{paragraph}{Résultat} 
+     On voit bien qu'on a la plus petite erreur des  énergies avec la tension de \unit[80]{V}. C'est celui que nous avons utilisé pour tous les mesures suivantes. 
+     \begin{table}[H]
+      \begin{center}
+       \begin{tabular}{c|c|c|c|c|c|c}
+        tension\unit{[V]} & $n^{\circ}$ de particules	& err(part.) & énergie	&	err(èn.)	& resolution & err(res.)	\\ \hline 
+        0	&	2545,3	&	50,45	&	1295,22	&	3,21	&	14,36	&	0,26		\\ 
+        25	&	2154,9	&	46,42	&	1664,71	&	0,27	&	6,34	&	0,18		\\ 
+        50	&	1838,12	&	42,87	&	1676,8	&	0,28	&	4,93	&	0,18		\\ 
+        80	&	2028,32	&	45,04	&	1678,01	&	0,21	&	4,94	&	0,14		\\ 
+       \end{tabular}
+      \end{center}
+     \end{table}
+    \end{paragraph}
+
+    \begin{paragraph}{Explication}
+     On a vu qu'il est nécessaire que l'énergie des $\alpha$ est totalement perdue dans la zone desertée pour avoir un résultat exact. La zone agraindi proportionellement à la tension de polarisation.
+    \end{paragraph}
    \end{subsubsection}
   \end{subsection} 
 
   \begin{subsection}{Calibration des résultat}
-   \todo{Erklärung was und warum gemessen}
-   \begin{table}[htbp]
-    \caption{Résultats de la mesure précise de Am et Bi}
-    \begin{center}
-     \begin{tabular}{|c||c||c||c|c|c|c|c|c|}
-      \hline 
-      matériau	&	pic	& énergie  &	énergie	&	err(én)	&	resolution	&	err(res)	&	$n^{\circ}$ de 	&	err(part)\\
-      & & &calculée [MeV] & & &&  particules & \\ \hline\hline
-      Bi 	&	1 (Tl)	&	 6, 114 &	1868,94	&	0,25	&	8,36	&	0,25	&	1215,24	&	34,86	\\ \hline
-      Bi 	&	2 (Po)	&	 8, 785 &	2752,96	&	0,12	&	4,58	&	0,08	&	2335,28	&	48,32	\\ \hline
-      Am	&	1	&	 5, 433 &	1662,27	&	0,1	&	13,52	&	0,06	&	23528,39	&	153,39	\\ \hline\hline
-      \multicolumn{ 7}{|c|}{} & temps\unit{[s]} & 300 \\ \cline{ 8- 9}
-      \multicolumn{7}{|c|}{} & tension \unit{[V]}& 80 \\ \cline{8-9}
-      \multicolumn{ 7}{|c|}{} & pression\unit{[mb]}& 0.78 \\ \hline
-     \end{tabular}
+   Car on ne sait pas le facteur du logiciel \flqq Spectro TP\frqq, alors il faut le calibrer. Ainsi nous avons fait une mesure pour chaque source avec la tension de \unit[80]{V} et une pression de \unit[0,78]{mb} en comptant pendant \unit[300]{s} pour avoir une mesure précise.
+   \begin{paragraph}{Résultat}
+    \begin{table}[H]
+     \begin{center}
+      \begin{tabular}{c|c|c|c|c|c|c|c|c}
+       matériau	&	pic	& énergie  &	position	&	err(pos)	&	resolution	&	err(res)	&	nb de particules	&	err(part)\\ \hline
+       Bi 	&	1 (Tl)	&	 6, 114 &	1868,94	&	0,25	&	8,36	&	0,25	&	1215,24	&	34,86	\\
+       Bi 	&	2 (Po)	&	 8, 785 &	2752,96	&	0,12	&	4,58	&	0,08	&	2335,28	&	48,32	\\ 
+       Am	&	1	&	 5, 433 &	1662,27	&	0,1	&	13,52	&	0,06	&	23528,39	&	153,39	\\ 
+      \end{tabular}
     \end{center}
    \end{table}
    \begin{figure*}
@@ -191,13 +190,14 @@
      \caption[calibration d'énergie]{fitparameter: $ a = 0.00305786  \pm 4.301\cdot 10^{-5} \hspace{2 em} b = 0.371954  \pm 0.09235$ }
     \end{center}
    \end{figure*}
+
+   Nous savons l'énergie des $\alpha$ et la position de pic, en faisant la supposition que l'augmentation de la position de pic est linéair à l'augmentation de l'énergie nous avon fait un fit en utillisant le logiciel \flqq Gnuplot\frqq\. qui applique la méthode des moindres carrés. On trouve pour les coefficients a et b les valeurs
+   \begin{align*}
+    a&= 0.00305786 \\
+    b&= 0.371954 \\
+    \rightarrow E_{callibration} &= 0.00305786  \cdot E +0.371954 
+   \end{align*}
   \end{subsection}
-  Nous avons utillisés le logiciel \flqq Gnuplot\frqq \.pour le fit de données qui applique la méthode des moindres carrés. On trouve pour les coefficients a et b les valeurs
-  \begin{align*}
-   a&= 0.00305786 \\
-   b&= 0.371954 \\
-   \rightarrow E_{callibration} &= 0.00305786  \cdot E +0.371954 
-  \end{align*}
 
   \begin{subsection}{Simulation de la perte d'énergie}
    Nous avons lancé une simulation avec le logiciel \flqq SRIM \frqq pour savoir quoi attendre. Nous avons pris pour la simulation un trajet de \unit[45]{mm} (la distance maximale entre la source et le détecteur) dans l'air.

@@ -172,16 +172,20 @@
   \end{subsection} 
 
   \begin{subsection}{Calibration des résultat}
-   Car on ne sait pas le facteur du logiciel \flqq Spectro TP\frqq, alors il faut le calibrer. Ainsi nous avons fait une mesure pour chaque source avec la tension de \unit[80]{V} et une pression de \unit[0,78]{mb} en comptant pendant \unit[300]{s} pour avoir une mesure précise.
-   \begin{paragraph}{Résultat}
-    \begin{table}[H]
-     \begin{center}
-      \begin{tabular}{c|c|c|c|c|c|c|c|c}
-       matériau	&	pic	& énergie  &	position	&	err(pos)	&	resolution	&	err(res)	&	nb de particules	&	err(part)\\ \hline
-       Bi 	&	1 (Tl)	&	 6, 114 &	1868,94	&	0,25	&	8,36	&	0,25	&	1215,24	&	34,86	\\
-       Bi 	&	2 (Po)	&	 8, 785 &	2752,96	&	0,12	&	4,58	&	0,08	&	2335,28	&	48,32	\\ 
-       Am	&	1	&	 5, 433 &	1662,27	&	0,1	&	13,52	&	0,06	&	23528,39	&	153,39	\\ 
-      \end{tabular}
+   Car on ne sait pas le facteur du logiciel \flqq Spectro TP\frqq il faut le calibrer.
+   \todo{Erklärung was und warum gemessen}
+   \begin{table}[htbp]
+    \caption{Résultats de la mesure précise de Am et Bi}
+    \begin{center}
+     \begin{tabular}{c|c|c|c|c|c|c|c|c}
+      matériau	&	pic	& énergie  &	position	&	err(pos)	&	resolution	&	err(res)	&	$n^{\circ}$ de particules	&	err(part)\\ \hline
+      Bi 	&	1 (Tl)	&	 6, 114 &	1868,94	&	0,25	&	8,36	&	0,25	&	1215,24	&	34,86	\\
+      Bi 	&	2 (Po)	&	 8, 785 &	2752,96	&	0,12	&	4,58	&	0,08	&	2335,28	&	48,32	\\ 
+      Am	&	1	&	 5, 433 &	1662,27	&	0,1	&	13,52	&	0,06	&	23528,39	&	153,39	\\ \hline
+      \multicolumn{ 7}{|c|}{} & temps\unit{[s]} & 300 \\ \cline{ 8- 9}
+      \multicolumn{7}{|c|}{} & tension \unit{[V]}& 80 \\ \cline{8-9}
+      \multicolumn{ 7}{|c|}{} & pression\unit{[mb]}& 0.78 \\ \hline
+     \end{tabular}
     \end{center}
    \end{table}
    \begin{figure*}
@@ -190,14 +194,13 @@
      \caption[calibration d'énergie]{fitparameter: $ a = 0.00305786  \pm 4.301\cdot 10^{-5} \hspace{2 em} b = 0.371954  \pm 0.09235$ }
     \end{center}
    \end{figure*}
-
-   Nous savons l'énergie des $\alpha$ et la position de pic, en faisant la supposition que l'augmentation de la position de pic est linéair à l'augmentation de l'énergie nous avon fait un fit en utillisant le logiciel \flqq Gnuplot\frqq\. qui applique la méthode des moindres carrés. On trouve pour les coefficients a et b les valeurs
-   \begin{align*}
-    a&= 0.00305786 \\
-    b&= 0.371954 \\
-    \rightarrow E_{callibration} &= 0.00305786  \cdot E +0.371954 
-   \end{align*}
   \end{subsection}
+  Nous avons utillisés le logiciel \flqq Gnuplot\frqq \.pour le fit de données qui applique la méthode des moindres carrés. On trouve pour les coefficients a et b les valeurs
+  \begin{align*}
+   a&= 0.00305786 \\
+   b&= 0.371954 \\
+   \rightarrow E_{callibration} &= 0.00305786  \cdot E +0.371954 
+  \end{align*}
 
   \begin{subsection}{Simulation de la perte d'énergie}
    Nous avons lancé une simulation avec le logiciel \flqq SRIM \frqq pour savoir quoi attendre. Nous avons pris pour la simulation un trajet de \unit[45]{mm} (la distance maximale entre la source et le détecteur) dans l'air.

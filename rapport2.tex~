@@ -44,7 +44,7 @@
  \vfill
 
  \begin{abstract}
-  Le but des cette TP est de connaître la perte d'énergie des particules $\alpha$ dans l'air. Nous avons eu deux sources une source d'Americium 241 (\isotope[241]{Am}) et une source de Plomb 212/ Bismuth 212 (\isotope[212]{Bi}) pour étudier des particules $\alpha$ différentes. L'$\alpha$ perd son énergie par ionisation des atomes de la matière, ici l'air. La perte est proportionnelle au carré de la charge et à la masse de l'$alpha$ et varie beaucoup avec la vitess d'$\alpha$. Plus l'$\alpha$ est lente plus de temps il passe dans l'atome et \c ca augmente la chance d'une interaction. Si l'ionisation est très intense, le trajet de la particule est très court.
+  Le but des cette TP est de connaître la perte d'énergie des particules $\alpha$ dans l'air. Nous avons eu deux sources une source d'Americium 241 (\isotope[241]{Am}) et une source de Plomb 212/ Bismuth 212 (\isotope[212]{Bi}) pour étudier des particules $\alpha$ différentes. L'$\alpha$ perd son énergie par ionisation des atomes de la matière, ici l'air. La perte est proportionelle au carré de la charge et à la masse de l'$alpha$ et varie beaucoup avec la vitess d'$\alpha$. Plus l'$\alpha$ est lente plus de temps il passe dans l'atome et \c ca augmente la chance d'une interaction. Si l'ionisation est très intense, le trajet de la particule est très court.
 
   Dans ce TP nous allons étudier le spectre des $\alpha$ émis par les deux sources, calibrer le dispositif éxpermental pour ensuite mesurer le pouvoir d'ionisation des $\alpha$. C'est réalisé par la mesure de la longuer du trajet des $\alpha$ dans l'air.
  \end{abstract}
@@ -134,7 +134,7 @@
     \caption{Schéma d'un détecteur semi-conducteur}
    \end{figure*}
    Le détecteur est un détecteur semi-conducteur et consiste d'une jonction Si(Li) avec une barrière de surface. Un détecteur semi-conducteur a trois parts: une zone chargée négative n, une zone chargée positive p  et une zone neutre, la zone active ou desertée. Le largeur de cette dernière zone est reglée par haute tension, la tension de polarisation. Comme ci la jonction est assimilable à un condensateur plan dont la distance est égale à la zone désertée. Donc ce condensateur est de même d'amplitude que la tension rélié.
-   Le préamplificateur de charge supprime ce problème. Il est rélie à un module de mise en forme qui fournit un signal de l'amplitude proportionnel à la charge collecté dans la jonction du détecteur indépedant de la capacité.
+   Le préamplificateur de charge supprime ce problème. Il est rélie à un module de mise en forme qui fournit un signal de l'amplitude proportionel à la charge collecté dans la jonction du détecteur indépedant de la capacité.
   \end{subsection}
 
   \begin{subsection}{Logiciel}
@@ -145,24 +145,67 @@
  \begin{section}{Expériences préliminaire}
   \begin{subsection}{Etude de la réponse du détecteur}
    \begin{subsubsection}{Caractéristique du détecteur}
-    \todo{Astar}
+   Nous avons utilisé le logiciel \flqq Astar \frqq \. pour avoir une estimation de l'énergie maximale pour laquelle la particule perd toute son énergie.  Les énergies utilisés pour les calculations du Total Stopping Power et du Projected Range étaient les plus probables des désintégration. La première mesure était fait pour le détecteur donc le matériel donné est Silicium, la deuxième mesure était fait pour l'air.
+   \begin{paragraph}{Silicium}
+    \begin{center}
+     \begin{tabular}{c|c|c|c}
+      Désintegration&	Energie cinétique [MeV] & Total Stp. Pow. [$\frac{MeV cm^2}{g}$]  & Projected Range [$\frac{g}{cm^2}$] \\ \hline
+      Am 	&5,413 & 584,6 & 0,00625 \\ 
+      Bi	&6,004 & 546,7 & 0,00792 \\ 
+      Po	&8,785 & 411,1 & 0,01313 \\ 
+     \end{tabular}
+    \end{center}
+    Pour le détecteur on a donné und valeur de $\unit[1,5]{cm^2}$, donc les énergies maximale se calcule comme suivante 
+    \begin{eqnarray*}
+     E_{max}(Am)&=\text{Total Stp. Power}\cdot \unit[1,5]{cm^2}&=\unit[876,9]{MeV}\\
+     E_{max}(Bi)&&=\unit[820,05]{MeV}\\
+     E_{max}(Po)&&=\unit[616,65]{MeV}
+    \end{eqnarray*}
+    La densité du Silicium est $\rho=\unit[2,336]{\frac{g}{cm3}}$, alors on trouve pour les trajets maximale dans le détecteur
+    \begin{eqnarray*}
+     x_{max}(Am)&=\frac{\text{Projected Range}}{\rho}&=\unit[26,76]{\mu m}\\
+     x_{max}(Bi)&&=\unit[33,92]{\mu m}\\
+     x_{max}(Po)&&=\unit[56,21]{\mu m}
+    \end{eqnarray*}
+    \todo{rausfinden Spannung...}
+   \end{paragraph}
+   \begin{paragraph}{Air}
+    \begin{center}
+     \begin{tabular}{c|c|c|c}
+      Désintégration & Energie cinétique \unit{[MeV]} & Total Stp. Pow. [$\frac{MeV cm^2}{g}$] & Projected Range [$\frac{g}{cm^2}$] \\ \hline
+      Am & 5,413 & 718,0 & 0,00491 \\ 
+      Bi & 6,004 & 669,3 & 0,00574 \\ 
+      Po & 8,785 & 509,5 & 0,01055 \\ 
+     \end{tabular}
+    \end{center}
+    Pour l'air seulement les trajets maximale sont intéressant et la densité de l'air dans l'atmosphère ambiante est $\rho\approx\unit[0,00129]{\frac{g}{cm^3}}$
+    \begin{eqnarray*}
+     x_{max}(Am)&=\frac{\text{Projected Range}}{\rho}&=\unit[38,06]{mm}\\
+     x_{max}(Bi)&&=\unit[44,50]{mm}\\
+     x_{max}(Po)&&=\unit[81,78]{mm}
+    \end{eqnarray*}
+    Nous avons que la distance maximale entre la source et le détecteur est \unit[45]{mm}, donc nous avons seulement la chance de détecter les pic de Bragg de la désintégration du Am et du Bi vers Tl.
+   \end{paragraph}
+
+     
    \end{subsubsection}
 
    \begin{subsubsection}{Largeur de la zone active en fonction de la tension}
     Pour comprendre le comportement du détecteur en fonction de la tension, nous avons lancé une série de mesure. Nous avons choisi une tension de \unit[0]{V}, \unit[25]{V}, \unit[50]{V} et \unit[80]{V} et nous avons mesurer à une pression de \unit[0,78]{mbar} pendant \unit[30]{s} par mesure.\\
+    Nous avons aussi calculé la résolution en énergie $\frac{\Delta E}{E}$ en usant le savoir que la position du pic est proportionel à l'énergie.
     \begin{paragraph}{Résultat} 
+     \begin{center}
+      \begin{tabular}{c|c|c|c|}
+       tension\unit{[V]} & $n^{\circ}$ de particules & Position	& Largeur du pic 	\\ \hline 
+       0	&	2545,3  $\pm$ 50,45	&	1295,22	$\pm$ 3,21	&	14,36 $\pm$ 0,26		\\ 
+       25	&	2154,9 $\pm$ 46,42	&	1664,71	$\pm$ 0,27	&	6,34 $\pm$ 0,18		\\ 
+       50	&	1838,12 $\pm$ 42,87	&	1676,8	$\pm$ 0,28	&	4,93 $\pm$ 0,18		\\ 
+       80	&	2028,32 $\pm$ 45,04	&	1678,01	$\pm$ 0,21	&	4,94 $\pm$ 0,14		\\ 
+      \end{tabular}
+     \end{center}
+     L'intégrale du pic correspond à la nombre des particules mesurées et sa largeur à l'écart-type de la position.
+ 
      On voit bien qu'on a la plus petite erreur des  énergies avec la tension de \unit[80]{V}. C'est celui que nous avons utilisé pour tous les mesures suivantes. 
-     \begin{table}[H]
-      \begin{center}
-       \begin{tabular}{c|c|c|c|c|c|c}
-        tension\unit{[V]} & $n^{\circ}$ de particules	& err(part.) & énergie	&	err(èn.)	& resolution & err(res.)	\\ \hline 
-        0	&	2545,3	&	50,45	&	1295,22	&	3,21	&	14,36	&	0,26		\\ 
-        25	&	2154,9	&	46,42	&	1664,71	&	0,27	&	6,34	&	0,18		\\ 
-        50	&	1838,12	&	42,87	&	1676,8	&	0,28	&	4,93	&	0,18		\\ 
-        80	&	2028,32	&	45,04	&	1678,01	&	0,21	&	4,94	&	0,14		\\ 
-       \end{tabular}
-      \end{center}
-     \end{table}
     \end{paragraph}
 
     \begin{paragraph}{Explication}
@@ -172,25 +215,23 @@
   \end{subsection} 
 
   \begin{subsection}{Calibration des résultat}
-   Car on ne sait pas le facteur du logiciel \flqq Spectro TP\frqq, alors il faut le calibrer. Ainsi nous avons fait une mesure pour chaque source avec la tension de \unit[80]{V} et une pression de \unit[0,78]{mb} en comptant pendant \unit[300]{s} pour avoir une mesure précise.
+   Le logiciel \flqq Spectro TP\frqq ne donne que la position des pics, mais on ne sait pas à quoi \c ca correspond, alors il faut le calibrer. Ainsi nous avons fait une mesure pour chaque source avec une tension de \unit[80]{V} et une pression de \unit[0,78]{mb} en comptant pendant \unit[300]{s} pour avoir une mesure précise. Donc la pression est très petite on peut admettre que le trajet est zéro et en résulte que l'énergie des $\alpha$ donné au détecteur correspond à leur énergie maximale.
    \begin{paragraph}{Résultat}
-    \begin{table}[H]
-     \begin{center}
-      \begin{tabular}{c|c|c|c|c|c|c|c|c}
-       matériau	&	pic	& énergie  &	position	&	err(pos)	&	resolution	&	err(res)	&	nb de particules	&	err(part)\\ \hline
-       Bi 	&	1 (Tl)	&	 6, 114 &	1868,94	&	0,25	&	8,36	&	0,25	&	1215,24	&	34,86	\\
-       Bi 	&	2 (Po)	&	 8, 785 &	2752,96	&	0,12	&	4,58	&	0,08	&	2335,28	&	48,32	\\ 
-       Am	&	1	&	 5, 433 &	1662,27	&	0,1	&	13,52	&	0,06	&	23528,39	&	153,39	\\ 
-      \end{tabular}
-    \end{center}
-   \end{table}
-   \begin{figure*}
     \begin{center}
-     \includegraphics[width=0.75\textwidth]{Bilder/calibration.png}
-     \caption[calibration d'énergie]{fitparameter: $ a = 0.00305786  \pm 4.301\cdot 10^{-5} \hspace{2 em} b = 0.371954  \pm 0.09235$ }
+     \begin{tabular}{c|c|c|c|c}
+      Pic	& Energie [MeV] &	Position	&	Résolution	&	Nb de particules	\\ \hline
+      Bi(Tl)	&6, 114	 &1868,94 $\pm$ 0,25 	&8,36 $\pm$ 0,25	&1215,24 $\pm$ 34,86	\\
+      Bi(Po)	&8, 785	&2752,96 $\pm$ 0,12	&4,58 $\pm$ 0,08	&2335,28 $\pm$ 48,32	\\ 
+      Am	&5, 433 &1662,27 $\pm$ 0,1	&13,52 $\pm$ 0,06	&23528,39 $\pm$ 153,39	\\ 
+     \end{tabular}
     \end{center}
-   \end{figure*}
-
+    \begin{figure}[H]
+     \begin{center}
+      \includegraphics[width=0.75\textwidth]{Bilder/calibration.png}
+      \caption[calibration d'énergie]{fitparameter: $ a = 0.00305786  \pm 4.301\cdot 10^{-5} \hspace{2 em} b = 0.371954  \pm 0.09235$ }
+     \end{center}
+    \end{figure}
+   \end{paragraph}
    Nous savons l'énergie des $\alpha$ et la position de pic, en faisant la supposition que l'augmentation de la position de pic est linéair à l'augmentation de l'énergie nous avon fait un fit en utillisant le logiciel \flqq Gnuplot\frqq\. qui applique la méthode des moindres carrés. On trouve pour les coefficients a et b les valeurs
    \begin{align*}
     a&= 0.00305786 \\
@@ -217,101 +258,118 @@
  \end{section}
 
  \begin{section}{Mesure de l'atténuation des particules alpha dans l'air}
-  \begin{subsection}{Perte d'énergie dans l'air en fonction de pression}
-   \begin{table}[H]
-    \caption{Energie des alphas en fonction de pression pour l'\isotope[241][95]{Am}}
-    \begin{center}
-     \begin{tabular}{|c||c|c|c|c|c|c|c|}
-      \hline 
-      pression\unit{[mb]} & pic	&	énergie	&	err(én)	&	resolution	&	err(res)	&	$n^{\circ}$ de particules	&	err(part) 	\\ \hline\hline
-      1,62	&	1	&	1660,02	&	0,25	&	6,83	&	0,21	&	1486,168	&	38,55	\\ \hline
-      102,4	&	1	&	1525,79	&	0,29	&	8,7	&	0,25	&	1542,36	&	39,27	\\ \hline
-      199,7	&	1	&	1374,82	&	0,33	&	10,99	&	0,26	&	1600,78	&	40,01	\\ \hline
-      300,5	&	1	&	1216,61	&	0,4	&	13,96	&	0,32	&	1674,84	&	40,92	\\ \hline
-      401,3	&	1	&	1044,07	&	0,52	&	18,31	&	0,45	&	1664,61	&	40,8	\\ \hline
-      501,08	&	1	&	855,9	&	0,59	&	21,59	&	0,49	&	1695,65	&	40,74	\\ \hline
-      608,7	&	1	&	609,86	&	0,72	&	26,56	&	0,6	&	1615,09	&	40,19	\\ \hline
-      706,3	&	1	&	349,35	&	1,17	&	30,9	&	1,31	&	1341,7	&	36,63	\\ \hline
-      706,3	&	2	&	246,13	&	36,48	&	128,45	&	32,14	&	474,96	&	21,31	\\ \hline
-      806,39	&	1	&	246,13	&	36,48	&	128,45	&	32,14	&	474,96	&	21,31	\\ \hline
-      653,9	&	1	&	503,98	&	0,86	&	29,08	&	0,77	&	1511,56	&	38,8	\\ \hline
-      714,65	&	1	&	329,75	&	1,16	&	32,07	&	1,26	&	1402,57	&	37,45	\\ \hline
-      714,65	&	2	&	207,4	&	42,1	&	116,78	&	35,28	&	362,95	&	19,05	\\ \hline
-      738,8	&	1	&	247,17	&	1	&	40,16	&	1,2	&	1525,44	&	39,05	\\ \hline
-      762,2	&	1	&	172,24	&	1,36	&	45,47	&	1,32	&	1475,01	&	38,41	\\ \hline
-      774,5	&	1	&	134,43	&	1,3	&	40,26	&	1,26	&	1290,85	&	35,93	\\ \hline
-      817,3	&	1	&	134,43	&	1,3	&	40,26	&	1,62	&	1290,9	&	35,92	\\ \hline
-		&	-	&		&		&		&		&	14	&		\\ \hline\hline
-      \hline
-      \multicolumn{ 6}{|c|}{} & temps\unit{[s]} & 20 \\ \cline{ 7- 8}
-      \multicolumn{6}{|c|}{} & tension \unit{[V]}& 80 \\ \cline{7-8}
-      \multicolumn{ 6}{|c|}{} & matériau& \isotope[241][95]{Am} \\ \hline
-     \end{tabular}
-    \end{center}
-   \end{table}
-   \begin{table}[H]
-    \caption{Energie des alphas en fonction de pression pour le \isotope[212][83]{Bi}}
-    \begin{center}
-     \begin{tabular}{|c||c|c|c|c|c|c|c|}
-      \hline 
-      pression\unit{[mb]} & pic	&	énergie	&	err(én)	&	resolution	&	err(res)	&	$n^{\circ}$ de particules	&	err(part) 	\\ \hline\hline
-      16,43	&	1	&	2732,85	&	0,23	&	5,69	&	0,26	&	412,9	&	20,32	\\ \hline
-      6,43	&	2	&	1899,94	&	0,63	&	9,11	&	0,65	&	242,96	&	15,59	\\ \hline
-      100,7	&	1	&	2653,17	&	0,36	&	7,28	&	0,33	&	460,25	&	21,5	\\ \hline
-      100,7	&	2	&	1741,73	&	0,85	&	11,2	&	1,06	&	253,24	&	25,11	\\ \hline
-      200,42	&	1	&	2564,43	&	0,45	&	8,97	&	0,42	&	445,97	&	21,12	\\ \hline
-      200,42	&	2	&	1619,05	&	1,4	&	14,61	&	2,21	&	177,23	&	13,21	\\ \hline
-      300,6	&	1	&	2461,22	&	0,6	&	11,52	&	0,62	&	429,58	&	20,73	\\ \hline
-      300,6	&	2	&	1474,6	&	1,61	&	18,89	&	1,98	&	235,1	&	15,33	\\ \hline
-      403,7	&	1	&	2357,18	&	0,73	&	12,27	&	0,7	&	379,64	&	19,48	\\ \hline
-      403,7	&	2	&	1326,71	&	1,59	&	18,99	&	2,33	&	226,68	&	15,06	\\ \hline
-      503,7	&	1	&	2246,3	&	0,85	&	15,47	&	0,83	&	413,87	&	20,34	\\ \hline
-      503,7	&	2	&	1161,31	&	2,08	&	24,58	&	2,86	&	234,92	&	15,32	\\ \hline
-      605,2	&	1	&	2143,09	&	0,95	&	16,41	&	1,01	&	387,72	&	19,69	\\ \hline
-      605,2	&	2	&	1001,36	&	4,3	&	39,75	&	9,3	&	297,97	&	17,26	\\ \hline
-      705	&	1	&	2029,47	&	1,17	&	15,54	&	1,17	&	309,43	&	17,59	\\ \hline
-      705	&	2	&	1152,52	&	116,51	&	70,93	&	202,05	&	3526,06	&	59,38	\\ \hline
-      802,1	&	1	&	1916,84	&	1,08	&	19,65	&	1,37	&	387,17	&	19,68	\\ \hline
-      802,1	&	2	&	626,78	&	71,36	&	253,05	&	113,1	&	987,4	&	31,42	\\ \hline
-      905,2	&	1	&	1793,34	&	1,42	&	16,75	&	1,89	&	257,1	&	16,03	\\ \hline
-      994,66	&	1	&	1678,34	&	1,64	&	27,11	&	2,01	&	401,01	&	29,03	\\ \hline\hline
-      \hline
-      \multicolumn{ 6}{|c|}{} & temps\unit{[s]} & 30 \\ \cline{ 7- 8}
-      \multicolumn{6}{|c|}{} & tension \unit{[V]}& 80 \\ \cline{7-8}
-      \multicolumn{ 6}{|c|}{} & matériau& \isotope[212][83]{Bi} \\ \hline
-     \end{tabular}
-    \end{center}
-   \end{table}
-   \begin{figure*}[H]
-    \begin{center}
-     \includegraphics[width=0.75\textwidth]{Bilder/fonction_pression.png}
-    \end{center}
-   \end{figure*}
-   Le dispositif expérimental est construit ainsi que la distance entre le détecteur et la source est fixé à \unit[45]{mm}. Donc on modifie la pression d'air à l'intérieur de l'enceinte à vide pour simuler des distances différentes.\\
-   L'équation des gaz parfaits $p \cdot x \cdot A =N \cdot R \cdot T$ nous indique que la pression $p$ et la distance $x$ sont inversement proportionnelles, il en résulte pour la distance x = x(p) 
+  Pour calculer l'énergie des particules en fonction de la position nous avons fait la calibration, donc $E=0.00305786  \cdot E +0.371954$.
+
+  La distance parcouru depend de la pression dans l'enceinte à vide. Le dispositif expérimental est construit ainsi que la distance entre le détecteur et la source est fixé à $x_0=\unit[45]{mm}$. Donc on modifie la pression d'air à l'intérieur de l'enceinte à vide pour simuler des distances différentes. L'équation des gaz parfaits $p \cdot x \cdot A =N \cdot R \cdot T$ nous indique que la pression $p$ et la distance $x$ sont inversement proportionelles, il en résulte pour la distance x = x(p) avec la pression ambiante $p_0=\unit[994,66]{mbar}$ mesuré ce jour
    \begin{equation*}
-    x=\frac{p}{p_0}\cdot x_0
+    x=\frac{p}{p_0}\cdot x_0=p\cdot\frac{\unit[45]{mm}}{\unit[994,66]{mbar}}\approx\unit[0,0045]{\frac{mm}{mbar}}\cdot p
    \end{equation*}
-\newpage
-   Avec la calibration d'énergie $E_{callibration}= 0.00305786  \cdot E +0.371954 $, on trouve pour le distance $x$ en fonction d'énergie $E$:
-   \begin{figure*}[h]
+  \begin{subsection}{La source \isotope[241][95]{Am}}
+   La temps de mesure était \unit[20]{s} et la tension était comme avant à \unit[80]{V}.
     \begin{center}
-     \includegraphics[width=0.75\textwidth]{Bilder/energie_restante.png}
+     \begin{tabular}{c|c|c|c|c}
+      Position	&Energie [MeV]	&Nb de particules	&Pression[mb]	&Distance parcouru [mm]\\ \hline
+      1660,020 $\pm$ 0,250	&5,448 $\pm$ 0,373	&1486,168 $\pm$ 38,55	&1,62	&0,073\\		
+      1525,790 $\pm$ 0,290	&5,038 $\pm$ 0,373	&1542,360 $\pm$ 39,270	&102,400	&4,633\\
+      1374,820 $\pm$ 0,330	&4,576 $\pm$ 0,373	&1600,780 $\pm$ 40,010	&199,700	&9,035\\
+      1216,610 $\pm$ 0,400	&4,092 $\pm$ 0,373	&1674,840 $\pm$ 40,920	&300,50	&13,595\\
+      1044,070 $\pm$ 0,520	&3,565 $\pm$ 0,374	&1664,610 $\pm$ 40,800	&401,30	&18,155\\
+      855,900 $\pm$ 0,590	&2,989 $\pm$ 0,374	&1695,650 $\pm$ 40,740	&501,08	&22,670\\
+      609,860 $\pm$ 0,720	&2,237 $\pm$ 0,374	&1615,090 $\pm$ 40,190	&608,70	&27,539\\
+      503,980 $\pm$ 0,860	&1,913 $\pm$ 0,375	&1511,560 $\pm$ 38,800	&653,90	&29,583\\
+      349,350 $\pm$ 1,17	&1,440 $\pm$ 0,376	&1341,700 $\pm$ 36,630	&706,30	&31,954\\
+      329,750 $\pm$ 1,16	&1,380 $\pm$ 0,376	&1402,570 $\pm$ 37,450	&714,65	&32,332\\
+      247,170 $\pm$ 1,000	&1,128 $\pm$ 0,375	&1525,440 $\pm$ 39,050	&738,80	&33,424\\
+      172,240 $\pm$ 1,36	&0,899 $\pm$ 0,376	&1475,010 $\pm$ 38,410	&762,20	&34,483\\
+      134,430 $\pm$ 1,3		&0,783 $\pm$ 0,376	&1290,850 $\pm$ 35,930	&774,50	&35,040\\
+      63,460 $\pm$ 1,48		&0,566 $\pm$ 0,484	&474,960 $\pm$ 21,310	&806,39	&36,482\\
+      14,740 $\pm$ 1,3		&0,417 $\pm$ 0,376	&1290,900 $\pm$ 35,920	&817,30	&36,976\\
+      0				&0,372 $\pm$ 0,372	&14			&850	&38,455\\
+     \end{tabular}
     \end{center}
-   \end{figure*}
-   \begin{figure*}[h]
+    \begin{minipage}{0.45\textwidth}
+     \includegraphics[width=\textwidth]{Sabine/am_pression.png}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+     \includegraphics[width=\textwidth]{Sabine/am_distance.png}
+    \end{minipage}
+   \end{subsection}
+
+   \begin{subsection}{La source \isotope[212][83]{Bi}}
+    La temps de mesure était \unit[30]{s} et la tension était comme avant à \unit[80]{V}.
     \begin{center}
-     \includegraphics[width=0.75\textwidth]{Bilder/energie_perdue.png}
+     \begin{tabular}{c|c|c|c|c}
+      Position	&Energie [MeV]	&Nb de particules	&Pression[mb]	&Distance parcouru [mm]\\ \hline
+      1899,94 $\pm$ 0,63	&6,182 $\pm$ 0,374	&242,96 $\pm$ 15,59	&6,43	&0,291\\
+      1741,73 $\pm$ 0,85	&5,698 $\pm$ 0,375	&253,24 $\pm$ 25,11	&100,7	&4,556\\
+      1619,05 $\pm$ 1,40	&5,323 $\pm$ 0,376	&177,23 $\pm$ 13,21	&200,42	&9,067\\
+      1474,60 $\pm$ 1,61	&4,881 $\pm$ 0,377	&235,10 $\pm$ 15,33	&300,6	&13,600\\
+      1326,71 $\pm$ 1,59	&4,429 $\pm$ 0,377	&226,68 $\pm$ 15,06	&403,7	&18,264\\
+      1161,31 $\pm$ 2,08	&3,923 $\pm$ 0,378	&234,92 $\pm$ 15,32	&503,7	&22,788\\
+      1001,36 $\pm$ 4,30	&3,434 $\pm$ 0,385	&297,97 $\pm$ 17,26	&605,2	&27,380\\
+      875,52 $\pm$ 86,51	&3,049 $\pm$ 0,728	&3526,06 $\pm$ 59,38	&705	&31,895\\
+      626,78 $\pm$ 71,36	&2,289 $\pm$ 0,590	&987,40 $\pm$ 31,42	&802,1	&36,288\\
+     \end{tabular}
     \end{center}
-   \end{figure*}
-  \end{subsection}
+    \begin{minipage}{0.45\textwidth}
+     \includegraphics[width=\textwidth]{Sabine/bi_pression.png}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+     \includegraphics[width=\textwidth]{Sabine/bi_distance.png}
+    \end{minipage}
+   \end{subsection}
   
-  \begin{subsection}{Perte d'énergie par unité de longueur}
+   \begin{subsection}{La source \isotope[212][82]{Po}}
+    La temps de mesure était \unit[30]{s} et la tension était comme avant à \unit[80]{V}.
+    \begin{center}
+     \begin{tabular}{c|c|c|c|c}
+      Position	&Energie [MeV]	&Nb de particules	&Pression[mb]	&Distance parcouru [mm]\\ \hline
+      2732,85 $\pm$ 0,23	&8,729 $\pm$ 0,373	&412,90 $\pm$ 20,32	&6,43	&0,291\\
+      2653,17 $\pm$ 0,36	&8,485 $\pm$ 0,373	&460,25 $\pm$ 21,5	&100,7	&4,556\\
+      2564,43 $\pm$ 0,45	&8,214 $\pm$ 0,373	&445,97 $\pm$ 21,12	&200,42	&9,067\\
+      2461,22 $\pm$ 0,6	&7,898 $\pm$ 0,374	&429,58 $\pm$ 20,73	&300,6	&13,600\\
+      2357,18 $\pm$ 0,73	&7,580 $\pm$ 0,374	&379,64 $\pm$ 19,48	&503,7	&22,788\\
+      2143,09 $\pm$ 0,95	&6,925 $\pm$ 0,375	&387,72 $\pm$ 19,69	&605,2	&27,380\\
+      2029,47 $\pm$ 1,17	&6,578 $\pm$ 0,376	&309,43 $\pm$ 17,59	&705	&31,895\\
+      1916,84 $\pm$ 1,08	&6,233 $\pm$ 0,375	&387,17 $\pm$ 19,68	&802,1	&36,288\\
+      1793,34 $\pm$ 1,42	&5,856 $\pm$ 0,376	&257,10 $\pm$ 16,03	&905,2	&40,953\\
+      1678,34 $\pm$ 1,64	&5,504 $\pm$ 0,377	&401,01 $\pm$ 29,03	&994,66	&45,000\\
+     \end{tabular}
+    \end{center}
+   \begin{minipage}{0.45\textwidth}
+     \includegraphics[width=\textwidth]{Sabine/po_pression.png}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+     \includegraphics[width=\textwidth]{Sabine/po_distance.png}
+    \end{minipage}
+  \end{subsection}
+   
+  \begin{subsection}{Interprétation}
+   C'est maintenant interéssant de voir les différence entre les sources et aussi le comportement de la perte d'énergie.\\
+   \begin{minipage}{0.45\textwidth}
+    \includegraphics[width=\textwidth]{Sabine/alle.png}
+   \end{minipage}
+   \hfill
+   \begin{minipage}{0.45\textwidth}
+    \includegraphics[width=\textwidth]{Sabine/alle_perte.png}
+   \end{minipage}
+   On voit bien qu'une particule avec une plus grande énergie a un trajet plus long dans le même matériau. C'est remarquable qu'au fin du trajet la perte par distance s'augmente. Si la particule est lente, elle passe plus de temps dans un atome et cela augmente la probabilité d'une interaction. Cette comportement est précisé au part suivant. 
   \end{subsection}
  \end{section}
 
  \begin{section}{Pic de Bragg}
-  
+  Pour savoir comment la particule pers son énergie localement il faut faire une calculation sur les mesures. On sait que la particule $\alpha$ a perdu l'énergie $E_{perdue}(l)=\int_0^l \left(-\frac{\text{d}\,E}{\text{d}\,x}\right) \text{d}\,x$.
+
+  Nous nous intéressons pour $\left(-\frac{\text{d}\,E}{\text{d}\,x}\right)$ et nous avons usé la méthode suivante pour l'obtenir:
+  \begin{enumerate}
+   \item Ajuster un polynôme à la courbe de énergie perdue en fonction de la distance
+   \item Deriver ce polynôme
+   \item Obtenir le Pic de Bragg en présentant $\left(-\frac{\text{d}\,E}{\text{d}\,x}\right)$ 
+  \end{enumerate}
+
  \end{section}
 
  

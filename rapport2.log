@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.11.18)  22 NOV 2011 09:10
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.11.18)  23 NOV 2011 20:56
 entering extended mode
  %&-line parsing enabled.
 **rapport2.tex
@@ -1199,9 +1199,9 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \tab@size=\count161
 \listing@line=\count162
 )
-runsystem(touch /tmp/w18-test-20111122550)...disabled.
+runsystem(touch /tmp/w18-test-201111231256)...disabled.
 
-runsystem(rm -f /tmp/w18-test-20111122550)...disabled.
+runsystem(rm -f /tmp/w18-test-201111231256)...disabled.
 
 
 
@@ -1658,13 +1658,13 @@ Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)            on input line 9.
 Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)           `sectioning' that is an alias of element `disposition'
-(scrartcl)            on input line 18.
+(scrartcl)            on input line 20.
 Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)           `sectioning' that is an alias of element `disposition'
-(scrartcl)            on input line 21.
+(scrartcl)            on input line 25.
 Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)           `sectioning' that is an alias of element `disposition'
-(scrartcl)            on input line 22.
+(scrartcl)            on input line 26.
 )
 \tf@toc=\write8
 \openout8 = `rapport2.toc'.
@@ -1687,7 +1687,7 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\isotope' on input line 57.
 
-<Bilder/schemaAm1.png, id=110, 464.4853pt x 313.17pt>
+<Bilder/schemaAm1.png, id=120, 464.4853pt x 313.17pt>
 File: Bilder/schemaAm1.png Graphic file (type png)
 
 <use Bilder/schemaAm1.png>
@@ -1706,7 +1706,7 @@ l.85    \begin{eqnarray*}
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\isotope' on input line 92.
 
-<Bilder/schemaBi1.png, id=119, 597.73312pt x 286.82156pt>
+<Bilder/schemaBi1.png, id=129, 597.73312pt x 286.82156pt>
 File: Bilder/schemaBi1.png Graphic file (type png)
 
 <use Bilder/schemaBi1.png>
@@ -1726,7 +1726,7 @@ has been already used, duplicate ignored
                                                   \fi \fi 
 l.101 \newpage
                <./Bilder/schemaBi1.png (PNG copy)>]
-<Bilder/schemaPo1.png, id=125, 388.45125pt x 318.43968pt>
+<Bilder/schemaPo1.png, id=135, 388.45125pt x 318.43968pt>
 File: Bilder/schemaPo1.png Graphic file (type png)
 
 <use Bilder/schemaPo1.png>
@@ -1746,7 +1746,7 @@ has been already used, duplicate ignored
                                                   \fi \fi 
 l.121 \newpage
                <./Bilder/schemaPo1.png (PNG copy)>]
-<Bilder/detecteur.png, id=131, 479.1501pt x 299.1978pt>
+<Bilder/detecteur.png, id=141, 479.1501pt x 299.1978pt>
 File: Bilder/detecteur.png Graphic file (type png)
 
 <use Bilder/detecteur.png> [6pdfTeX warning (ext4): destination with the same i
@@ -1756,159 +1756,136 @@ dentifier (name{figure.4}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.144 
        <./Bilder/detecteur.png>]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 148.
+Overfull \hbox (18.31519pt too wide) in paragraph at lines 151--157
+ [] 
+ []
 
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 170.
 
 (/usr/share/texmf-texlive/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 152--153
-
- []
-
-
-Overfull \hbox (60.5697pt too wide) in paragraph at lines 179--185
+Overfull \hbox (17.66914pt too wide) in paragraph at lines 174--180
  [] 
  []
 
-<Bilder/calibration.png, id=139, 642.4pt x 481.8pt>
+[7] [8] <Bilder/calibration.png, id=163, 642.4pt x 481.8pt>
 File: Bilder/calibration.png Graphic file (type png)
 
-<use Bilder/calibration.png> [7]
+<use Bilder/calibration.png> [9pdfTeX warning (ext4): destination with the same
+ identifier (name{figure.5}) has been already used, duplicate ignored
 
-! LaTeX Error: \begin{paragraph} on input line 176 ended by \end{subsection}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.200   \end{subsection}
-                        
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-<Bilder/simam.png, id=148, 508.90125pt x 439.6425pt>
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.240    \end{align*}
+                      <./Bilder/calibration.png (PNG copy)>]
+<Bilder/simam.png, id=171, 508.90125pt x 439.6425pt>
 File: Bilder/simam.png Graphic file (type png)
  <use Bilder/simam.png>
-<Bilder/simbi7MeV.png, id=149, 508.90125pt x 439.6425pt>
+<Bilder/simbi7MeV.png, id=172, 508.90125pt x 439.6425pt>
 File: Bilder/simbi7MeV.png Graphic file (type png)
 
-<use Bilder/simbi7MeV.png> [8pdfTeX warning (ext4): destination with the same i
-dentifier (name{figure.5}) has been already used, duplicate ignored
+<use Bilder/simbi7MeV.png> [10pdfTeX warning (ext4): destination with the same 
+identifier (name{figure.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.215    O
-          n va bien que les particules $\alpha$ de l'\isotope[241]{Am} n'arr...
- <./Bilder/calibration.png (PNG copy)>]
-
-! LaTeX Error: \begin{subsection} on input line 174 ended by \end{section}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.217  \end{section}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Overfull \hbox (15.62186pt too wide) in paragraph at lines 224--250
- [] 
- []
-
-
-Overfull \hbox (15.62186pt too wide) in paragraph at lines 255--283
- [] 
- []
-
-[9pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) 
-has been already used, duplicate ignored
+l.264    \begin{equation*}
+                          pdfTeX warning (ext4): destination with the same iden
+tifier (name{figure.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.284    \end{table}
-                    pdfTeX warning (ext4): destination with the same identifier
- (name{figure.7}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.284    \end{table}
-                     <./Bilder/simam.png (PNG copy)> <./Bilder/simbi7MeV.png (P
-NG copy)>] <Bilder/fonction_pression.png, id=163, 642.4pt x 481.8pt>
-File: Bilder/fonction_pression.png Graphic file (type png)
-
-<use Bilder/fonction_pression.png> [10pdfTeX warning (ext4): destination with t
-he same identifier (name{table.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.290    L
-          e dispositif expérimental est construit ainsi que la distance ent...
-] [11pdfTeX warning (ext4): destination with the same identifier (name{table.2}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.295 \newpage
-              ] <Bilder/energie_restante.png, id=174, 642.4pt x 481.8pt>
-File: Bilder/energie_restante.png Graphic file (type png)
-
-<use Bilder/energie_restante.png>
-<Bilder/energie_perdue.png, id=175, 642.4pt x 481.8pt>
-File: Bilder/energie_perdue.png Graphic file (type png)
-
-<use Bilder/energie_perdue.png>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-LaTeX Font Info:    Try loading font information for TS1+lmss on input line 326
-.
-(/usr/share/texmf/tex/latex/lm/ts1lmss.fd
-File: ts1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [12 <./Bilder/energie_restante.png (PNG copy)>] [13 <./Bilder/energie_perdue.
+l.264    \begin{equation*}
+                           <./Bilder/simam.png (PNG copy)> <./Bilder/simbi7MeV.
 png (PNG copy)>]
 
-! LaTeX Error: \begin{section} on input line 145 ended by \end{document}.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\isotope' on input line 267.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.329 \end{document}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
 
-(./rapport2.aux) )
-(\end occurred inside a group at level 1)
+Overfull \hbox (38.2355pt too wide) in paragraph at lines 270--289
+ [] 
+ []
 
-### semi simple group (level 1) entered at line 145 (\begingroup)
-### bottom level 
+<Sabine/am_pression.png, id=179, 642.4pt x 481.8pt>
+File: Sabine/am_pression.png Graphic file (type png)
+
+<use Sabine/am_pression.png>
+<Sabine/am_distance.png, id=180, 642.4pt x 481.8pt>
+File: Sabine/am_distance.png Graphic file (type png)
+
+<use Sabine/am_distance.png>
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\isotope' on input line 299.
+
+[11 <./Sabine/am_pression.png (PNG copy)> <./Sabine/am_distance.png (PNG copy)>
+]
+Overfull \hbox (21.18628pt too wide) in paragraph at lines 302--314
+ [] 
+ []
+
+<Sabine/bi_pression.png, id=187, 642.4pt x 481.8pt>
+File: Sabine/bi_pression.png Graphic file (type png)
+
+<use Sabine/bi_pression.png>
+<Sabine/bi_distance.png, id=188, 642.4pt x 481.8pt>
+File: Sabine/bi_distance.png Graphic file (type png)
+
+<use Sabine/bi_distance.png>
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\isotope' on input line 324.
+
+
+Overfull \hbox (21.18628pt too wide) in paragraph at lines 327--340
+ [] 
+ []
+
+<Sabine/po_pression.png, id=189, 642.4pt x 481.8pt>
+File: Sabine/po_pression.png Graphic file (type png)
+
+<use Sabine/po_pression.png>
+<Sabine/po_distance.png, id=190, 642.4pt x 481.8pt>
+File: Sabine/po_distance.png Graphic file (type png)
+
+<use Sabine/po_distance.png> [12 <./Sabine/bi_pression.png (PNG copy)> <./Sabin
+e/bi_distance.png (PNG copy)>] <Sabine/alle.png, id=197, 642.4pt x 481.8pt>
+File: Sabine/alle.png Graphic file (type png)
+
+<use Sabine/alle.png> <Sabine/alle_perte.png, id=198, 642.4pt x 481.8pt>
+File: Sabine/alle_perte.png Graphic file (type png)
+
+<use Sabine/alle_perte.png> [13 <./Sabine/po_pression.png (PNG copy)> <./Sabine
+/po_distance.png (PNG copy)> <./Sabine/alle.png (PNG copy)> <./Sabine/alle_pert
+e.png (PNG copy)>]
+LaTeX Font Info:    Try loading font information for TS1+lmss on input line 384
+.
+ (/usr/share/texmf/tex/latex/lm/ts1lmss.fd
+File: ts1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [14]
+(./rapport2.aux) ) 
 Here is how much of TeX's memory you used:
- 20349 strings out of 495028
- 318238 string characters out of 1181228
- 503635 words of memory out of 3000000
- 22904 multiletter control sequences out of 15000+50000
+ 20382 strings out of 495028
+ 318821 string characters out of 1181228
+ 489322 words of memory out of 3000000
+ 22925 multiletter control sequences out of 15000+50000
  114775 words of font info for 141 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 60i,13n,69p,712b,971s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc} </home/sabine/
-.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0800.600pk>{/usr/share/texmf/fonts/e
-nc/dvips/lm/lm-ec.enc}{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</u
-sr/share/texmf-texlive/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/t
-exmf-texlive/fonts/type1/public/fourier/fourier-ml.pfb></usr/share/texmf-texliv
-e/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texmf-texlive/fonts/t
-ype1/public/fourier/fourier-ms.pfb></usr/share/texmf/fonts/type1/public/lm/lmss
-bx10.pfb></usr/share/texmf-texlive/fonts/type1/adobe/utopia/putr8a.pfb></usr/sh
-are/texmf-texlive/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on rapport2.pdf (13 pages, 297872 bytes).
+ 60i,13n,73p,711b,1028s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc} </home/sabin
+e/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0800.600pk>{/usr/share/texmf/fonts
+/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}<
+/usr/share/texmf-texlive/fonts/type1/public/fourier/fourier-mex.pfb></usr/share
+/texmf-texlive/fonts/type1/public/fourier/fourier-ml.pfb></usr/share/texmf-texl
+ive/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texmf-texlive/fonts
+/type1/public/fourier/fourier-ms.pfb></usr/share/texmf/fonts/type1/public/lm/lm
+ssbx10.pfb></usr/share/texmf-texlive/fonts/type1/adobe/utopia/putr8a.pfb></usr/
+share/texmf-texlive/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on rapport2.pdf (14 pages, 336661 bytes).
 PDF statistics:
- 234 PDF objects out of 1000 (max. 8388607)
- 45 named destinations out of 1000 (max. 500000)
- 207 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 263 PDF objects out of 1000 (max. 8388607)
+ 51 named destinations out of 1000 (max. 500000)
+ 248 words of extra memory for PDF output out of 10000 (max. 10000000)
 

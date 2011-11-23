@@ -1,0 +1,6 @@
+set output 'alle.png'
+set terminal png
+set title "Energie restante en fonction de la distance"
+set ylabel 'Energie restante[MeV]'
+set xlabel 'Distance [mm]'
+plot 'Am_pression.txt' using 8:3 title 'Am','Bi_pression.txt' using 8:3 title 'Bi','Po_pression.txt' using 8:3 title 'Po' 

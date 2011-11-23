@@ -1,0 +1,6 @@
+set output 'alle_perte.png'
+set terminal png
+set title "Energie perdue en fonction de la distance"
+set ylabel 'Energie perdue[MeV]'
+set xlabel 'Distance [mm]'
+plot 'Am_pression.txt' using 8:(-$3+5.448) title 'Am','Bi_pression.txt' using 8:(-$3+6.182) title 'Bi' ,'Po_pression.txt' using 8:(-$3+8.729) title 'Po' 

@@ -9,14 +9,18 @@
 \contentsline {section}{\numberline {3}Exp\IeC {\'e}riences pr\IeC {\'e}liminaire}{7}{section.3}
 \contentsline {subsection}{\numberline {3.1}Etude de la r\IeC {\'e}ponse du d\IeC {\'e}tecteur}{7}{subsection.3.1}
 \contentsline {subsubsection}{\numberline {3.1.1}Caract\IeC {\'e}ristique du d\IeC {\'e}tecteur}{7}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}Largeur de la zone active en fonction de la tension}{7}{subsubsection.3.1.2}
-\contentsline {paragraph}{R\IeC {\'e}sultat}{7}{section*.2}
-\contentsline {paragraph}{Explication}{7}{section*.3}
-\contentsline {subsection}{\numberline {3.2}Calibration des r\IeC {\'e}sultat}{7}{subsection.3.2}
-\contentsline {paragraph}{R\IeC {\'e}sultat}{8}{figure.5}
-\contentsline {subsection}{\numberline {3.3}Simulation de la perte d'\IeC {\'e}nergie}{8}{subsection.3.3}
+\contentsline {paragraph}{Silicium}{7}{section*.2}
+\contentsline {paragraph}{Air}{8}{section*.3}
+\contentsline {subsubsection}{\numberline {3.1.2}Largeur de la zone active en fonction de la tension}{8}{subsubsection.3.1.2}
+\contentsline {paragraph}{R\IeC {\'e}sultat}{8}{section*.4}
+\contentsline {paragraph}{Explication}{8}{section*.5}
+\contentsline {subsection}{\numberline {3.2}Calibration des r\IeC {\'e}sultat}{9}{subsection.3.2}
+\contentsline {paragraph}{R\IeC {\'e}sultat}{9}{section*.6}
+\contentsline {subsection}{\numberline {3.3}Simulation de la perte d'\IeC {\'e}nergie}{10}{subsection.3.3}
 \contentsline {section}{\numberline {4}Mesure de l'att\IeC {\'e}nuation des particules alpha dans l'air}{10}{section.4}
-\contentsline {subsection}{\numberline {4.1}Perte d'\IeC {\'e}nergie dans l'air en fonction de pression}{10}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Perte d'\IeC {\'e}nergie par unit\IeC {\'e} de longueur}{12}{subsection.4.2}
-\contentsline {section}{\numberline {5}Pic de Bragg}{12}{section.5}
-\contentsline {section}{\numberline {6}Conclusion}{12}{section.6}
+\contentsline {subsection}{\numberline {4.1}La source \isotope [241][95]{Am}}{11}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}La source \isotope [212][83]{Bi}}{12}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}La source \isotope [212][82]{Po}}{12}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Interpr\IeC {\'e}tation}{13}{subsection.4.4}
+\contentsline {section}{\numberline {5}Pic de Bragg}{13}{section.5}
+\contentsline {section}{\numberline {6}Conclusion}{14}{section.6}

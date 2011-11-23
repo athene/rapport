@@ -1,0 +1,12 @@
+set output 'po_pression.png'
+set terminal png
+set title "Energie restante en fonction de la pression"
+set ylabel 'Energie restante[MeV]'
+set xlabel 'Pression [mbar]'
+plot 'Po_pression.txt' using 7:3 title 'po' 
+
+set output 'po_distance.png'
+set title "Energie restante en fonction de la distance"
+set ylabel 'Energie restante[MeV]'
+set xlabel 'Distance [mm]'
+plot 'Po_pression.txt' using 8:3 title 'po' 

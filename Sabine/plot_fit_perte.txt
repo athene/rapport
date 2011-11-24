@@ -1,0 +1,13 @@
+set output 'fit_alle_perte.png'
+set terminal png
+set title "Energie perdue en fonction de la distance"
+set ylabel 'Energie perdue [MeV]'
+set xlabel 'Distance [mm]'
+set xrange [0:45]
+u(x)=a*x**5+b*x**4+c*x**3+d*x**2+e*x+f
+v(x)=g*x**5+h*x**4+i*x**3+j*x**2+k*x+l
+w(x)=m*x**5+n*x**4+o*x**3+p*x**2+q*x+r
+fit u(x) 'Am_pression.txt' using 8:(-$3+5.448) via a,b,c,d,e,f
+fit v(x) 'Bi_pression.txt' using 8:(-$3+6.182) via g,h,i,j,k,l
+fit w(x) 'Po_pression.txt' using 8:(-$3+8.729) via m,n,o,p,q,r
+plot 'Am_pression.txt' using 8:(-$3+5.448) title 'Am', u(x) title 'polynôme Am', 'Bi_pression.txt' using 8:(-$3+6.182) title 'Bi', v(x) title 'polynôme Bi', 'Po_pression.txt' using 8:(-$3+8.729) title 'Po', w(x) title 'polynôme Po' 

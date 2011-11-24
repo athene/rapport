@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.11.18)  23 NOV 2011 20:56
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.11.18)  24 NOV 2011 10:44
 entering extended mode
  %&-line parsing enabled.
 **rapport2.tex
@@ -44,9 +44,29 @@ Package scrartcl Info: You've used obsolete option `11pt'.
 (scrartcl)             used instead.
 (scrartcl)             You may simply replace `11pt'
 (scrartcl)             by `fontsize=11pt'.
+
+
+Class scrartcl Warning: You've used obsolete option `liststotocnumbered'.
+(scrartcl)              Usage of this option indicates an old document and
+(scrartcl)              changes compatibility level using
+(scrartcl)              `listof=numbered,version=first'.
+(scrartcl)              If you don't want this, you should simply replace
+(scrartcl)              usage of option `liststotocnumbered' by `listof=numbere
+d'.
+
+Class scrartcl Info: Switching compatibility level to `first'.
+
+Class scrartcl Warning: You've used obsolete option `bibtotocnumbered'.
+(scrartcl)              Usage of this option indicates an old document and
+(scrartcl)              changes compatibility level using
+(scrartcl)              `bibliography=totocnumbered,version=first'.
+(scrartcl)              If you don't want this, you should simply replace
+(scrartcl)              usage of option `bibtotocnumbered' by `bibliography=tot
+ocnumbered'.
+
+Class scrartcl Info: Switching compatibility level to `first'.
 Class scrartcl Info: File `scrsize11pt.clo' used to setup font sizes on input l
 ine 1171.
-
 (/usr/share/texmf-texlive/tex/latex/koma-script/scrsize11pt.clo
 File: scrsize11pt.clo 2009/07/24 v3.04a KOMA-Script font size class option (11p
 t)
@@ -1199,9 +1219,9 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \tab@size=\count161
 \listing@line=\count162
 )
-runsystem(touch /tmp/w18-test-201111231256)...disabled.
+runsystem(touch /tmp/w18-test-20111124644)...disabled.
 
-runsystem(rm -f /tmp/w18-test-201111231256)...disabled.
+runsystem(rm -f /tmp/w18-test-20111124644)...disabled.
 
 
 
@@ -1591,46 +1611,46 @@ LaTeX Info: Redefining \pageref on input line 22.
 \openout7 = `rapport2.out'.
 
 \AtBeginShipoutBox=\box78
-LaTeX Font Info:    Try loading font information for FML+futmi on input line 31
+LaTeX Font Info:    Try loading font information for FML+futmi on input line 32
 .
  (/usr/share/texmf-texlive/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 22.88956pt on input line 31.
+(Font)              scaled to size 22.88956pt on input line 32.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 15.89755pt on input line 31.
+(Font)              scaled to size 15.89755pt on input line 32.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 31.
+(Font)              scaled to size 11.03998pt on input line 32.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 22.88956pt on input line 31.
+(Font)              scaled to size 22.88956pt on input line 32.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 15.89755pt on input line 31.
+(Font)              scaled to size 15.89755pt on input line 32.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 31.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 31.
+(Font)              scaled to size 11.03998pt on input line 32.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 32.
 
 (/usr/share/texmf-texlive/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for TS1+futs on input line 31.
+LaTeX Font Info:    Try loading font information for TS1+futs on input line 32.
 
 
 (/usr/share/texmf-texlive/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 47.
+(Font)              scaled to size 10.07397pt on input line 48.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 47.
+(Font)              scaled to size 7.63599pt on input line 48.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 47.
+(Font)              scaled to size 5.51999pt on input line 48.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 47.
+(Font)              scaled to size 10.07397pt on input line 48.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 47.
+(Font)              scaled to size 7.63599pt on input line 48.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 47.
+(Font)              scaled to size 5.51999pt on input line 48.
  [1
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1643,7 +1663,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 
 {/home/sabine/.texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 53.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 54.
  (/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) (./rapport2.toc
@@ -1665,33 +1685,42 @@ Class scrartcl Info: You've told me to use the font selection of the element
 Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)           `sectioning' that is an alias of element `disposition'
 (scrartcl)            on input line 26.
+Class scrartcl Info: You've told me to use the font selection of the element
+(scrartcl)           `sectioning' that is an alias of element `disposition'
+(scrartcl)            on input line 27.
+Class scrartcl Info: You've told me to use the font selection of the element
+(scrartcl)           `sectioning' that is an alias of element `disposition'
+(scrartcl)            on input line 28.
+Class scrartcl Info: You've told me to use the font selection of the element
+(scrartcl)           `sectioning' that is an alias of element `disposition'
+(scrartcl)            on input line 29.
 )
 \tf@toc=\write8
 \openout8 = `rapport2.toc'.
 
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 54.
+(Font)              scaled to size 8.27998pt on input line 55.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 54.
+(Font)              scaled to size 6.99199pt on input line 55.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 54.
+(Font)              scaled to size 8.27998pt on input line 55.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 54.
+(Font)              scaled to size 6.99199pt on input line 55.
  [2]
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 57.
+(Font)              scaled to size 6.43999pt on input line 58.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 57.
+(Font)              scaled to size 6.43999pt on input line 58.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\isotope' on input line 57.
+(hyperref)                removing `\isotope' on input line 58.
 
-<Bilder/schemaAm1.png, id=120, 464.4853pt x 313.17pt>
+<Bilder/schemaAm1.png, id=135, 464.4853pt x 313.17pt>
 File: Bilder/schemaAm1.png Graphic file (type png)
 
 <use Bilder/schemaAm1.png>
-Underfull \hbox (badness 10000) in paragraph at lines 58--65
+Underfull \hbox (badness 10000) in paragraph at lines 59--66
 
  []
 
@@ -1700,22 +1729,22 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.85    \begin{eqnarray*}
+l.86    \begin{eqnarray*}
                           <./Bilder/schemaAm1.png (PNG copy)>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\isotope' on input line 92.
+(hyperref)                removing `\isotope' on input line 93.
 
-<Bilder/schemaBi1.png, id=129, 597.73312pt x 286.82156pt>
+<Bilder/schemaBi1.png, id=144, 597.73312pt x 286.82156pt>
 File: Bilder/schemaBi1.png Graphic file (type png)
 
 <use Bilder/schemaBi1.png>
-Underfull \hbox (badness 10000) in paragraph at lines 93--99
+Underfull \hbox (badness 10000) in paragraph at lines 94--100
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
 
  []
 
@@ -1724,19 +1753,19 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.101 \newpage
+l.102 \newpage
                <./Bilder/schemaBi1.png (PNG copy)>]
-<Bilder/schemaPo1.png, id=135, 388.45125pt x 318.43968pt>
+<Bilder/schemaPo1.png, id=150, 388.45125pt x 318.43968pt>
 File: Bilder/schemaPo1.png Graphic file (type png)
 
 <use Bilder/schemaPo1.png>
-Overfull \hbox (15.25038pt too wide) in paragraph at lines 117--121
+Overfull \hbox (13.21117pt too wide) in paragraph at lines 121--125
 \T1/futs/m/n/10.95 avec $\FML/futmi/m/it/10.95 M [] \FMS/futm/m/n/10.95 Å \T1/f
-uts/m/n/10.95 211\FML/futmi/m/it/10.95 ; \T1/futs/m/n/10.95 9912715 []\FML/futm
-i/m/it/10.95 ; []M [] \FMS/futm/m/n/10.95 Å \T1/futs/m/n/10.95 207\FML/futmi/m/
-it/10.95 ; \T1/futs/m/n/10.95 9820047 []\FML/futmi/m/it/10.95 ; M [] \FMS/futm/
-m/n/10.95 Å \T1/futs/m/n/10.95 211\FML/futmi/m/it/10.95 ; \T1/futs/m/n/10.95 98
-88518 []\FML/futmi/m/it/10.95 ; [] 
+uts/m/n/10.95 211\FML/futmi/m/it/10.95 ; \T1/futs/m/n/10.95 9912715 []$, $\FML/
+futmi/m/it/10.95 M [] \FMS/futm/m/n/10.95 Å \T1/futs/m/n/10.95 207\FML/futmi/m/
+it/10.95 ; \T1/futs/m/n/10.95 9820047 []$, $\FML/futmi/m/it/10.95 M [] \FMS/fut
+m/m/n/10.95 Å \T1/futs/m/n/10.95 211\FML/futmi/m/it/10.95 ; \T1/futs/m/n/10.95 
+9888518 []$,
  []
 
 [5pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) 
@@ -1744,9 +1773,9 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.121 \newpage
+l.125 \newpage
                <./Bilder/schemaPo1.png (PNG copy)>]
-<Bilder/detecteur.png, id=141, 479.1501pt x 299.1978pt>
+<Bilder/detecteur.png, id=156, 479.1501pt x 299.1978pt>
 File: Bilder/detecteur.png Graphic file (type png)
 
 <use Bilder/detecteur.png> [6pdfTeX warning (ext4): destination with the same i
@@ -1754,22 +1783,15 @@ dentifier (name{figure.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.144 
+l.148 
        <./Bilder/detecteur.png>]
-Overfull \hbox (18.31519pt too wide) in paragraph at lines 151--157
- [] 
- []
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 174.
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 170.
 
 (/usr/share/texmf-texlive/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-Overfull \hbox (17.66914pt too wide) in paragraph at lines 174--180
- [] 
- []
-
-[7] [8] <Bilder/calibration.png, id=163, 642.4pt x 481.8pt>
+) [7] [8]
+<Bilder/calibration.png, id=182, 642.4pt x 481.8pt>
 File: Bilder/calibration.png Graphic file (type png)
 
 <use Bilder/calibration.png> [9pdfTeX warning (ext4): destination with the same
@@ -1777,12 +1799,12 @@ File: Bilder/calibration.png Graphic file (type png)
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.240    \end{align*}
+l.242    \end{align*}
                       <./Bilder/calibration.png (PNG copy)>]
-<Bilder/simam.png, id=171, 508.90125pt x 439.6425pt>
+<Bilder/simam.png, id=191, 508.90125pt x 439.6425pt>
 File: Bilder/simam.png Graphic file (type png)
  <use Bilder/simam.png>
-<Bilder/simbi7MeV.png, id=172, 508.90125pt x 439.6425pt>
+<Bilder/simbi7MeV.png, id=192, 508.90125pt x 439.6425pt>
 File: Bilder/simbi7MeV.png Graphic file (type png)
 
 <use Bilder/simbi7MeV.png> [10pdfTeX warning (ext4): destination with the same 
@@ -1790,102 +1812,177 @@ identifier (name{figure.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.264    \begin{equation*}
+l.266    \begin{equation*}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{figure.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.264    \begin{equation*}
+l.266    \begin{equation*}
                            <./Bilder/simam.png (PNG copy)> <./Bilder/simbi7MeV.
 png (PNG copy)>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\isotope' on input line 267.
+(hyperref)                removing `\isotope' on input line 269.
 
-
-Overfull \hbox (38.2355pt too wide) in paragraph at lines 270--289
- [] 
- []
-
-<Sabine/am_pression.png, id=179, 642.4pt x 481.8pt>
+<Sabine/am_pression.png, id=202, 642.4pt x 481.8pt>
 File: Sabine/am_pression.png Graphic file (type png)
 
 <use Sabine/am_pression.png>
-<Sabine/am_distance.png, id=180, 642.4pt x 481.8pt>
+<Sabine/am_distance.png, id=203, 642.4pt x 481.8pt>
 File: Sabine/am_distance.png Graphic file (type png)
 
 <use Sabine/am_distance.png>
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\isotope' on input line 299.
+(hyperref)                removing `\isotope' on input line 280.
 
-[11 <./Sabine/am_pression.png (PNG copy)> <./Sabine/am_distance.png (PNG copy)>
-]
-Overfull \hbox (21.18628pt too wide) in paragraph at lines 302--314
- [] 
- []
-
-<Sabine/bi_pression.png, id=187, 642.4pt x 481.8pt>
+<Sabine/bi_pression.png, id=206, 642.4pt x 481.8pt>
 File: Sabine/bi_pression.png Graphic file (type png)
 
 <use Sabine/bi_pression.png>
-<Sabine/bi_distance.png, id=188, 642.4pt x 481.8pt>
+<Sabine/bi_distance.png, id=207, 642.4pt x 481.8pt>
 File: Sabine/bi_distance.png Graphic file (type png)
 
 <use Sabine/bi_distance.png>
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\isotope' on input line 324.
+(hyperref)                removing `\isotope' on input line 291.
 
-
-Overfull \hbox (21.18628pt too wide) in paragraph at lines 327--340
- [] 
- []
-
-<Sabine/po_pression.png, id=189, 642.4pt x 481.8pt>
+<Sabine/po_pression.png, id=210, 642.4pt x 481.8pt>
 File: Sabine/po_pression.png Graphic file (type png)
 
 <use Sabine/po_pression.png>
-<Sabine/po_distance.png, id=190, 642.4pt x 481.8pt>
+<Sabine/po_distance.png, id=211, 642.4pt x 481.8pt>
 File: Sabine/po_distance.png Graphic file (type png)
 
-<use Sabine/po_distance.png> [12 <./Sabine/bi_pression.png (PNG copy)> <./Sabin
-e/bi_distance.png (PNG copy)>] <Sabine/alle.png, id=197, 642.4pt x 481.8pt>
+<use Sabine/po_distance.png> [11 <./Sabine/am_pression.png (PNG copy)> <./Sabin
+e/am_distance.png (PNG copy)> <./Sabine/bi_pression.png (PNG copy)> <./Sabine/b
+i_distance.png (PNG copy)>] <Sabine/alle.png, id=222, 642.4pt x 481.8pt>
 File: Sabine/alle.png Graphic file (type png)
 
-<use Sabine/alle.png> <Sabine/alle_perte.png, id=198, 642.4pt x 481.8pt>
+<use Sabine/alle.png> <Sabine/alle_perte.png, id=223, 642.4pt x 481.8pt>
 File: Sabine/alle_perte.png Graphic file (type png)
 
-<use Sabine/alle_perte.png> [13 <./Sabine/po_pression.png (PNG copy)> <./Sabine
-/po_distance.png (PNG copy)> <./Sabine/alle.png (PNG copy)> <./Sabine/alle_pert
-e.png (PNG copy)>]
-LaTeX Font Info:    Try loading font information for TS1+lmss on input line 384
+<use Sabine/alle_perte.png> <Sabine/fit_alle.png, id=224, 642.4pt x 481.8pt>
+File: Sabine/fit_alle.png Graphic file (type png)
+
+<use Sabine/fit_alle.png>
+<Sabine/fit_alle_perte.png, id=225, 642.4pt x 481.8pt>
+File: Sabine/fit_alle_perte.png Graphic file (type png)
+
+<use Sabine/fit_alle_perte.png> [12 <./Sabine/po_pression.png (PNG copy)> <./Sa
+bine/po_distance.png (PNG copy)> <./Sabine/alle.png (PNG copy)> <./Sabine/alle_
+perte.png (PNG copy)>] <Sabine/am_pic.png, id=238, 642.4pt x 481.8pt>
+File: Sabine/am_pic.png Graphic file (type png)
+
+<use Sabine/am_pic.png> <Sabine/bi_pic.png, id=239, 642.4pt x 481.8pt>
+File: Sabine/bi_pic.png Graphic file (type png)
+
+<use Sabine/bi_pic.png> <Sabine/po_pic.png, id=240, 642.4pt x 481.8pt>
+File: Sabine/po_pic.png Graphic file (type png)
+
+<use Sabine/po_pic.png> [13pdfTeX warning (ext4): destination with the same ide
+ntifier (name{figure.8}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.365   O
+         n voit que nous serions besoin de plus des dates pour obtenir des m...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) ha
+s been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.365   O
+         n voit que nous serions besoin de plus des dates pour obtenir des m...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) h
+as been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.365   O
+         n voit que nous serions besoin de plus des dates pour obtenir des m...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) h
+as been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.365   O
+         n voit que nous serions besoin de plus des dates pour obtenir des m...
+ <./Sabine/fit_alle.png (PNG copy)> <./Sabine/fit_alle_perte.png (PNG copy)> <.
+/Sabine/am_pic.png (PNG copy)> <./Sabine/bi_pic.png (PNG copy)>]
+LaTeX Font Info:    Try loading font information for TS1+lmss on input line 377
 .
- (/usr/share/texmf/tex/latex/lm/ts1lmss.fd
+
+(/usr/share/texmf/tex/latex/lm/ts1lmss.fd
 File: ts1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [14]
-(./rapport2.aux) ) 
+) [14pdfTeX warning (ext4): destination with the same identifier (name{figure.1
+2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.380 \newpage
+               <./Sabine/po_pic.png (PNG copy)>] (./rapport2.bbl)
+Overfull \hbox (28.42432pt too wide) in paragraph at lines 389--408
+ [] 
+ []
+
+
+Overfull \hbox (11.37509pt too wide) in paragraph at lines 414--426
+ [] 
+ []
+
+[15pdfTeX warning (ext4): destination with the same identifier (name{table.1}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.429 
+      ]
+Overfull \hbox (11.37509pt too wide) in paragraph at lines 432--445
+ [] 
+ []
+
+(./rapport2.lof [16pdfTeX warning (ext4): destination with the same identifier 
+(name{table.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.12 ...le \isotope [212][83]{Bi}}}{13}{figure.11}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{table.3}) has been already used, duplicate
+ ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.12 ...le \isotope [212][83]{Bi}}}{13}{figure.11}
+                                                  ])
+\tf@lof=\write9
+\openout9 = `rapport2.lof'.
+
+ [17] (./rapport2.aux) ) 
 Here is how much of TeX's memory you used:
- 20382 strings out of 495028
- 318821 string characters out of 1181228
- 489322 words of memory out of 3000000
- 22925 multiletter control sequences out of 15000+50000
- 114775 words of font info for 141 fonts, out of 3000000 for 9000
+ 20469 strings out of 495028
+ 320270 string characters out of 1181228
+ 494594 words of memory out of 3000000
+ 22982 multiletter control sequences out of 15000+50000
+ 115089 words of font info for 142 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 60i,13n,73p,711b,1028s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc} </home/sabin
-e/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0800.600pk>{/usr/share/texmf/fonts
-/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}<
-/usr/share/texmf-texlive/fonts/type1/public/fourier/fourier-mex.pfb></usr/share
-/texmf-texlive/fonts/type1/public/fourier/fourier-ml.pfb></usr/share/texmf-texl
-ive/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texmf-texlive/fonts
-/type1/public/fourier/fourier-ms.pfb></usr/share/texmf/fonts/type1/public/lm/lm
-ssbx10.pfb></usr/share/texmf-texlive/fonts/type1/adobe/utopia/putr8a.pfb></usr/
-share/texmf-texlive/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on rapport2.pdf (14 pages, 336661 bytes).
+ 60i,13n,79p,711b,1034s stack positions out of 5000i,500n,10000p,200000b,50000s
+ </home/sabine/.texmf-var/fonts/pk/ljfour/jknappen/ec/e
+ctt1095.600pk>{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc} </home/sabine/.t
+exmf-var/fonts/pk/ljfour/jknappen/ec/ectt0800.600pk>{/usr/share/texmf/fonts/enc
+/dvips/lm/lm-ec.enc}{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr
+/share/texmf-texlive/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/tex
+mf-texlive/fonts/type1/public/fourier/fourier-ml.pfb></usr/share/texmf-texlive/
+fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texmf-texlive/fonts/typ
+e1/public/fourier/fourier-ms.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx
+10.pfb></usr/share/texmf-texlive/fonts/type1/adobe/utopia/putr8a.pfb></usr/shar
+e/texmf-texlive/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on rapport2.pdf (17 pages, 397081 bytes).
 PDF statistics:
- 263 PDF objects out of 1000 (max. 8388607)
- 51 named destinations out of 1000 (max. 500000)
- 248 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 374 PDF objects out of 1000 (max. 8388607)
+ 69 named destinations out of 1000 (max. 500000)
+ 297 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,8 @@
+set output 'bi_pic.png'
+set terminal png
+set title "Pic de Bragg Bi"
+set ylabel 'dE/dx[MeV/mm]'
+set xlabel 'distance [mm]'
+set xrange [0:45]
+g(x)=9.31*10**(-8)*x**4-1.02*10**(-5)*x**3+4.24*10**(-4)*x**2-8.16*10**(-3)*x+0.171
+plot g(x) title 'Bi' 

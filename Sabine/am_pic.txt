@@ -1,0 +1,8 @@
+set output 'am_pic.png'
+set terminal png
+set title "Pic de Bragg Am"
+set ylabel 'dE/dx[MeV/mm]'
+set xlabel 'distance [mm]'
+set xrange [0:45]
+f(x)=8.24*10**(-9)*x**4-6.89*10**(-6)*x**3+2.95*10**(-4)*x**2-2.02*10**(-4)*x+0.0946
+plot f(x) title 'Am' 

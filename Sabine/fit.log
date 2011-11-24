@@ -1,0 +1,174 @@
+
+
+*******************************************************************************
+Thu Nov 24 10:31:32 2011
+
+
+FIT:    data read from 'Am_pression.txt' using 8:(-$3+5.448)
+	x range restricted to [0.00000 : 45.0000]
+        #datapoints = 16
+        residuals are weighted equally (unit weight)
+
+function used for fitting: u(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 0.0331039         delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1.61603e+07
+
+initial set of free parameter values
+
+a               = 4.12491e-08
+b               = -2.75706e-06
+c               = 8.86333e-05
+d               = -0.000403535
+e               = 0.0945936
+f               = -0.0114228
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 0.0331039
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 10
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.057536
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00331039
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = 4.12491e-08      +/- 1.407e-07    (341%)
+b               = -2.75706e-06     +/- 1.367e-05    (496%)
+c               = 8.86333e-05      +/- 0.0004729    (533.6%)
+d               = -0.000403535     +/- 0.006883     (1706%)
+e               = 0.0945936        +/- 0.03775      (39.91%)
+f               = -0.0114228       +/- 0.05871      (513.9%)
+
+
+correlation matrix of the fit parameters:
+
+               a      b      c      d      e      f      
+a               1.000 
+b              -0.996  1.000 
+c               0.977 -0.993  1.000 
+d              -0.929  0.958 -0.985  1.000 
+e               0.799 -0.842  0.895 -0.955  1.000 
+f              -0.234  0.265 -0.314  0.400 -0.589  1.000 
+
+
+*******************************************************************************
+Thu Nov 24 10:31:32 2011
+
+
+FIT:    data read from 'Bi_pression.txt' using 8:(-$3+6.182)
+	x range restricted to [0.00000 : 45.0000]
+        #datapoints = 9
+        residuals are weighted equally (unit weight)
+
+function used for fitting: v(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 0.00361638        delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 9.9371e+06
+
+initial set of free parameter values
+
+g               = 4.65626e-07
+h               = -4.08946e-05
+i               = 0.00127311
+j               = -0.0163183
+k               = 0.170974
+l               = -0.0512852
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 0.00361638
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 3
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0347197
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00120546
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+g               = 4.65626e-07      +/- 1.289e-07    (27.68%)
+h               = -4.08946e-05     +/- 1.183e-05    (28.94%)
+i               = 0.00127311       +/- 0.000386     (30.32%)
+j               = -0.0163183       +/- 0.005302     (32.49%)
+k               = 0.170974         +/- 0.02764      (16.17%)
+l               = -0.0512852       +/- 0.03918      (76.39%)
+
+
+correlation matrix of the fit parameters:
+
+               g      h      i      j      k      l      
+g               1.000 
+h              -0.996  1.000 
+i               0.977 -0.993  1.000 
+j              -0.931  0.960 -0.986  1.000 
+k               0.813 -0.855  0.905 -0.961  1.000 
+l              -0.332  0.366 -0.416  0.498 -0.664  1.000 
+
+
+*******************************************************************************
+Thu Nov 24 10:31:32 2011
+
+
+FIT:    data read from 'Po_pression.txt' using 8:(-$3+8.729)
+	x range restricted to [0.00000 : 45.0000]
+        #datapoints = 11
+        residuals are weighted equally (unit weight)
+
+function used for fitting: w(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 0.00031715        delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 2.82514e+07
+
+initial set of free parameter values
+
+m               = -3.6055e-09
+n               = 6.83453e-07
+o               = -4.18411e-05
+p               = 0.00131335
+q               = 0.0500925
+r               = -0.0132577
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 0.00031715
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 5
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00796429
+variance of residuals (reduced chisquare) = WSSR/ndf   : 6.34299e-05
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+m               = -3.6055e-09      +/- 8.893e-09    (246.7%)
+n               = 6.83453e-07      +/- 1.011e-06    (148%)
+o               = -4.18411e-05     +/- 4.094e-05    (97.85%)
+p               = 0.00131335       +/- 0.0007021    (53.46%)
+q               = 0.0500925        +/- 0.004639     (9.26%)
+r               = -0.0132577       +/- 0.008695     (65.58%)
+
+
+correlation matrix of the fit parameters:
+
+               m      n      o      p      q      r      
+m               1.000 
+n              -0.995  1.000 
+o               0.975 -0.992  1.000 
+p              -0.925  0.956 -0.985  1.000 
+q               0.799 -0.845  0.899 -0.958  1.000 
+r              -0.345  0.383 -0.438  0.527 -0.696  1.000 

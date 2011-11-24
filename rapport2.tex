@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt]{scrartcl}
+\documentclass[a4paper,11pt,liststotocnumbered,bibtotocnumbered]{scrartcl}
 \usepackage[french]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -20,6 +20,7 @@
 \date{\today}
 
 \begin{document}
+ \nocite{poly}
  \pagestyle{empty}
  \begin{center}
   \makeatletter
@@ -108,14 +109,17 @@
    \end{figure}
    Les trois $\alpha$ principaux de la désintégration du \isotope[212]{Bi} sont deux $\alpha$ de la désintégration vers le \isotope[208]{Tl} et l'$\alpha$ de la désintégration du \isotope[212]{Po}. Pour 100 désintégration du \isotope[212]{Bi} environ 90 particules $\alpha$ sont émis et nous avons calculé l'énergie cinétique des trois $\alpha$ principaux.
    \begin{eqnarray*}
-    Q_{5^+}(Bi)&=\left[M\left(\isotope[212]{Bi}\right)-M\left(\isotope[208]{Pb}\right)-M\left(\isotope[4]{He}\right)\right]c^2\approx\unit[6,154]{MeV} &\text{ avec }\unit[9,7]{\%}\\
+    Q_{5^+}(Bi)&=\left[M\left(\isotope[212]{Bi}\right)-M\left(\isotope[208]{Pb}\right)-M\left(\isotope[4]{He}\right)\right]c^2\approx\unit[6,154]{MeV}\\
+    \text{ avec }\unit[9,7]{\%}\\
     &\rightarrow T_{0}(\alpha)=\unit[6,042]{MeV}\\
-    Q_{4^+}(Bi)&=Q_0-E^*_{4^+}=\unit[6,114]{MeV} &\text{ avec }\unit[25,1]{\%}\\
+    Q_{4^+}(Bi)&=Q_0-E^*_{4^+}=\unit[6,114]{MeV}\\
+    \text{ avec }\unit[25,1]{\%}\\
     &\rightarrow T_{2^+}(\alpha)=\unit[6,004]{MeV}\\
-    Q_{0^+}(Po)&=\left[M\left(\isotope[212]{Po}\right)-M\left(\isotope[208]{Pb}\right)-M\left(\isotope[4]{He}\right)\right]c^2\approx\unit[8,954]{MeV} &\text{ avec }\unit[55,2]{\%} \\  
+    Q_{0^+}(Po)&=\left[M\left(\isotope[212]{Po}\right)-M\left(\isotope[208]{Pb}\right)-M\left(\isotope[4]{He}\right)\right]c^2\approx\unit[8,954]{MeV}\\
+    \text{ avec }\unit[55,2]{\%} \\  
     &\rightarrow T_{0}(\alpha)=\unit[8,785]{MeV}\\
    \end{eqnarray*}
-   avec $M\left(\isotope[212]{Bi}\right)=\unit[211,9912715]{uma},\text{ }M\left(\isotope[208]{Tl}\right)=\unit[207,9820047]{uma}, M\left(\isotope[212]{Po}\right)=\unit[211,9888518]{uma},\newline M\left(\isotope[208]{Pb}\right)=\unit[207,9766359]{uma}, M\left(\isotope[4]{He}\right)=\unit[4,00266032]{uma}\text{ et }\unit[1]{uma}\cdot c^2=\unit[931,5]{MeV}$.
+   avec $M\left(\isotope[212]{Bi}\right)=\unit[211,9912715]{uma}$, $M\left(\isotope[208]{Tl}\right)=\unit[207,9820047]{uma}$, $M\left(\isotope[212]{Po}\right)=\unit[211,9888518]{uma}$, $M\left(\isotope[208]{Pb}\right)=\unit[207,9766359]{uma}$, $M\left(\isotope[4]{He}\right)=\unit[4,00266032]{uma}$ et $\unit[1]{uma}\cdot c^2=\unit[931,5]{MeV}$.
   \end{subsection}
  \end{section}
 \newpage
@@ -145,11 +149,11 @@
  \begin{section}{Expériences préliminaire}
   \begin{subsection}{Etude de la réponse du détecteur}
    \begin{subsubsection}{Caractéristique du détecteur}
-   Nous avons utilisé le logiciel \flqq Astar \frqq \. pour avoir une estimation de l'énergie maximale pour laquelle la particule perd toute son énergie.  Les énergies utilisés pour les calculations du Total Stopping Power et du Projected Range étaient les plus probables des désintégration. La première mesure était fait pour le détecteur donc le matériel donné est Silicium, la deuxième mesure était fait pour l'air.
+   Nous avons utilisé le logiciel \flqq Astar \frqq \cite{astar} pour avoir une estimation de l'énergie maximale pour laquelle la particule perd toute son énergie.  Les énergies utilisés pour les calculations du Total Stopping Power et du Projected Range étaient les plus probables des désintégration. La première mesure était fait pour le détecteur donc le matériel donné est Silicium, la deuxième mesure était fait pour l'air.
    \begin{paragraph}{Silicium}
     \begin{center}
      \begin{tabular}{c|c|c|c}
-      Désintegration&	Energie cinétique [MeV] & Total Stp. Pow. [$\frac{MeV cm^2}{g}$]  & Projected Range [$\frac{g}{cm^2}$] \\ \hline
+      Désintegration&	Energie cin. [MeV] & Total Stp. Pow. [$\frac{MeV cm^2}{g}$]  & Projected Range [$\frac{g}{cm^2}$] \\ \hline
       Am 	&5,413 & 584,6 & 0,00625 \\ 
       Bi	&6,004 & 546,7 & 0,00792 \\ 
       Po	&8,785 & 411,1 & 0,01313 \\ 
@@ -161,7 +165,7 @@
      E_{max}(Bi)&&=\unit[820,05]{MeV}\\
      E_{max}(Po)&&=\unit[616,65]{MeV}
     \end{eqnarray*}
-    La densité du Silicium est $\rho=\unit[2,336]{\frac{g}{cm3}}$, alors on trouve pour les trajets maximale dans le détecteur
+    La densité du Silicium \cite{wikisi} est $\rho=\unit[2,33]{\frac{g}{cm3}}$, alors on trouve pour les trajets maximale dans le détecteur
     \begin{eqnarray*}
      x_{max}(Am)&=\frac{\text{Projected Range}}{\rho}&=\unit[26,76]{\mu m}\\
      x_{max}(Bi)&&=\unit[33,92]{\mu m}\\
@@ -172,7 +176,7 @@
    \begin{paragraph}{Air}
     \begin{center}
      \begin{tabular}{c|c|c|c}
-      Désintégration & Energie cinétique \unit{[MeV]} & Total Stp. Pow. [$\frac{MeV cm^2}{g}$] & Projected Range [$\frac{g}{cm^2}$] \\ \hline
+      Désintégration & Energie cin \unit{[MeV]} & Total Stp. Pow. [$\frac{MeV cm^2}{g}$] & Projected Range [$\frac{g}{cm^2}$] \\ \hline
       Am & 5,413 & 718,0 & 0,00491 \\ 
       Bi & 6,004 & 669,3 & 0,00574 \\ 
       Po & 8,785 & 509,5 & 0,01055 \\ 
@@ -186,8 +190,6 @@
     \end{eqnarray*}
     Nous avons que la distance maximale entre la source et le détecteur est \unit[45]{mm}, donc nous avons seulement la chance de détecter les pic de Bragg de la désintégration du Am et du Bi vers Tl.
    \end{paragraph}
-
-     
    \end{subsubsection}
 
    \begin{subsubsection}{Largeur de la zone active en fonction de la tension}
@@ -228,7 +230,7 @@
     \begin{figure}[H]
      \begin{center}
       \includegraphics[width=0.75\textwidth]{Bilder/calibration.png}
-      \caption[calibration d'énergie]{fitparameter: $ a = 0.00305786  \pm 4.301\cdot 10^{-5} \hspace{2 em} b = 0.371954  \pm 0.09235$ }
+      \caption{Calibration de l'énergie}
      \end{center}
     \end{figure}
    \end{paragraph}
@@ -241,7 +243,7 @@
   \end{subsection}
 
   \begin{subsection}{Simulation de la perte d'énergie}
-   Nous avons lancé une simulation avec le logiciel \flqq SRIM \frqq pour savoir quoi attendre. Nous avons pris pour la simulation un trajet de \unit[45]{mm} (la distance maximale entre la source et le détecteur) dans l'air.
+   Nous avons lancé une simulation avec le logiciel \flqq SRIM \frqq \cite{srim} pour savoir quoi attendre. Nous avons pris pour la simulation un trajet de \unit[45]{mm} (la distance maximale entre la source et le détecteur) dans l'air.
    \begin{figure}[H]
     \begin{minipage}{0.45\textwidth}
      \includegraphics[width=\textwidth]{Bilder/simam.png}
@@ -265,28 +267,7 @@
     x=\frac{p}{p_0}\cdot x_0=p\cdot\frac{\unit[45]{mm}}{\unit[994,66]{mbar}}\approx\unit[0,0045]{\frac{mm}{mbar}}\cdot p
    \end{equation*}
   \begin{subsection}{La source \isotope[241][95]{Am}}
-   La temps de mesure était \unit[20]{s} et la tension était comme avant à \unit[80]{V}.
-    \begin{center}
-     \begin{tabular}{c|c|c|c|c}
-      Position	&Energie [MeV]	&Nb de particules	&Pression[mb]	&Distance parcouru [mm]\\ \hline
-      1660,020 $\pm$ 0,250	&5,448 $\pm$ 0,373	&1486,168 $\pm$ 38,55	&1,62	&0,073\\		
-      1525,790 $\pm$ 0,290	&5,038 $\pm$ 0,373	&1542,360 $\pm$ 39,270	&102,400	&4,633\\
-      1374,820 $\pm$ 0,330	&4,576 $\pm$ 0,373	&1600,780 $\pm$ 40,010	&199,700	&9,035\\
-      1216,610 $\pm$ 0,400	&4,092 $\pm$ 0,373	&1674,840 $\pm$ 40,920	&300,50	&13,595\\
-      1044,070 $\pm$ 0,520	&3,565 $\pm$ 0,374	&1664,610 $\pm$ 40,800	&401,30	&18,155\\
-      855,900 $\pm$ 0,590	&2,989 $\pm$ 0,374	&1695,650 $\pm$ 40,740	&501,08	&22,670\\
-      609,860 $\pm$ 0,720	&2,237 $\pm$ 0,374	&1615,090 $\pm$ 40,190	&608,70	&27,539\\
-      503,980 $\pm$ 0,860	&1,913 $\pm$ 0,375	&1511,560 $\pm$ 38,800	&653,90	&29,583\\
-      349,350 $\pm$ 1,17	&1,440 $\pm$ 0,376	&1341,700 $\pm$ 36,630	&706,30	&31,954\\
-      329,750 $\pm$ 1,16	&1,380 $\pm$ 0,376	&1402,570 $\pm$ 37,450	&714,65	&32,332\\
-      247,170 $\pm$ 1,000	&1,128 $\pm$ 0,375	&1525,440 $\pm$ 39,050	&738,80	&33,424\\
-      172,240 $\pm$ 1,36	&0,899 $\pm$ 0,376	&1475,010 $\pm$ 38,410	&762,20	&34,483\\
-      134,430 $\pm$ 1,3		&0,783 $\pm$ 0,376	&1290,850 $\pm$ 35,930	&774,50	&35,040\\
-      63,460 $\pm$ 1,48		&0,566 $\pm$ 0,484	&474,960 $\pm$ 21,310	&806,39	&36,482\\
-      14,740 $\pm$ 1,3		&0,417 $\pm$ 0,376	&1290,900 $\pm$ 35,920	&817,30	&36,976\\
-      0				&0,372 $\pm$ 0,372	&14			&850	&38,455\\
-     \end{tabular}
-    \end{center}
+   La temps de mesure était \unit[20]{s} et la tension était \unit[80]{V}. Le tableau \ref{tabelle-am} des dates se trouve à la page \pageref{tabelle-am}.\\
     \begin{minipage}{0.45\textwidth}
      \includegraphics[width=\textwidth]{Sabine/am_pression.png}
     \end{minipage}
@@ -297,21 +278,7 @@
    \end{subsection}
 
    \begin{subsection}{La source \isotope[212][83]{Bi}}
-    La temps de mesure était \unit[30]{s} et la tension était comme avant à \unit[80]{V}.
-    \begin{center}
-     \begin{tabular}{c|c|c|c|c}
-      Position	&Energie [MeV]	&Nb de particules	&Pression[mb]	&Distance parcouru [mm]\\ \hline
-      1899,94 $\pm$ 0,63	&6,182 $\pm$ 0,374	&242,96 $\pm$ 15,59	&6,43	&0,291\\
-      1741,73 $\pm$ 0,85	&5,698 $\pm$ 0,375	&253,24 $\pm$ 25,11	&100,7	&4,556\\
-      1619,05 $\pm$ 1,40	&5,323 $\pm$ 0,376	&177,23 $\pm$ 13,21	&200,42	&9,067\\
-      1474,60 $\pm$ 1,61	&4,881 $\pm$ 0,377	&235,10 $\pm$ 15,33	&300,6	&13,600\\
-      1326,71 $\pm$ 1,59	&4,429 $\pm$ 0,377	&226,68 $\pm$ 15,06	&403,7	&18,264\\
-      1161,31 $\pm$ 2,08	&3,923 $\pm$ 0,378	&234,92 $\pm$ 15,32	&503,7	&22,788\\
-      1001,36 $\pm$ 4,30	&3,434 $\pm$ 0,385	&297,97 $\pm$ 17,26	&605,2	&27,380\\
-      875,52 $\pm$ 86,51	&3,049 $\pm$ 0,728	&3526,06 $\pm$ 59,38	&705	&31,895\\
-      626,78 $\pm$ 71,36	&2,289 $\pm$ 0,590	&987,40 $\pm$ 31,42	&802,1	&36,288\\
-     \end{tabular}
-    \end{center}
+    La temps de mesure était \unit[30]{s} et la tension était comme avant à \unit[80]{V}. Le tableau \ref{tabelle-bi} des dates se trouve à la page \pageref{tabelle-bi}.\\
     \begin{minipage}{0.45\textwidth}
      \includegraphics[width=\textwidth]{Sabine/bi_pression.png}
     \end{minipage}
@@ -322,22 +289,7 @@
    \end{subsection}
   
    \begin{subsection}{La source \isotope[212][82]{Po}}
-    La temps de mesure était \unit[30]{s} et la tension était comme avant à \unit[80]{V}.
-    \begin{center}
-     \begin{tabular}{c|c|c|c|c}
-      Position	&Energie [MeV]	&Nb de particules	&Pression[mb]	&Distance parcouru [mm]\\ \hline
-      2732,85 $\pm$ 0,23	&8,729 $\pm$ 0,373	&412,90 $\pm$ 20,32	&6,43	&0,291\\
-      2653,17 $\pm$ 0,36	&8,485 $\pm$ 0,373	&460,25 $\pm$ 21,5	&100,7	&4,556\\
-      2564,43 $\pm$ 0,45	&8,214 $\pm$ 0,373	&445,97 $\pm$ 21,12	&200,42	&9,067\\
-      2461,22 $\pm$ 0,6	&7,898 $\pm$ 0,374	&429,58 $\pm$ 20,73	&300,6	&13,600\\
-      2357,18 $\pm$ 0,73	&7,580 $\pm$ 0,374	&379,64 $\pm$ 19,48	&503,7	&22,788\\
-      2143,09 $\pm$ 0,95	&6,925 $\pm$ 0,375	&387,72 $\pm$ 19,69	&605,2	&27,380\\
-      2029,47 $\pm$ 1,17	&6,578 $\pm$ 0,376	&309,43 $\pm$ 17,59	&705	&31,895\\
-      1916,84 $\pm$ 1,08	&6,233 $\pm$ 0,375	&387,17 $\pm$ 19,68	&802,1	&36,288\\
-      1793,34 $\pm$ 1,42	&5,856 $\pm$ 0,376	&257,10 $\pm$ 16,03	&905,2	&40,953\\
-      1678,34 $\pm$ 1,64	&5,504 $\pm$ 0,377	&401,01 $\pm$ 29,03	&994,66	&45,000\\
-     \end{tabular}
-    \end{center}
+    Les résultats sont de la même mesure que les résultats du \isotope[212][83]{Bi} avec $t=\unit[30]{s}$ et $U=\unit[80]{V}$. Le tableau \ref{tabelle-po} des dates se trouve à la page \pageref{tabelle-po}.\\
    \begin{minipage}{0.45\textwidth}
      \includegraphics[width=\textwidth]{Sabine/po_pression.png}
     \end{minipage}
@@ -365,16 +317,57 @@
 
   Nous nous intéressons pour $\left(-\frac{\text{d}\,E}{\text{d}\,x}\right)$ et nous avons usé la méthode suivante pour l'obtenir:
   \begin{enumerate}
-   \item Ajuster un polynôme à la courbe de énergie perdue en fonction de la distance
+   \item Ajuster un polynôme à la courbe d'énergie restante en fonction de la distance
    \item Deriver ce polynôme
-   \item Obtenir le Pic de Bragg en présentant $\left(-\frac{\text{d}\,E}{\text{d}\,x}\right)$ 
+   \item Obtenit le Pic de Bragg en présentant $\left(-\frac{\text{d}\,E}{\text{d}\,x}\right)$ 
   \end{enumerate}
-
+  \begin{figure}[hbt]
+   \begin{minipage}{0.45\textwidth}
+    \begin{center}
+    \includegraphics[width=0.5\textwidth]{Sabine/fit_alle.png}
+    \caption{Energie restante en fonction de la distance avec l'ajustation}
+    \end{center} 
+   \end{minipage}
+   \hfill
+   \begin{minipage}{0.45\textwidth}
+    \begin{center}
+    \includegraphics[width=0.5\textwidth]{Sabine/fit_alle_perte.png}
+    \caption{Energie perdue en fonction de la distance avec l'ajustation}
+    \end{center} 
+   \end{minipage}
+  \end{figure}
+  On trouve les polynômes suivantes en usant le logiciel \flqq gnuplot\frqq. Les polynômes des coubes d'énergie perdue et énergie restante ne se destingue qu'au facteur $(-1)$ et à l'ordonnée à l'origine. Donc les derivées ne se destingue qu'au facteur $(-1)$. Ici nous présontons les polynômes de l'énergie perdue. 
+  \begin{eqnarray*}
+   f_{Am}(x)&=& 4,12\cdot10^{-8}x^5-2,76\cdot10^{-6}x^4+8,86\cdot10^{-5}x^3-4,03\cdot10^{-4}x^2+0,0946x-0,011\\
+   \Rightarrow f^{\prime}(x)&=&8,24\cdot10^{-9}x^4-6,89\cdot10^{-6}x^3+2.95\cdot10^{-4}x^2-2,02\cdot10^{-4}x+0,0946\\
+   g_{Bi}(x)&=& 4,66\cdot10^{-7}x^5-4,09\cdot10^{-5}x^4+1,27\cdot10^{-3}x^3-1,63\cdot10^{-2}x^2+0,171x-0,051\\ 
+   \Rightarrow g^{\prime}(x)&=&9,31\cdot10^{-8}x^4-1,02\cdot10^{-5}x^3+4,24\cdot10^{-4}x^2-8,16\cdot10^{-3}x+0,171\\
+   h_{Po}(x)&=& -3,61\cdot10^{-9}x^5+6,83\cdot10^{-7}x^4-4,18\cdot10^{-5}x^3+1,31\cdot10^{-2}x^2+0,050x-0,013\\
+   \Rightarrow h^{\prime}(x)&=&-7,21\cdot10^{-10}x^4+1,71\cdot10^{-7}x^3-1,39\cdot10^{-5}x^2+6,56\cdot10^{-4}x+0,050\\
+  \end{eqnarray*}
+  \begin{figure}[H]
+   \begin{minipage}{0.45\textwidth}
+    \includegraphics[width=\textwidth]{Sabine/am_pic.png}
+    \caption{Pic de Bragg mesuré pour le \isotope[241][95]{Am}}
+   \end{minipage}
+   \hfill
+   \begin{minipage}{0.45\textwidth}
+    \includegraphics[width=\textwidth]{Sabine/bi_pic.png}
+    \caption{Pic de Bragg mesuré pour le \isotope[212][83]{Bi}}
+   \end{minipage}
+  \end{figure}
+  \begin{figure}[H]
+   \begin{center}
+    \includegraphics[width=0.45\textwidth]{Sabine/po_pic.png}
+   \end{center}
+   \caption{Pic de Bragg mesuré pour le \isotope[212][82]{Po}}
+  \end{figure}
+  On voit que nous serions besoin de plus des dates pour obtenir des meilleures courbes, spécialement pour la courbe du \isotope[212][82]{Po}. 
  \end{section}
 
  
  \begin{section}{Conclusion}
-  Nous avons appris comment lancé une mesure et calibré les dispositifs pour cette mésure. En plus nous avons vu que des particules $\alpha$ déposent leur énergie après un certain trajet parcouru. Cette distance montré par le pic de Bragg est spécifique pour les $\alpha$ d'une source comme nous avons vu en comparaisant les deux sources disponibles pour la TP.
+  Nous avons appris comment lancé une mesure et calibré les dispositifs pour cette mésure. En plus nous avons vu que des particules $\alpha$ déposent leur énergie après un certain trajet parcouru. Cette distance en théorie montré par le pic de Bragg est spécifique pour les $\alpha$ d'une énergie. Il nous fallait plus des points de mesure pour améliorer notre résultat.
   
   Dans la radiothérapie on use ce fait pour détruire des tumeurs. En utilisant des particules $\alpha$ on est sûre de ne détruire que la tumeur car l'alpha interagissent que dans cette pétite zone bien défini.
  \end{section}
@@ -384,5 +377,77 @@
   \titlefont \textcopyleft\ Mona Dentler et Sabine Engelhardt
  \end{flushright}
 
+\newpage
+ 
+ \begin{appendix}
+  \bibliographystyle{unsrt}
+  \bibliography{literatur}  
+
+  \begin{section}{Tableaux}
+   \begin{table}[H]
+    \begin{center}
+     \begin{tabular}{c|c|c|c|c}
+      Position	&Energie [MeV]	&Nb de particules	&Pression[mbar]	&Dist. parcouru [mm]\\ \hline
+      1660,020 $\pm$ 0,250	&5,448 $\pm$ 0,373	&1486,168 $\pm$ 38,55	&1,62	&0,073\\		
+      1525,790 $\pm$ 0,290	&5,038 $\pm$ 0,373	&1542,360 $\pm$ 39,270	&102,400	&4,633\\
+      1374,820 $\pm$ 0,330	&4,576 $\pm$ 0,373	&1600,780 $\pm$ 40,010	&199,700	&9,035\\
+      1216,610 $\pm$ 0,400	&4,092 $\pm$ 0,373	&1674,840 $\pm$ 40,920	&300,50	&13,595\\
+      1044,070 $\pm$ 0,520	&3,565 $\pm$ 0,374	&1664,610 $\pm$ 40,800	&401,30	&18,155\\
+      855,900 $\pm$ 0,590	&2,989 $\pm$ 0,374	&1695,650 $\pm$ 40,740	&501,08	&22,670\\
+      609,860 $\pm$ 0,720	&2,237 $\pm$ 0,374	&1615,090 $\pm$ 40,190	&608,70	&27,539\\
+      503,980 $\pm$ 0,860	&1,913 $\pm$ 0,375	&1511,560 $\pm$ 38,800	&653,90	&29,583\\
+      349,350 $\pm$ 1,17	&1,440 $\pm$ 0,376	&1341,700 $\pm$ 36,630	&706,30	&31,954\\
+      329,750 $\pm$ 1,16	&1,380 $\pm$ 0,376	&1402,570 $\pm$ 37,450	&714,65	&32,332\\
+      247,170 $\pm$ 1,000	&1,128 $\pm$ 0,375	&1525,440 $\pm$ 39,050	&738,80	&33,424\\
+      172,240 $\pm$ 1,36	&0,899 $\pm$ 0,376	&1475,010 $\pm$ 38,410	&762,20	&34,483\\
+      134,430 $\pm$ 1,3		&0,783 $\pm$ 0,376	&1290,850 $\pm$ 35,930	&774,50	&35,040\\
+      63,460 $\pm$ 1,48		&0,566 $\pm$ 0,484	&474,960 $\pm$ 21,310	&806,39	&36,482\\
+      14,740 $\pm$ 1,3		&0,417 $\pm$ 0,376	&1290,900 $\pm$ 35,920	&817,30	&36,976\\
+      0				&0 	&14			&836,5	&38,455\\
+     \end{tabular}
+    \caption{\label{tabelle-am} Les résultats du \isotope[241][95]{Am} }
+    \end{center}
+   \end{table}
+   
+   \begin{table}[H]
+    \begin{center}
+     \begin{tabular}{c|c|c|c|c}
+      Position			&Energie [MeV]		&Nb de particules	&Pression[mbar]		&Dist. parcouru [mm]\\ \hline
+      1899,94 $\pm$ 0,63	&6,182 $\pm$ 0,374	&242,96 $\pm$ 15,59	&6,43	&0,291\\
+      1741,73 $\pm$ 0,85	&5,698 $\pm$ 0,375	&253,24 $\pm$ 25,11	&100,7	&4,556\\
+      1619,05 $\pm$ 1,40	&5,323 $\pm$ 0,376	&177,23 $\pm$ 13,21	&200,42	&9,067\\
+      1474,60 $\pm$ 1,61	&4,881 $\pm$ 0,377	&235,10 $\pm$ 15,33	&300,6	&13,600\\
+      1326,71 $\pm$ 1,59	&4,429 $\pm$ 0,377	&226,68 $\pm$ 15,06	&403,7	&18,264\\
+      1161,31 $\pm$ 2,08	&3,923 $\pm$ 0,378	&234,92 $\pm$ 15,32	&503,7	&22,788\\
+      1001,36 $\pm$ 4,30	&3,434 $\pm$ 0,385	&297,97 $\pm$ 17,26	&605,2	&27,380\\
+      875,52 $\pm$ 86,51	&3,049 $\pm$ 0,728	&3526,06 $\pm$ 59,38	&705	&31,895\\
+      626,78 $\pm$ 71,36	&2,289 $\pm$ 0,590	&987,40 $\pm$ 31,42	&802,1	&36,288\\
+     \end{tabular}
+    \caption{\label{tabelle-bi} Les résultats du \isotope[212][83]{Bi} }
+    \end{center}
+   \end{table}
+ 
+   \begin{table}[H]
+    \begin{center}
+     \begin{tabular}{c|c|c|c|c}
+      Position	&Energie [MeV]	&Nb de particules	&Pression[mbar]		&Dist. parcouru [mm]\\ \hline
+      2732,85 $\pm$ 0,23	&8,729 $\pm$ 0,373	&412,90 $\pm$ 20,32	&6,43	&0,291\\
+      2653,17 $\pm$ 0,36	&8,485 $\pm$ 0,373	&460,25 $\pm$ 21,5	&100,7	&4,556\\
+      2564,43 $\pm$ 0,45	&8,214 $\pm$ 0,373	&445,97 $\pm$ 21,12	&200,42	&9,067\\
+      2461,22 $\pm$ 0,6		&7,898 $\pm$ 0,374	&429,58 $\pm$ 20,73	&300,6	&13,600\\
+      2357,18 $\pm$ 0,73	&7,580 $\pm$ 0,374	&379,64 $\pm$ 19,48	&503,7	&22,788\\
+      2143,09 $\pm$ 0,95	&6,925 $\pm$ 0,375	&387,72 $\pm$ 19,69	&605,2	&27,380\\
+      2029,47 $\pm$ 1,17	&6,578 $\pm$ 0,376	&309,43 $\pm$ 17,59	&705	&31,895\\
+      1916,84 $\pm$ 1,08	&6,233 $\pm$ 0,375	&387,17 $\pm$ 19,68	&802,1	&36,288\\
+      1793,34 $\pm$ 1,42	&5,856 $\pm$ 0,376	&257,10 $\pm$ 16,03	&905,2	&40,953\\
+      1678,34 $\pm$ 1,64	&5,504 $\pm$ 0,377	&401,01 $\pm$ 29,03	&994,66	&45,000\\
+     \end{tabular}
+    \caption{\label{tabelle-po}Les résultats du \isotope[212][82]{Po}}
+    \end{center}
+   \end{table}
+  \end{section}
+ \end{appendix}
+
+ \listoffigures  
 \end{document}
 

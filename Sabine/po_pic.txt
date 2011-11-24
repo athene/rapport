@@ -1,0 +1,8 @@
+set output 'po_pic.png'
+set terminal png
+set title "Pic de Bragg Po"
+set ylabel 'dE/dx[MeV/mm]'
+set xlabel 'distance [mm]'
+set xrange [0:80]
+h(x)=-7.21*10**(-10)*x**4+1.71*10**(-7)*x**3-1.39*10**(-5)*x**2+6.56*10**(-4)*x+0.050
+plot h(x) title 'Po' 

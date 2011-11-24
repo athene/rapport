@@ -262,7 +262,7 @@
    \begin{subsubsection}{La source \isotope[241][95]{Am}}
     \begin{center}
      \begin{tabular}{c|c|c|c|c|c|c|c}
-      pression\unit{[mb]} & $n^{\circ}$ du pic	&	énergie	&	err(én)	&	resolution	&	err(res)	&	$n^{\circ}$ de particules	&	err(part) 	\\ \hline
+      pression\unit{[mb]} & $n^{\circ}$ du pic	&	énergie	&	err(én)	&	Largeur du pic	&	err(res)	&	$n^{\circ}$ de particules	&	err(part) 	\\ \hline
       1,62	&	1	&	1660,02	&	0,25	&	6,83	&	0,21	&	1486,168	&	38,55	\\ 
       102,4	&	1	&	1525,79	&	0,29	&	8,7	&	0,25	&	1542,36	&	39,27	\\ 
       199,7	&	1	&	1374,82	&	0,33	&	10,99	&	0,26	&	1600,78	&	40,01	\\ 
@@ -304,7 +304,7 @@
     \begin{center}
      \begin{tabular}{c|c|c|c|c|c|c|c}
 
-      pression\unit{[mb]} & pic	&	énergie	&	err(én)	&	resolution	&	err(res)	&	$n^{\circ}$ de particules	&	err(part) 	\\ \hline
+      pression\unit{[mb]} & pic	&	énergie	&	err(én)	&	Largeur du pic	&	err(res)	&	$n^{\circ}$ de particules	&	err(part) 	\\ \hline
       6,43	&	1	&	2732,85	&	0,23	&	5,69	&	0,26	&	412,9	&	20,32	\\ 
       6,43	&	2	&	1899,94	&	0,63	&	9,11	&	0,65	&	242,96	&	15,59	\\ 
       100,7	&	1	&	2653,17	&	0,36	&	7,28	&	0,33	&	460,25	&	21,5	\\ 

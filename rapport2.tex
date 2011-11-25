@@ -307,7 +307,8 @@
    \hfill
    \begin{minipage}{0.45\textwidth}
     \includegraphics[width=\textwidth]{Sabine/alle_perte.png}
-   \end{minipage}
+   \end{minipage} \\
+
    On voit bien qu'une particule avec une plus grande énergie a un trajet plus long dans le même matériau. C'est remarquable qu'au fin du trajet la perte par distance s'augmente. Si la particule est lente, elle passe plus de temps dans un atome et cela augmente la probabilité d'une interaction. Cette comportement est précisé au part suivant. 
   \end{subsection}
  \end{section}
@@ -319,50 +320,26 @@
   \begin{enumerate}
    \item Ajuster un polynôme à la courbe d'énergie restante en fonction de la distance
    \item Deriver ce polynôme
-   \item Obtenit le Pic de Bragg en présentant $\left(-\frac{\text{d}\,E}{\text{d}\,x}\right)$ 
-  \end{enumerate}
-  \begin{figure}[hbt]
-   \begin{minipage}{0.45\textwidth}
-    \begin{center}
-    \includegraphics[width=0.5\textwidth]{Sabine/fit_alle.png}
-    \caption{Energie restante en fonction de la distance avec l'ajustation}
-    \end{center} 
-   \end{minipage}
-   \hfill
-   \begin{minipage}{0.45\textwidth}
-    \begin{center}
-    \includegraphics[width=0.5\textwidth]{Sabine/fit_alle_perte.png}
-    \caption{Energie perdue en fonction de la distance avec l'ajustation}
-    \end{center} 
-   \end{minipage}
-  \end{figure}
-  On trouve les polynômes suivantes en usant le logiciel \flqq gnuplot\frqq. Les polynômes des coubes d'énergie perdue et énergie restante ne se destingue qu'au facteur $(-1)$ et à l'ordonnée à l'origine. Donc les derivées ne se destingue qu'au facteur $(-1)$. Ici nous présontons les polynômes de l'énergie perdue. 
-  \begin{eqnarray*}
-   f_{Am}(x)&=& 4,12\cdot10^{-8}x^5-2,76\cdot10^{-6}x^4+8,86\cdot10^{-5}x^3-4,03\cdot10^{-4}x^2+0,0946x-0,011\\
-   \Rightarrow f^{\prime}(x)&=&8,24\cdot10^{-9}x^4-6,89\cdot10^{-6}x^3+2.95\cdot10^{-4}x^2-2,02\cdot10^{-4}x+0,0946\\
-   g_{Bi}(x)&=& 4,66\cdot10^{-7}x^5-4,09\cdot10^{-5}x^4+1,27\cdot10^{-3}x^3-1,63\cdot10^{-2}x^2+0,171x-0,051\\ 
-   \Rightarrow g^{\prime}(x)&=&9,31\cdot10^{-8}x^4-1,02\cdot10^{-5}x^3+4,24\cdot10^{-4}x^2-8,16\cdot10^{-3}x+0,171\\
-   h_{Po}(x)&=& -3,61\cdot10^{-9}x^5+6,83\cdot10^{-7}x^4-4,18\cdot10^{-5}x^3+1,31\cdot10^{-2}x^2+0,050x-0,013\\
-   \Rightarrow h^{\prime}(x)&=&-7,21\cdot10^{-10}x^4+1,71\cdot10^{-7}x^3-1,39\cdot10^{-5}x^2+6,56\cdot10^{-4}x+0,050\\
-  \end{eqnarray*}
+   \item Obtenit le Pic de Bragg en présentant $\left(-\frac{\text{d}\,E}{\text{d}\,x}\right)$ \\
+Nous avons choisi à calculé $\left(-\frac{\text{d}\,E}{\text{d}\,x}\right)$ avec la methode suivante: Nous avons calculé la pente entre deux couple de valeurs se succédant. Aprés en a ordonné ces valeurs d'abord vers la distance et puis vers l'énergie. Pour l'\isotope[241]{Am} en observe un pic juste avant que les particules ne s'arrêtent. On appelle ce phénomène le pic de Bragg. Pour la deuxième courbe on trouve que le pic est placé au début de la courbe ou les particules $\alpha$ ont seulement peu énegie, 	 cela vient de ce que quand les particules son lentes, elles passent davantage de temps dans un atome et donc la section efficace d'interaction augmente.\\
+Pour le l'\isotope[212]{Bi} on ne trouve pas un joli pic pars que le rayon d'action de l'\isotope[212]{Bi} est plus grand que le distance maximale dans notre manip à cause d'énergie plus grande des particules $\alpha$. C'est vrai d'autant plus pour le Po pars que l'énergie cinetique des particules $\alpha$ est encore plus grande.
   \begin{figure}[H]
    \begin{minipage}{0.45\textwidth}
-    \includegraphics[width=\textwidth]{Sabine/am_pic.png}
-    \caption{Pic de Bragg mesuré pour le \isotope[241][95]{Am}}
+    \includegraphics[width=\textwidth]{Bilder/picAm.png}
+    \caption{Pic de Bragg mesuré pour l' \isotope[241][95]{Am} en fonction de la distance}
    \end{minipage}
    \hfill
    \begin{minipage}{0.45\textwidth}
-    \includegraphics[width=\textwidth]{Sabine/bi_pic.png}
-    \caption{Pic de Bragg mesuré pour le \isotope[212][83]{Bi}}
+    \includegraphics[width=\textwidth]{Bilder/picAm2.png}
+    \caption{Pic de Bragg mesuré pour l' \isotope[241][95]{Am} en fonction de l'énergie}
    \end{minipage}
   \end{figure}
   \begin{figure}[H]
    \begin{center}
-    \includegraphics[width=0.45\textwidth]{Sabine/po_pic.png}
+    \includegraphics[width=0.45\textwidth]{Bilder/picBi.png}
    \end{center}
-   \caption{Pic de Bragg mesuré pour le \isotope[212][82]{Po}}
-  \end{figure}
-  On voit que nous serions besoin de plus des dates pour obtenir des meilleures courbes, spécialement pour la courbe du \isotope[212][82]{Po}. 
+   \caption{Pic de Bragg mesuré pour le \isotope[212][83]{Bi}}
+  \end{figure} 
  \end{section}
 
  

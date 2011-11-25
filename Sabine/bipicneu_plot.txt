@@ -1,0 +1,11 @@
+set output 'bipic.png'
+set terminal png
+set title 'Perte d`énergie par unité de longeur'
+set xlabel 'distance [mm]'
+set ylabel 'dE/dx [MeV/mm]'
+plot 'bipicneu.txt' using 1:2 title 'Bi'
+
+set output 'bipic2.png'
+set title 'Perte d`énergie par unité d`énergie'
+set xlabel 'énergie [MeV]'
+plot 'bipicneu.txt' using 3:2 title 'Bi'

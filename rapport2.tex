@@ -149,7 +149,7 @@
  \begin{section}{Expériences préliminaire}
   \begin{subsection}{Etude de la réponse du détecteur}
    \begin{subsubsection}{Caractéristique du détecteur}
-   Nous avons utilisé le logiciel \flqq Astar \frqq \cite{astar} pour avoir une estimation de l'énergie maximale pour laquelle la particule perd toute son énergie.  Les énergies utilisés pour les calculations du Total Stopping Power et du Projected Range étaient les plus probables des désintégration. La première mesure était fait pour le détecteur donc le matériel donné est Silicium, la deuxième mesure était fait pour l'air.
+   Nous avons utilisé le logiciel \flqq Astar \frqq \cite{astar} pour avoir une estimation de l'énergie maximale pour laquelle la particule perd toute son énergie.  Les énergies utilisés pour les calculations du Total Stopping Power et du Projected Range étaient les plus probables des désintégration et alos aussi les énergies donc on a le chance de les voir sur les spectres. La première mesure était fait pour le détecteur donc le matériel donné est Silicium, la deuxième mesure était fait pour l'air.
    \begin{paragraph}{Silicium}
     \begin{center}
      \begin{tabular}{c|c|c|c}
@@ -171,7 +171,6 @@
      x_{max}(Bi)&&=\unit[33,92]{\mu m}\\
      x_{max}(Po)&&=\unit[56,21]{\mu m}
     \end{eqnarray*}
-    \todo{rausfinden Spannung...}
    \end{paragraph}
    \begin{paragraph}{Air}
     \begin{center}
@@ -229,7 +228,7 @@
     \end{center}
     \begin{figure}[H]
      \begin{center}
-      \includegraphics[width=0.75\textwidth]{Bilder/calibration.png}
+      \includegraphics[width=0.6\textwidth]{Bilder/calibration.png}
       \caption{Calibration de l'énergie}
      \end{center}
     \end{figure}
@@ -266,7 +265,9 @@
    \begin{equation*}
     x=\frac{p}{p_0}\cdot x_0=p\cdot\frac{\unit[45]{mm}}{\unit[994,66]{mbar}}\approx\unit[0,0045]{\frac{mm}{mbar}}\cdot p
    \end{equation*}
-  \begin{subsection}{La source \isotope[241][95]{Am}}
+  Nous avons tracé l'énergie des particules mesurées une fois en fonction de la pression et une fois en fonction de la distance parcouru pour chaque source parce qu'on en fonction de la pression on ne peut pas bien voir ce qui se passe. 
+ 
+ \begin{subsection}{La source \isotope[241][95]{Am}}
    La temps de mesure était \unit[20]{s} et la tension était \unit[80]{V}. Le tableau \ref{tabelle-am} des dates se trouve à la page \pageref{tabelle-am}.\\
     \begin{minipage}{0.45\textwidth}
      \includegraphics[width=\textwidth]{Sabine/am_pression.png}
@@ -275,6 +276,7 @@
     \begin{minipage}{0.45\textwidth}
      \includegraphics[width=\textwidth]{Sabine/am_distance.png}
     \end{minipage}
+   On voit ici qu'après un certain trajet les particules ont perdue toute leur énergie et ils s'arretent là. La distance maximale trouvé par la mesure est d'environ \unit[38]{mm} ce qui correspend assez bien avec le trajet donné de \unit[38,06]{mm}. 
    \end{subsection}
 
    \begin{subsection}{La source \isotope[212][83]{Bi}}
@@ -286,8 +288,9 @@
     \begin{minipage}{0.45\textwidth}
      \includegraphics[width=\textwidth]{Sabine/bi_distance.png}
     \end{minipage}
+   Comme pour l'Am on voit que les particules s'arretent après un certain trajet. On peut aussi constaté que les particules pertent plus d'énergie par distance parcouru vers le fin de leur trajet. Ceci est analyse au partie du Pic de Bragg \pageref{Bragg}. Le trajet maximale de \unit[41]{mm} est plus court que le trajet calculé de \unit[44,5]{mm}, mais c'est quand même trés proche.
    \end{subsection}
-  
+
    \begin{subsection}{La source \isotope[212][82]{Po}}
     Les résultats sont de la même mesure que les résultats du \isotope[212][83]{Bi} avec $t=\unit[30]{s}$ et $U=\unit[80]{V}$. Le tableau \ref{tabelle-po} des dates se trouve à la page \pageref{tabelle-po}.\\
    \begin{minipage}{0.45\textwidth}
@@ -297,6 +300,7 @@
     \begin{minipage}{0.45\textwidth}
      \includegraphics[width=\textwidth]{Sabine/po_distance.png}
     \end{minipage}
+  Les énergies ont encore beaucoup d'énergie au fin de la mesure, parce que le trajet des $\alpha$ est trop long comme nous avons déjà calculé. On peut constaté que les particules pertent aussi d'énergie et probablement qu'elles arrêtent après le trajet calculé d'environ \unit[81]{mm}. 
   \end{subsection}
    
   \begin{subsection}{Interprétation}
@@ -309,42 +313,64 @@
     \includegraphics[width=\textwidth]{Sabine/alle_perte.png}
    \end{minipage} \\
 
-   On voit bien qu'une particule avec une plus grande énergie a un trajet plus long dans le même matériau. C'est remarquable qu'au fin du trajet la perte par distance s'augmente. Si la particule est lente, elle passe plus de temps dans un atome et cela augmente la probabilité d'une interaction. Cette comportement est précisé au part suivant. 
+   On voit bien qu'une particule avec une plus grande énergie a un trajet plus long dans le même matériau avant son arrêt. C'est remarquable qu'au fin du trajet la perte d'énergie par distance s'augmente très fortement. L'explication c'est si la particule est lente, elle passe plus de temps dans un atome et cela augmente la probabilité d'une interaction.  
   \end{subsection}
  \end{section}
 
- \begin{section}{Pic de Bragg}
-  Pour savoir comment la particule pers son énergie localement il faut faire une calculation sur les mesures. On sait que la particule $\alpha$ a perdu l'énergie $E_{perdue}(l)=\int_0^l \left(-\frac{\text{d}\,E}{\text{d}\,x}\right) \text{d}\,x$.
+\newpage
+ \begin{section}{Pic de Bragg}\label{Bragg}  Pour savoir comment la particule perd son énergie localement, il faut faire une calculation sur les mesures. On sait que la particule $\alpha$ a perdu l'énergie $E_{perdue}(l)=\int_0^l \left(-\frac{\text{d}\,E}{\text{d}\,x}\right) \text{d}\,x$ après avoir parcouru un distance $l$. Ce qui nous interèsse c'est la perte d'énergie par unité de longeur $\left(-\frac{\text{d}\,E}{\text{d}\,x}\right)$. Il y a plusieurs possibilité de l'obtenir.\\
+ La première possibilité est d'ajuster un polynôme à la courbe de la perte ènergie en fonction de la distance et ensuite de deriver ce polynôme pour obtenir la courbe de $\left(-\frac{\text{d}\,E}{\text{d}\,x}\right)$ en fonction de la distance parcouru. Nous avons essayé cette méthode mais nous avons pas eu de bons résultat.\\ 
+ La deuxième possibilité qui a donné des meilleures courbes c'est de calculer la pente entre deux énergies se succédant et puis tracer la pente vers la distance. La deuxième courbe montrer est la pente en fonction de l'énegie de l'$\alpha$. 
 
-  Nous nous intéressons pour $\left(-\frac{\text{d}\,E}{\text{d}\,x}\right)$ et nous avons usé la méthode suivante pour l'obtenir:
-  \begin{enumerate}
-   \item Ajuster un polynôme à la courbe d'énergie restante en fonction de la distance
-   \item Deriver ce polynôme
-   \item Obtenit le Pic de Bragg en présentant $\left(-\frac{\text{d}\,E}{\text{d}\,x}\right)$ \\
-Nous avons choisi à calculé $\left(-\frac{\text{d}\,E}{\text{d}\,x}\right)$ avec la methode suivante: Nous avons calculé la pente entre deux couple de valeurs se succédant. Aprés en a ordonné ces valeurs d'abord vers la distance et puis vers l'énergie. Pour l'\isotope[241]{Am} en observe un pic juste avant que les particules ne s'arrêtent. On appelle ce phénomène le pic de Bragg. Pour la deuxième courbe on trouve que le pic est placé au début de la courbe ou les particules $\alpha$ ont seulement peu énegie, 	 cela vient de ce que quand les particules son lentes, elles passent davantage de temps dans un atome et donc la section efficace d'interaction augmente.\\
-Pour le l'\isotope[212]{Bi} on ne trouve pas un joli pic pars que le rayon d'action de l'\isotope[212]{Bi} est plus grand que le distance maximale dans notre manip à cause d'énergie plus grande des particules $\alpha$. C'est vrai d'autant plus pour le Po pars que l'énergie cinetique des particules $\alpha$ est encore plus grande.
+ \begin{subsection}{La source \isotope[241][95]{Am}}
   \begin{figure}[H]
    \begin{minipage}{0.45\textwidth}
     \includegraphics[width=\textwidth]{Bilder/picAm.png}
-    \caption{Pic de Bragg mesuré pour l' \isotope[241][95]{Am} en fonction de la distance}
+    \caption{Pic de Bragg mesuré de l' \isotope[241][95]{Am} en fonction de la distance}
    \end{minipage}
    \hfill
    \begin{minipage}{0.45\textwidth}
     \includegraphics[width=\textwidth]{Bilder/picAm2.png}
-    \caption{Pic de Bragg mesuré pour l' \isotope[241][95]{Am} en fonction de l'énergie}
+    \caption{Pic de Bragg mesuré de l' \isotope[241][95]{Am} en fonction de l'énergie}
    \end{minipage}
   \end{figure}
+  Pour l'\isotope[241]{Am} on observe un pic juste devant l'arrêt pour la courbe en fonction de la distance et pour l'autre courbe on trouve un pic placé au début de la courbe où les particules $\alpha$ ont seulement peu d'énegie. On appelle cette pic le pic de Bragg. Il s'explique par l'idée qu'une particule lente passe plus de temps dans un atome et donc la section efficace d'interaction augmente.
+ \end{subsection}
+
+   \begin{subsection}{La source \isotope[212][83]{Bi}}
+  \begin{figure}[H]
+   \begin{minipage}{0.45\textwidth}
+    \includegraphics[width=\textwidth]{Sabine/bipic.png}
+    \caption{Pic de Bragg mesuré de l' \isotope[212][83]{Bi} en fonction de la distance}
+   \end{minipage}
+   \hfill
+   \begin{minipage}{0.45\textwidth}
+    \includegraphics[width=\textwidth]{Sabine/bipic2.png}
+    \caption{Pic de Bragg mesuré de l' \isotope[212][83]{Bi} en fonction de l'énergie}
+   \end{minipage}
+  \end{figure}
+  Pour le \isotope[212]{Bi} on voit aussi un pic, mais il n'est pas très bien tracé parce que le rayon d'action de le \isotope[212]{Bi} est le même que la distance maximale dans notre dispositif experimental, comme nous avons vu dans la calculation du logiciel \glqq Astar\grqq. En plus nous n'avons pas eu de temps pour mesurer encore plus précise devant et après le trajet maximale des particules. 
+ \end{subsection}
+\enlargethispage{1,5cm}
+ \begin{subsection}{La source \isotope[212][82]{Po}}
   \begin{figure}[H]
    \begin{center}
-    \includegraphics[width=0.45\textwidth]{Bilder/picBi.png}
+    \includegraphics[width=0.45\textwidth]{Sabine/popic.png}
    \end{center}
-   \caption{Pic de Bragg mesuré pour le \isotope[212][83]{Bi}}
+   \caption{Mesure du \isotope[212][82]{Po}}
   \end{figure} 
+
+   Ici on ne voit pas de pic parce que le trajet des particules $\alpha$ du \isotope[212]{Po} est le double de la distance maximale de notre dispositif expérimental, parce que l'énergie cinétique des particules $\alpha$ est encore plus grande. Ainsi nous n'avons pas eu la possibilité de mesurer le pic de Bragg pour le \isotope[212]{Po}. 
+  \end{subsection}
+
+\newpage
+  En comparaissent nos résultat avec ceux du logiciel \flqq Astar\frqq, on trouve que nos valeurs du trajet maximale sont plus petits que les valeurs données par \flqq Astar\frqq. Une explication est que dans notre expérience la pression air n'était pas à la norme de \unit[1]{mbar} mais à \unit[0,994]{bar}. Par conséquence la densité était un peu plus grand alors il y a plus d'intéraction.\\ 
+  Pour les deux énergies où c'était possible nous avons trouvé les pic de Bragg et comme \c ca nous avons verifié qu'une particule $\alpha$ perd presque toute son énergie après un certain trajet. 
  \end{section}
 
  
  \begin{section}{Conclusion}
-  Nous avons appris comment lancé une mesure et calibré les dispositifs pour cette mésure. En plus nous avons vu que des particules $\alpha$ déposent leur énergie après un certain trajet parcouru. Cette distance en théorie montré par le pic de Bragg est spécifique pour les $\alpha$ d'une énergie. Il nous fallait plus des points de mesure pour améliorer notre résultat.
+  Nous avons appris comment lancé une mesure et calibré les dispositifs pour cette mésure. En plus nous avons vu que des particules $\alpha$ déposent leur énergie après un certain trajet parcouru. Cette distance en théorie montré par le pic de Bragg est spécifique pour les $\alpha$ d'une énergie et nous avons bien trouvé les pics de Bragg pour les deux énergies des $\alpha$ où la mesure était possible avec notre dispositif experimental. Il nous fallaitseulemnt avoir plus des points de mesure pour améliorer notre résultat.
   
   Dans la radiothérapie on use ce fait pour détruire des tumeurs. En utilisant des particules $\alpha$ on est sûre de ne détruire que la tumeur car l'alpha interagissent que dans cette pétite zone bien défini.
  \end{section}
@@ -360,7 +386,10 @@ Pour le l'\isotope[212]{Bi} on ne trouve pas un joli pic pars que le rayon d'act
   \bibliographystyle{unsrt}
   \bibliography{literatur}  
 
+  \listoffigures  
+
   \begin{section}{Tableaux}
+
    \begin{table}[H]
     \begin{center}
      \begin{tabular}{c|c|c|c|c}
@@ -385,6 +414,7 @@ Pour le l'\isotope[212]{Bi} on ne trouve pas un joli pic pars que le rayon d'act
     \caption{\label{tabelle-am} Les résultats du \isotope[241][95]{Am} }
     \end{center}
    \end{table}
+
    
    \begin{table}[H]
     \begin{center}
@@ -399,6 +429,7 @@ Pour le l'\isotope[212]{Bi} on ne trouve pas un joli pic pars que le rayon d'act
       1001,36 $\pm$ 4,30	&3,434 $\pm$ 0,385	&297,97 $\pm$ 17,26	&605,2	&27,380\\
       875,52 $\pm$ 86,51	&3,049 $\pm$ 0,728	&3526,06 $\pm$ 59,38	&705	&31,895\\
       626,78 $\pm$ 71,36	&2,289 $\pm$ 0,590	&987,40 $\pm$ 31,42	&802,1	&36,288\\
+      0				&0			&25			&905,2	&40,953
      \end{tabular}
     \caption{\label{tabelle-bi} Les résultats du \isotope[212][83]{Bi} }
     \end{center}
@@ -425,6 +456,6 @@ Pour le l'\isotope[212]{Bi} on ne trouve pas un joli pic pars que le rayon d'act
   \end{section}
  \end{appendix}
 
- \listoffigures  
+ 
 \end{document}
 

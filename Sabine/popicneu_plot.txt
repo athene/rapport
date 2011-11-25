@@ -1,0 +1,7 @@
+set output 'popic.png'
+set terminal png
+set title 'Perte d`énergie par unité de longeur'
+set xlabel 'distance [mm]'
+set ylabel 'dE/dx [MeV/mm]'
+plot 'po_picneu.txt' using 1:2 title 'Po'
+
